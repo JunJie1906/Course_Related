@@ -1,0 +1,14 @@
+import urllib.request
+import re
+
+keyword = input("keyword:")
+weburl = "http://www.g-cores.com/categories/2"
+for i in range(200):
+	weburl='http://www.g-cores.com/categories/2/originals?page='+str(i)
+	page = urllib.request.urlopen(weburl)
+	contentBytes = page.read()
+	list = re.findall(r'("http://www.g-cores.com/articles[^s]*</a>)',str(contentBytes.decode(encoding='utf-8')))  # 正则表达式查找所有的图片
+
+	for i in list:
+		if keyword in i:
+			print(i)

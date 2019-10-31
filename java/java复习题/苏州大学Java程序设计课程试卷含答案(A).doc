@@ -1,0 +1,2238 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="苏州大学Java程序设计课程试卷含答案(A).files/filelist.xml">
+<title> </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Lenovo</o:Author>
+  <o:LastAuthor>Lenovo</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>97</o:TotalTime>
+  <o:Created>2015-07-02T06:39:00Z</o:Created>
+  <o:LastSaved>2015-07-02T08:16:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>979</o:Words>
+  <o:Characters>5583</o:Characters>
+  <o:Company>Microsoft</o:Company>
+  <o:Lines>46</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>6549</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="苏州大学Java程序设计课程试卷含答案(A).files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="苏州大学Java程序设计课程试卷含答案(A).files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:Zoom>120</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridVerticalSpacing>7.8 磅</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BalanceSingleByteDoubleByteWidth/>
+   <w:DoNotExpandShiftReturn/>
+   <w:BreakWrappedTables/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" UnhideWhenUsed="false" QFormat="true"
+   Name="Normal"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="true" QFormat="true"
+   Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="true" QFormat="true"
+   Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="true" QFormat="true"
+   Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="index 1"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="index 2"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="index 3"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="index 4"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="index 5"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="index 6"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="index 7"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="index 8"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="header"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="footer"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="true" QFormat="true"
+   Name="caption"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="line number"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="page number"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="macro"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false" Name="List"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Number"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List 2"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List 3"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List 4"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List 5"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Closing"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false" Name="Date"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Outline List 3"/>
+  <w:LsdException Locked="false" Priority="0" UnhideWhenUsed="false"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" QFormat="true"
+   Name="No Spacing"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" QFormat="true"
+   Name="Quote"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="19" UnhideWhenUsed="false"
+   QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" UnhideWhenUsed="false"
+   QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" UnhideWhenUsed="false"
+   QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" UnhideWhenUsed="false"
+   QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" UnhideWhenUsed="false"
+   QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true" QFormat="true"
+   Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	mso-pagination:none;
+	font-size:13.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	margin-top:17.0pt;
+	margin-right:0cm;
+	margin-bottom:16.5pt;
+	margin-left:0cm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:140%;
+	mso-pagination:lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:宋体;
+	font-weight:bold;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	font-weight:bold;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	font-weight:bold;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	font-weight:bold;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:10.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	font-weight:bold;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:正文;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	font-size:7.5pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;
+	font-weight:bold;}
+p
+	{mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+pre
+	{mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:21.0pt;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.1Char
+	{mso-style-name:"标题 1 Char";
+	mso-style-unhide:no;
+	mso-ansi-font-size:22.0pt;
+	mso-bidi-font-size:22.0pt;
+	font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:22.0pt;
+	font-weight:bold;}
+span.2Char
+	{mso-style-name:"标题 2 Char";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.3Char
+	{mso-style-name:"标题 3 Char";
+	mso-style-unhide:no;
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.4Char
+	{mso-style-name:"标题 4 Char";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.5Char
+	{mso-style-name:"标题 5 Char";
+	mso-style-unhide:no;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:宋体;
+	mso-fareast-font-family:宋体;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.6Char
+	{mso-style-name:"标题 6 Char";
+	mso-style-unhide:no;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:宋体;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-font-kerning:1.0pt;
+	font-weight:bold;}
+span.HTMLChar
+	{mso-style-name:"HTML 预设格式 Char";
+	mso-style-unhide:no;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:宋体;
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";
+	mso-font-kerning:1.0pt;}
+p.Char, li.Char, div.Char
+	{mso-style-name:"普通\(网站\) Char";
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+p.preChar, li.preChar, div.preChar
+	{mso-style-name:"pre Char";
+	mso-style-unhide:no;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:宋体;
+	mso-bidi-font-family:宋体;}
+span.10
+	{mso-style-name:10;
+	mso-style-unhide:no;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.15
+	{mso-style-name:15;
+	mso-style-unhide:no;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+span.16
+	{mso-style-name:16;
+	mso-style-unhide:no;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-font-kerning:0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:普通表格;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ZH-CN style='tab-interval:21.0pt;text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=left style='text-align:left'><span style='font-size:
+12.0pt;color:#999999'><span style='mso-spacerun:yes'>&nbsp;</span><span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<h1 align=center style='text-align:center'><span style='font-family:宋体;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman"'>苏州大学</span><span
+lang=EN-US>Java</span><span style='font-family:宋体'>程序设计课程试卷<span class=GramE>含答案</span></span><span
+lang=EN-US>(A)</span></h1>
+
+<p class=MsoNormal style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;line-height:20.0pt;mso-line-height-rule:exactly;mso-pagination:
+widow-orphan'><span lang=EN-US style='color:white'><span
+style='mso-spacerun:yes'>&nbsp;</span><o:p></o:p></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>苏州大学<span lang=EN-US>Java</span>程序设计课程试卷 （<span lang=EN-US>A</span>）卷 参考答案
+共<span lang=EN-US>7</span>页</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>一、选择题（<span lang=EN-US>2</span>分<span lang=EN-US>*25= 50</span>分）</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>1</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．<span lang=EN-US>main</span>方法是<span lang=EN-US>Java Application</span>程序执行的入口点，关于<span
+lang=EN-US>main</span>方法<span lang=EN-US>, </span>以下哪项是合法的（<span lang=EN-US> B </span>）？</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>public static void main</span>（ ）</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>public static void main</span>（<span lang=EN-US>
+String <span class=SpellE>args</span>[] </span>）</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>public static <span class=SpellE>int</span> main</span>（<span
+lang=EN-US>String [] <span class=SpellE>arg</span> </span>）</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>public void main</span>（<span lang=EN-US>String <span
+class=SpellE>arg</span> [] </span>）</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>2</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．<span lang=EN-US>Java Application</span>源程序<span class=GramE>的主类是</span>指包含有（<span
+lang=EN-US> A </span>）方法的类。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>main</span>方法<span lang=EN-US> B</span>、<span
+class=SpellE><span lang=EN-US>toString</span></span>方法</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span class=SpellE><span lang=EN-US>init</span></span>方法<span
+lang=EN-US> D</span>、<span class=SpellE><span lang=EN-US>actionPerfromed</span></span>方法</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>3</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．在编写<span lang=EN-US>Java Application</span>程序时，若需要使用到标准输入输出语句，必须在程序的开头写上<span
+lang=EN-US>( C )</span>语句。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>import <span class=SpellE>java.awt</span>.<span
+class=GramE>* ;</span> B</span>、<span lang=EN-US>import <span class=SpellE>java.applet.Applet</span>
+;</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>import java.io.<span class=GramE>* ;</span> D</span>、<span
+lang=EN-US>import <span class=SpellE>java.awt.Graphics</span> ;</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>4</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．对于构造函数，下列叙述错误的是（<span lang=EN-US> B </span>）。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、构造函数是类的一种特殊函数，它的方法名必须与类名相同。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、构造函数的返回类型只能是<span lang=EN-US>void</span>型。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、构造函数的主要作用是完成对类的对象的初始化工作。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、一般在创建新对象时，系统会自动调用构造函数。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>5</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．下面的是<span class=GramE>关于类</span>及其修饰符的一些描述，错误的是：（<span lang=EN-US> B </span>）。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>abstract</span>类只能用来派生子类，不能用来创建<span lang=EN-US>abstract</span>类的对象。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>final</span>类不但可以用来派生子类，也可以用来创建<span lang=EN-US>final</span>类的对象。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>abstract</span>不能与<span lang=EN-US>final</span>同时修饰一个类。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>abstract</span>方法必须在<span lang=EN-US>abstract</span>类中声明，但<span
+lang=EN-US>abstract</span>类定义中可以没有<span lang=EN-US>abstract</span>方法。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>6</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．在<span lang=EN-US>Java</span>中，一个类可同时定义许多同名的方法，这些方法的形式参数的个数、类型或顺序各不相同，传回的值也可以不相同。这种面向对象程序特性称为（<span
+lang=EN-US> C </span>）。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、隐藏<span lang=EN-US> B</span>、覆盖<span lang=EN-US> C</span>、重载<span
+lang=EN-US> D</span>、<span lang=EN-US>Java</span>不支持此特性</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>7</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．设有下面两个类的定义：</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>class</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> Person { class
+Student extends Person {</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>long id; // </span><span style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>身份证号<span lang=EN-US> <span class=SpellE>int</span>
+score; // </span>入学总分</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>String name; // </span><span style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>姓名<span lang=EN-US> <span class=SpellE>int</span> <span
+class=SpellE>getScore</span>(){</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>} return score;</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>问：类<span lang=EN-US>Person</span>和类<span lang=EN-US>Student</span>的关系是（<span
+lang=EN-US> B </span>）。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、包含关系<span lang=EN-US> B</span>、继承关系</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、关联关系<span lang=EN-US> D</span>、无关系，上述类定义有语法错误</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>8</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>． 设有下面的两个类定义：</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>class</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> AA {</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>void Show(){ <span class=SpellE>System.out.println</span>(&quot;</span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>我喜欢<span lang=EN-US>Java!&quot;);</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>class</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> BB extends AA {</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>void Show(){ <span class=SpellE>System.out.println</span>(&quot;</span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>我喜欢<span lang=EN-US>C++!&quot;);</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>则顺序执行如下语句后输出结果为：（<span lang=EN-US> A </span>）</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>AA a; BB b;</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>a.Show</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>); <span
+class=SpellE>b.Show</span>();</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、我喜欢<span lang=EN-US>Java! B</span>、我喜欢<span lang=EN-US>C++!</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>我喜欢<span lang=EN-US>C++! </span>我喜欢<span lang=EN-US>Java!</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、我喜欢<span lang=EN-US>Java! D</span>、我喜欢<span lang=EN-US>C++!</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>我喜欢<span lang=EN-US>Java! </span>我喜欢<span lang=EN-US>C++!</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>9</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．设有下面的一个类定义：</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>class</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> AA {</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>static void Show( ){ <span class=SpellE>System.out.println</span>(&quot;</span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>我喜欢<span lang=EN-US>Java!&quot;);
+}</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>class BB { void Show( ){ <span class=SpellE>System.out.println</span>(&quot;</span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>我喜欢<span lang=EN-US>C++!&quot;);
+} }</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>若已经使用<span lang=EN-US>AA</span>类创建对象<span lang=EN-US>a</span>和<span
+lang=EN-US>BB</span>类创建对象<span lang=EN-US>b</span>，则下面哪一个方法调用是正确的：（<span
+lang=EN-US> C </span>）</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span class=SpellE><span lang=EN-US>a.Show</span></span><span
+lang=EN-US>( ) B</span>、<span class=SpellE><span lang=EN-US>AA.<span
+class=GramE>Show</span></span></span><span class=GramE><span lang=EN-US>(</span></span><span
+lang=EN-US> );</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>b.Show</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> ) <span
+class=SpellE>BB.Show</span>( );</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span class=SpellE><span lang=EN-US>AA.Show</span></span><span
+lang=EN-US>( ); D</span>、<span class=SpellE><span lang=EN-US>a.<span
+class=GramE>Show</span></span></span><span class=GramE><span lang=EN-US>(</span></span><span
+lang=EN-US> );</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>b.Show</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> ); <span
+class=SpellE>BB.Show</span>( );</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>10</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．对于构造函数，下列叙述错误的是（<span lang=EN-US> C </span>）。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、构造函数也允许重载。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、子类无条件地继承<span class=GramE>父类的无参</span>构造函数。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、子类不允许<span class=GramE>调用父类的</span>构造函数。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、在同一个类中定义的重载构造函数可以相互调用。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>11</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．在使用<span lang=EN-US>interface</span>声明一个接口时，只可以使用（<span lang=EN-US> D </span>）修饰符修饰该接口。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>private B</span>、<span lang=EN-US>protected</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>private protected D</span>、<span lang=EN-US>public</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>12</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．对于子类的构造函数说明，下列叙述中不正确的是（<span lang=EN-US> D </span>）。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、子类无条件地继承<span class=GramE>父类的无参</span>构造函数。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、子类可以在自己的构造函数中使用<span lang=EN-US>super</span>关键字来<span class=GramE>调用父类的</span>含参数构造函数，但这个调用语句必须是子类构造函数的第一个可执行语句。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、在创建子类的对象时，将先执行继承<span class=GramE>自父类的无参</span>构造函数，然后再执行自己的构造函数。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、子类不但可以继承<span class=GramE>父类的无参</span>构造函数，也可以<span class=GramE>继承父类的</span>有参构造函数。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>13. Java</span><span style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>语言是<span lang=EN-US>( D )</span>。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A.</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>面向问题的解释型高级编程语言</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B.</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>面向机器的低级编程语言</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C.</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>面向过程的编译型高级编程语言</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D.</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>面向对象的解释型高级编程语言</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>14. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>既能作为类的修饰符<span lang=EN-US>, </span>也能作为类成员的修饰符的是<span lang=EN-US>( A)</span>。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A) <span class=GramE>public</span> B) extends C) Float
+D) static</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>15. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>下列选项中，用于定义接口的关键字是<span lang=EN-US>( C)</span>。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>import B) implements C) interface D) protected</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>16.</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>下列类头定义中，错误的是<span lang=EN-US>(B )</span>。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A) <span class=GramE>class</span> x</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{ .... }</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B) <span class=GramE>public</span> x extends y</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{ .... }</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C) <span class=GramE>public</span> class x extends y</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{ .... }</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D) <span class=GramE>class</span> x extends y
+implements y1</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{ .... }</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>17.</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>下列选项中，用于在定义类头时<span class=GramE>声明父类名</span>的关键字是<span lang=EN-US>(C )</span>。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>return B) interface C) extends D) class</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>18. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>定义类头时，不可能用到的关键字是<span lang=EN-US>( A)</span>。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A) <span class=GramE>private</span> B)class C)extends
+D)implements</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>19. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>若一个类中对某个方法进行了重载，能够区分这些重载方法的手段是<span lang=EN-US> (C )</span>。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A) </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>它们的返回<span class=GramE>值类型</span>的不同<span lang=EN-US> B) </span>它们的名称的不同</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C) </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>它们的参数表的不同<span lang=EN-US> D) </span>它们的修饰符不同</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>20.</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>下列关于继承的哪项叙述是正确的？<span lang=EN-US> D</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）在<span lang=EN-US>java</span>中允许多重继承</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）在<span lang=EN-US>java</span>中一个类只能实现一个接口</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）在<span lang=EN-US>java</span>中一个类不能同时继承一个类和实现一个接口</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>java</span>的单一继承使代码更可靠</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>21.</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>下列哪个修饰符可以使在一个类中定义的成员变量只能被同一包中的类访问？</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>private B</span>）无修饰符<span lang=EN-US> C</span>）<span
+lang=EN-US>public D</span>）<span lang=EN-US>protected</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>22. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>给出下列代码，如何使成员变量<span lang=EN-US>m </span><span class=GramE>被方法</span><span
+lang=EN-US>fun</span>（）直接访问？<span lang=EN-US> C</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>class</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> Test</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>private</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>int</span>
+m;</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>public static void fun</span><span style='font-size:
+13.0pt;mso-font-kerning:1.0pt'>（）</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>...</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）将<span lang=EN-US>private <span class=SpellE>int</span> m </span>改为<span
+lang=EN-US>protected <span class=SpellE>int</span> m</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）将<span lang=EN-US>private <span class=SpellE>int</span> m </span>改为<span
+lang=EN-US> public <span class=SpellE>int</span> m</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）将<span lang=EN-US>private <span class=SpellE>int</span> m </span>改为<span
+lang=EN-US> static <span class=SpellE>int</span> m</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）将<span lang=EN-US>private <span class=SpellE>int</span> m </span>改为<span
+lang=EN-US> <span class=SpellE>int</span> m</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>23. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>下列关于内部类的说法不正确的是<span lang=EN-US> C</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）内部类的类<span class=GramE>名只能</span>在定义它的类或程序段中或在表达式内部匿名使用</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）内部类可以使用它所在类的静态成员变量和实例成员变量</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）内部类不可以用<span lang=EN-US>abstract</span>修饰符定义为抽象类</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）内部类可作为其他类的成员，而且可访问它所在类的成员</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>24. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>下列关于<span lang=EN-US>Frame</span>类的说法不正确的是<span lang=EN-US> C</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>Frame</span>是<span lang=EN-US>Window</span>类的直接子类</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>Frame</span>对象显示的效果是一个窗口</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>Frame</span>被默认初始化为可见</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>Frame</span>的默认布局管理器为<span class=SpellE><span
+lang=EN-US>BorderLayout</span></span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>25</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、下面哪一个是非法的标识符？<span lang=EN-US> A</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>A</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>2variable</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>B</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>Variable2</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>C</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US>_what</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>D</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>）<span lang=EN-US> _3_</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>二、判断题（<span lang=EN-US>2</span>分<span lang=EN-US>*5=10</span>分）</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>(T) 1</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>Java</span>虚拟机是实现跨平台的基础。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>(F) 2</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、<span lang=EN-US>Java</span>支持多继承。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>(T) 3</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、实现一个接口，则在类中一定要实现接口中的所有方法。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>(F) 4</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、一个<span lang=EN-US>Java</span>类可以有多个父类，这称作多继承。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>(T) 5</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>、只要类中显式地定义一个构造方法，那么<span lang=EN-US>Java</span>默认的构造方法不再存在。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>三、程序题 （<span lang=EN-US>5</span>分<span lang=EN-US>*4=20</span>分）</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>1</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．写出以下程序的运行结果。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>class</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>StaticTest</span>
+{</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>static</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>int</span>
+x=1;</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>int</span></span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> y;</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>StaticTest</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>()</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>{ y</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>++; } x=2</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>public</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> static void
+main(String <span class=SpellE>args</span>[ ]){ <span class=SpellE>st.y</span>=1</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>StaticTest</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>st</span>=new
+<span class=SpellE><span class=GramE>StaticTest</span></span><span class=GramE>(</span>);
+<span class=SpellE>st.y</span>=1 <span class=SpellE>System.out.println</span>(&quot;x=&quot;
++ x);</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>System.out.println</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>&quot;<span
+class=SpellE>st.y</span>=&quot; + <span class=SpellE>st.y</span>);</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>st</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>=</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>new <span
+class=SpellE>StaticTest</span>();</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>System.out.println</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>&quot;<span
+class=SpellE>st.y</span>=&quot; + <span class=SpellE>st.y</span>);</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>static</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> { x++;}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}<o:p></o:p></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>答：<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>x=2<o:p></o:p></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>st.y</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>=1 <o:p></o:p></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>st.y</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>=1<o:p></o:p></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>2</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．请写出如下程序的功能</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>import</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> java.io.*;</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>public</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> class Class1</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>public</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> static void
+main(String <span class=SpellE>args</span>[ ]){</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>int</span></span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>i</span>
+, Max , Min ;</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>int</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> a[ ] = {
+12,67,8,98,23,56,124,55,99,100 };</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>Max = Min = <span class=GramE>a[</span>0];</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>for</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> ( <span
+class=SpellE>i</span> = 1 ; <span class=SpellE>i</span> &lt; <span
+class=SpellE>a.length</span>; <span class=SpellE>i</span> ++ ) {</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>if</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> ( a[<span
+class=SpellE>i</span>]&lt;Min ) Min = a[<span class=SpellE>i</span>];</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>if</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> ( a[<span
+class=SpellE>i</span>]&gt;Max ) Max = a[<span class=SpellE>i</span>];</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>System.out.println</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> Max+&quot;
+&quot;+Min );</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>System.out.println</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> );</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>答：在数组中查找并输出最大值和最小值。</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>3</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>．请写出如下程序的功能</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>import</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>java.awt</span>.*;</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>public</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> class <span
+class=SpellE>abc</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>public</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> static void
+main(String <span class=SpellE>args</span>[])</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>new</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>FrameOut</span>();</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>class <span class=SpellE>FrameOut</span> extends Frame
+// Frame</span><span style='font-size:13.0pt;mso-font-kerning:1.0pt'>为系统定义的窗框类</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>Button <span class=SpellE>btn</span>;</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>FrameOut</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> )</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>super(&quot;</span><span style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>按钮<span lang=EN-US>&quot;);</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>btn</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> = new Button(&quot;</span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>按下我<span lang=EN-US>&quot;);</span></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>setLayout</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>new <span
+class=SpellE>FlowLayout</span>( ));</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>add(</span></span><span
+class=SpellE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>btn</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>);</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>setSize</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>300,200);</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>show(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> );</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>答：创建一个标题为<span lang=EN-US>&quot;</span>按钮<span lang=EN-US>&quot;</span>的窗框，窗框中显示有<span
+lang=EN-US>&quot;</span>按下我<span lang=EN-US>&quot;</span>字样的按钮。</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>4. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>阅读以下程序，说明输出结果是什么<span lang=EN-US>import java.io.*;</span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>public</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> class <span
+class=SpellE>ATest</span>{</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US><span
+style='mso-spacerun:yes'>&nbsp;</span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>public</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> static void
+main(String <span class=SpellE>args</span>[]) {</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>SubClass</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>sb</span>
+= new <span class=SpellE><span class=GramE>SubClass</span></span><span
+class=GramE>(</span> );</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>System.out.println</span></span></span><span
+class=GramE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>(</span></span><span
+class=SpellE><span lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>sb.funOfMod</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>( )); }</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>class</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>SuperClass</span>{</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>int</span></span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> a = 10 , b = -3 ;</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>class</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>SubClass</span>
+extends <span class=SpellE>SuperClass</span>{</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>int</span></span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>funOfMod</span>(
+) { return <span class=SpellE>a%b</span>; }</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>答： 输出结果为<span lang=EN-US> 1 //</span>就是阿拉伯数字１。</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>四、问答题（<span lang=EN-US>5</span>分<span lang=EN-US>*4=20</span>分）</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>1</span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>． 简述<span lang=EN-US>Java</span>的运行机制。</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>答：<span lang=EN-US>Java</span>程序的运行必须经过编写、编译、运行三个步骤。编写是指在<span
+lang=EN-US>Java</span>开发环境中进行程序代码的输入过程，最终形成后缀名为<span lang=EN-US>.java</span>源文件。编译是指使用<span
+lang=EN-US>Java</span>编译器对源文件进行错误排查的过程，编译后将生成后缀名为<span lang=EN-US>.class</span>的字节码文件。运行是指使用<span
+lang=EN-US>Java</span>解释器 将字节码文件翻译成机器代码，在<span class=SpellE><span lang=EN-US>cpu</span></span>上运行并显示结果的过程。这一过程如图所示。</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>2. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>什么是类成员，什么是实例成员？他们之间有什么区别？</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>答：<span lang=EN-US>Java</span>中使用<span lang=EN-US>static</span>修饰的变量和方法称为类变量（或称静态变量）和类方法（或称静态方法），没用<span
+lang=EN-US>static</span>修饰符的变量和方法称为实例变量和实例方法。</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>类成员</span></b><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>是指该成员属于这个类，由这个类所创建的所有对象共同拥有，该成员仅在类的存储单元中存在，这个类所创建的所有对象中仅存储一个指向该成员的
+引用。任何一个该类的对象改变了类成员，其他对象同样会发生改变。<span class=GramE>对于类</span>成员既可以使用对象访问，也可以使用类名直接进行访问，并且在类方法中只能访问类
+变量，而不能访问实例变量。 <b style='mso-bidi-font-weight:normal'>实例成员</b>是指该成员由每一个对象个体独有，对象的存储空间中的确有一块空间用来存储该成员，不同对象的实例成员不同，任何一个对象改变了实例成员，
+只会影响这个对象本身，其他对象中的实例成员不会发生改变。对于实例成员只能通过对象来访问，不能通过类名进行访问，在实例方法中既可以访问实例变量，也 可以访问类变量。</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>3. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>什么是多态<span lang=EN-US>?</span>面向对象程序设计为什么要引入多态的特性</span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>答<span lang=EN-US>: </span>一个类中存在多个同名的方法，称为多态。把抽象功能和目的相同，而具体<span
+class=GramE>实现因</span>不同情况而异的方法命名为同名方法，符合面向对象程序设计中抽象、提升概念，封装、隐藏细节的特点，从而提高了程序的简洁性和可读性，降低了类和程序模块直接的相互耦合和依赖。<span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'><span style='mso-spacerun:yes'>&nbsp;</span>7 <o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>4. </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>编写一个学生类<span lang=EN-US> Student </span>，要求： <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>(1) </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>学生类<span lang=EN-US>Student </span>属性有： <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>id:long</span></span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>型，代表学号 <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>name:String</span></span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>类对象，代表姓名 <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>age:int</span></span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>型，代表年龄 <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>sex:boolen</span></span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>型，代表性别（其中：<span lang=EN-US>true</span>表示男，<span
+lang=EN-US>false</span>表示女） <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>phone:String</span></span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>类对象，代表联系电话 <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>(2) </span><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>学生类<span lang=EN-US>Student</span>的方法有： <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>Student(long <span class=SpellE>i</span> , String n , <span
+class=SpellE>int</span> a , <span class=SpellE>boolean</span> s , long p): </span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>有参构造函数，形参表中的参数分别初始化学号、姓名、 年龄、性别和联系电话。
+<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>int</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>getAge</span>()(
+) : </span><span style='font-size:13.0pt;mso-font-kerning:1.0pt'>获取年龄作为方法的返回值。 <span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>boolean</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>getSex</span>(
+)( ) : </span><span style='font-size:13.0pt;mso-font-kerning:1.0pt'>获取性别作为方法的返回值。<span
+lang=EN-US> long <span class=SpellE>getPhone</span>( ) : </span>获取联系电话作为方法的返回值。
+<span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>public String <span class=SpellE>toString</span>( ) : </span><span
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>以 姓名：联系电话 的形式作为方法的返回值。 <span
+lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span style='font-size:13.0pt;mso-font-kerning:
+1.0pt'>答：参考程序段如下： <span lang=EN-US><o:p></o:p></span></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>class</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> Student { long <span
+class=SpellE>id;String</span> name; <span class=SpellE>int</span> age; <o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>boolean</span></span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> sex; long phone; <o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'><span style='mso-spacerun:yes'>&nbsp; </span><o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>Student(</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> long <span
+class=SpellE>i</span> ,String n , <span class=SpellE>int</span> a ,<span
+class=SpellE>boolean</span> s , long<span style='mso-spacerun:yes'>&nbsp;
+</span>p )<o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>{<span class=GramE>id</span> = <span class=SpellE>i</span>;<span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>name</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> = n; <o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>age</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> = a; <o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>sex</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> = s; <o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>phone</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> = p; } <o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>int</span></span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>getAge</span>(){
+return<span style='mso-spacerun:yes'>&nbsp; </span>age; }<span
+style='mso-spacerun:yes'>&nbsp; </span><o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=SpellE><span class=GramE><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'>boolean</span></span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>getSex</span>(){
+return<span style='mso-spacerun:yes'>&nbsp; </span>sex; }<span
+style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>long</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> <span class=SpellE>getPhone</span>()
+{ return<span style='mso-spacerun:yes'>&nbsp; </span>phone; }<span
+style='mso-spacerun:yes'>&nbsp; </span><o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>public</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'> String <span
+class=SpellE>toString</span>()<o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span class=GramE><span lang=EN-US
+style='font-size:13.0pt;mso-font-kerning:1.0pt'>{ return</span></span><span
+lang=EN-US style='font-size:13.0pt;mso-font-kerning:1.0pt'><span
+style='mso-spacerun:yes'>&nbsp; </span>name+&quot; : &quot;+phone; } <o:p></o:p></span></p>
+
+<p style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;margin-left:
+0cm;text-align:justify;text-justify:inter-ideograph;line-height:20.0pt;
+mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'>}<o:p></o:p></span></p>
+
+<p align=center style='text-align:center'><span lang=EN-US style='font-size:
+16.0pt;color:#993300'><span style='mso-spacerun:yes'>&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;mso-para-margin-top:.5gd;mso-para-margin-right:0cm;mso-para-margin-bottom:
+.5gd;mso-para-margin-left:0cm;text-indent:26.0pt;mso-char-indent-count:2.0;
+line-height:20.0pt;mso-line-height-rule:exactly'><span lang=EN-US
+style='font-family:宋体'><span style='mso-spacerun:yes'>&nbsp;</span><o:p></o:p></span></p>
+
+<p class=Char style='margin-top:7.8pt;margin-right:0cm;margin-bottom:7.8pt;
+margin-left:0cm;text-align:justify;text-justify:inter-ideograph;line-height:
+20.0pt;mso-line-height-rule:exactly'><span lang=EN-US style='font-size:13.0pt;
+mso-font-kerning:1.0pt'><span style='mso-spacerun:yes'>&nbsp;</span></span></p>
+
+<p class=Char align=center style='text-align:center'><span lang=EN-US
+style='font-size:16.0pt;color:#993300'><span
+style='mso-spacerun:yes'>&nbsp;</span><o:p></o:p></span></p>
+
+</div>
+
+<!--EndFragment-->
+</body>
+
+</html>

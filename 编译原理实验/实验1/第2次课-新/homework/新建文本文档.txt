@@ -1,0 +1,19 @@
+extract document part
+extract and remove 注释
+extract and modify head
+extract and remove emph
+
+extract and remove texttt
+extract and delete date (html里面无法获取当前时间，没法调用js，直接删除)
+extract and modify author
+extract and modify abstract
+
+extract and modify sections
+extract and modify textbf
+extract and modify itemize
+extract and remove \textbackslash
+
+modify center标签
+把tabular变成html表格
+abstract and remove thebibliography
+generate html text

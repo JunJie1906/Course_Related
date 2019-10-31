@@ -1,0 +1,15 @@
+function []=expand(k,Q,C,t,r,ws,wa,wd)R=sqrt((-4)*k*t*log((C/((1-r)*Q))*(4*pi*k*t)^(1.5)))for i=0:24:t/3600if (wd*(i/24))<=RR=R-wd;
+R0=R;
+t=0:0.1:0.5*pi;
+p=0:0.1:2*pi;
+wsx=ws*cos(wa)*i;
+wsy=ws*sin(wa)*i;
+[theta,phi]=meshgrid(t,p);
+x=R*sin(theta).*cos(phi)+wsx;
+y=R*sin(theta).*sin(phi)+wsy;
+z=R*cos(theta);
+hold onsurfc(x,y,z)endendR0=R0view(20,70)title('核泄漏有风向影响');
+xlabel('x');
+ylabel('y');
+zlabel('z');
+axis([-10,15,-10,25,0,10])x0=ws*cos(wa)*1000000/3600y0=ws*sin(wa)*1000000/3600R1=sqrt((x0)^2+(y0)^2)end

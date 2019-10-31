@@ -1,0 +1,64 @@
+	<!--% Article top matter-->
+	<h1 align="center">How to Structure a Latex Document</h1> <!--%\LaTeX is a macro for printing the Latex logo-->
+	<h2 align="center">Andrew Roberts School of Computing, University of Leeds, Leeds, United Kingdom, LS2 1HE andyr@comp.leeds.ac.uk</h2>  <!--%\texttt formats the text to a typewriter style font-->
+	  <!--%\today is replaced with the current date-->
+	
+	
+	<h3 align="center">abstract</h3><p>In this article, I shall discuss some of the fundamental topics in producing a structured document.  This document itself does not go into much depth, but is instead the output of an example of how to implement structure. Its Latex source, when in used with my tutorial provides all the relevant information.</p><br/>
+	
+	<ol>
+	<h3><li><b>Introduction</b></li></h3><br/><p>This small document is designed to illustrate how easy it is to create a well structured document within \LaTeX\cite{lamport94}.  You should quickly be able to see how the article looks very professional, despite the content being far from academic.  Titles, section headings, justified text, text formatting etc., is all there, and you would be surprised when you see just how little markup was required to get this output.</p><br/>
+	<h3><li><b>Structure</b></li></h3><br/><p>One of the great advantages of \LaTeX{} is that all it needs to know is the structure of a document, and then it will take care of the layout and presentation itself.  So, here we shall begin looking at how exactly you tell \LaTeX{} what it needs to know about your document.</p><br/>
+	<ol>
+	<h3><li><b>Top Matter</b></li></h3><br/><p>The first thing you normally have is a title of the document, as well as information about the author and date of publication.  In \LaTeX{} terms, this is all generally referred to as top matter.</p><br/>
+	<ol>
+	<h3><li><b>Article Information</b></li></h3><br/><p><!--%Set up an 'itemize' environment to start a bulleted list.  Each--> <!--%individual item begins with the <li> command.  Also note in this list--> <!--%that it has two levels, with a list embedded in one of the list items.--> <ul> <li> \ title{title} - The title of the article. <li> \ date - The date. Use: <ul> <li> \ date{\ today} - to get the date that the document is typeset. <li> \ date{date} - for a  <!--%\emph{} emphasises the specified text.  Italics by default.--> specific date. <li> \ date{} - for no date. </ul> </ul></p><br/>
+	<h3><li><b>Author Information</b></li></h3><br/><p>The basic article class only provides the one command: <ul> <li> \ author - The author of the document. </ul></p><br/>
+	It is common to not only include the author name, but to insert new
+	lines (\\) after and add things such
+	as address and email details.  For a slightly more logical approach, use
+	the AMS article class (amsart) and you have the following extra
+	commands:
+	
+	<ul>
+		<li> \ address - The author's address.  Use
+		the new line command (\\) for
+		line breaks.
+		<li> \ thanks - Where you put any acknowledgments.
+		<li> \ email - The author's email address.
+		<li> \ urladdr - The URL for the author's web page.
+	</ul>
+	
+	</ol>
+	<h3><li><b>Sectioning Commands</b></li></h3><br/><p>The commands for inserting sections are fairly intuitive.  Of course, certain commands are appropriate to different document classes. For example, a book has chapters but a article doesn't.</p><br/>
+	<!--%A simple table.  The center environment is first set up, otherwise the-->
+	<!--%table is left aligned.  The tabular environment is what tells Latex-->
+	<!--%that the data within is data for the table.-->
+	<div align="center">
+		<table border = "1" width="50%"> 
+			<!--%The tabular environment is what tells Latex that the data within is-->
+			<!--%data for the table.  The arguments say that there will be two-->
+			<!--%columns, both left justified (indicated by the 'l', you could also-->
+			<!--%have 'c' or 'r'.  The bars '|' indicate vertical lines throughout-->
+			<!--%the table.-->
+			
+		  <thead><tr><th width="60%"  style="text-align:left;"><!--% Print horizontal line-->
+			Command </th><th width="60%"  style="text-align:left;"> Level </th></tr></thead>   <tbody><tr><td><!--% Columns are delimited by '</td><td>'.  And--></td></tr><tr><td><!--%rows are delimited by ''--></td><td>\ part{part}</td></tr><tr><td>-1 </td><td>\ chapter{chapter}</td></tr><tr><td>0 </td><td>\ section{section}</td></tr><tr><td>1 </td><td>\ subsection{subsection}</td></tr><tr><td>2 </td><td>\ subsubsection{subsubsection}</td></tr><tr><td>3 </td><td>\ paragraph{paragraph}</td></tr><tr><td>4 </td><td>\ subparagraph{subparagraph}</td></tr></tbody>
+		
+		</table>
+	</div>
+	
+	Numbering of the sections is performed automatically by \LaTeX{}, so don't
+	bother adding them explicitly, just insert the heading you want between
+	the curly braces.  If you don't want sections number, then add an asterisk (*) after the
+	section command, but before the first curly brace, e.g., \texttt{\
+		section*{A Title Without Numbers}}.
+	
+	<!--%Create the environment for the bibliography.  Since there is only one-->
+	<!--%reference, set the label width to be one character (I shall follow-->
+	<!--%convention as use the number '9'.  This is because it helps to remind-->
+	<!--%that it is the maximum number of refs that is now permitted by that-->
+	<!--%width).-->
+	</ol>
+	</ol>
+	 <!--%Must end the environment-->
