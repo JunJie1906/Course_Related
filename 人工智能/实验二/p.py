@@ -86,16 +86,16 @@ class eight_code():
                     if in_close == False:
                         self.Update_open((j,self.f(j),begin))
 
-            min_score = 99999
+            min_steps = 99999
             add_state = ''
             father = ''
             for j in range(len(self.open)):
-                if self.open[j][1]<min_score:
-                    min_score=self.open[j][1]
+                if self.open[j][1]<min_steps:
+                    min_steps=self.open[j][1]
                     add_state=self.open[j][0]
                     father = self.open[j][2]
-            self.open.remove((add_state,min_score,father))
-            self.close.append((add_state,min_score,father))
+            self.open.remove((add_state,min_steps,father))
+            self.close.append((add_state,min_steps,father))
             begin = add_state
             self.depth += 1
 
@@ -107,14 +107,17 @@ class eight_code():
         print()
 
     def show_road(self,x):
+        road = []
         end = self.close[-1]
-        self.show_board(end[0])
+        road.append(end[0])
         while end[-1]!=x:
-            self.show_board(end[-1])
+            road.append(end[-1])
             for i in self.close:
                 if i[0]==end[-1]:
                     end = i
                     break
+        for i in range(len(road)):
+            self.show_board(road[len(road)-i-1])
 
     def play(self,s):
         str = '123804765'
@@ -139,6 +142,9 @@ class eight_code():
         self.show_road(s)
 
 m = eight_code()
-# m.play('wdassddwsdsdsdsdasawsadawdasdwadsdsdsswdwddwawdawadsawdwadads')
 
-m.run('682103754')
+# m.show_board('682103754')
+# m.play('awdwddsawsdawdsadwdsaasddwadasdawsaaaaadawsdawdasdaawdwwdssadwasdwawsdasdwasadawsadawawsdawdawdadawdsadawawsd')
+board = '841203576'
+m.show_board(board)
+m.run(board)
