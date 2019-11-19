@@ -1,0 +1,235 @@
+import ply.yacc as yacc
+from py_lex import *
+from Node import*
+
+def p_segment(t):
+    'segment : statements'
+    t[0] = node('[segment]')
+    t[0].add(t[1])
+
+def p_statements(t):
+    '''statements : statements statement
+                  | statement'''
+    if len(t)==3:
+        t[0] = t[1]
+        t[0].add(t[2])
+    elif len(t)==2:
+        t[0] = node('[statements]')
+        t[0].add(t[1])
+
+def p_statement(t):
+    '''
+    statement : assignment
+             | operation
+             | print
+             | if
+             | else
+             | elif
+             | while
+             | break
+             | for
+    '''
+    t[0] = node(t[1])
+
+def p_BREAK(t):
+    '''
+    break : BREAK
+    '''
+    t[0] = node('[BREAK]')
+
+def p_while(t):
+    '''
+    while : WHILE '(' condition ')' '{' statements '}'
+    '''
+    t[0] = node('[WHILE]')
+    t[0].add(t[3])
+    t[0].add(t[6])
+
+def p_for(t):
+    '''
+    for : FOR '(' assignment ';' condition ';' VARIABLE '+' '+' ')' '{' statements '}'
+    '''
+    t[0] = node('[FOR]')
+    t[0].add(t[3])
+    t[0].add(t[5])
+    t[0].add(node(t[7]))
+    t[0].add(t[12])
+
+def p_if(t):
+    '''
+    if : IF '(' condition ')' '{' statements '}'
+    '''
+    t[0] = node('[IF]')
+    t[0].add(node(t[3]))
+    t[0].add(node(t[6]))
+
+def p_else(t):
+    '''
+    else : ELSE '{' statements '}'
+    '''
+    t[0] = node('[ELSE]')
+    t[0].add(t[3])
+
+def p_elif(t):
+    '''
+    elif : ELIF '(' condition ')' '{' statements '}'
+    '''
+    t[0] = node('[ELIF]')
+    t[0].add(node(t[3]))
+    t[0].add(node(t[6]))
+
+
+def p_condition(t):
+    '''
+    condition : greater
+              | greater_equal
+              | less
+              | less_equal
+              | equal_equal
+    '''
+    t[0] = node(t[1])
+
+def p_greater(t):
+    '''
+    greater   : term '>' term
+              '''
+    t[0] = node('[greater]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[3]))
+
+def p_greater_equal(t):
+    '''
+    greater_equal   : term '>' '=' term
+              '''
+    t[0] = node('[greater_equal]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[4]))
+
+
+def p_less(t):
+    '''
+    less   : term '<' term
+              '''
+    t[0] = node('[less]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[3]))
+
+def p_less_equal(t):
+    '''
+    less_equal   : term '<' '=' term
+              '''
+    t[0] = node('[less_equal]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[4]))
+
+def p_equal_equal(t):
+    '''
+    equal_equal   : term '=' '=' term
+              '''
+    t[0] = node('[equal_equal]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[4]))
+
+def p_assignment(t):
+    '''
+    assignment : VARIABLE '=' term
+                | VARIABLE '=' array
+                | array_term '=' term
+    '''
+    t[0] = node('[assignment]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[3]))
+
+def p_operation(t):
+    '''
+    operation : ADD
+              | SUB
+              | MUL
+              | DIV
+    '''
+    t[0] = node(t[1])
+
+def p_ADD(t):
+    '''
+    ADD : term '+' term
+    '''
+    t[0] = node('[ADD]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[3]))
+
+def p_SUB(t):
+    '''
+    SUB : term '-' term
+    '''
+    t[0] = node('[SUB]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[3]))
+
+def p_MUL(t):
+    '''
+    MUL : term '*' term
+
+    '''
+    t[0] = node('[MUL]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[3]))
+
+def p_DIV(t):
+    '''
+    DIV : term '/' term
+    '''
+    t[0] = node('[DIV]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[3]))
+
+
+def p_print(t):
+    '''print : PRINT '(' pcontent ')' '''
+    t[0] = node(t[3])
+    t[0]._data = '[PRINT]'
+
+# add
+def p_array_term(t):
+    '''
+     array_term : VARIABLE '[' term ']'
+    '''
+    t[0] = node('[array_term]')
+    t[0].add(node(t[1]))
+    t[0].add(node(t[3]))
+
+# add
+def p_array(t):
+    '''
+    array : '[' pcontent ']'
+    '''
+    t[0] = node('[array]')
+    t[0].add(node(t[2]))
+
+
+def p_pcontent(t):
+    '''
+    pcontent : pcontent ',' term
+             | term
+    '''
+    if len(t)==2:
+        t[0] = node('[print_content]')
+        t[0].add(node(t[1]))
+    elif len(t) == 4:
+        t[0] = node(t[1])
+        t[0].add(node(t[3]))
+
+def p_term(t):
+    '''
+    term : VARIABLE
+         | NUMBER
+         | operation
+         | array_term
+    '''
+    t[0] = t[1]
+
+def p_error(t):
+    print("Syntax error at '%s'" % t.value)
+
+yacc.yacc()
+
+p = yacc.parse
