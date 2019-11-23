@@ -1,0 +1,3420 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> segment
+Rule 1     segment -> statements
+Rule 2     statements -> statements statement
+Rule 3     statements -> statement
+Rule 4     statement -> assignment
+Rule 5     statement -> operation
+Rule 6     statement -> print
+Rule 7     statement -> if
+Rule 8     statement -> else
+Rule 9     statement -> elif
+Rule 10    statement -> while
+Rule 11    statement -> break
+Rule 12    statement -> for
+Rule 13    break -> BREAK
+Rule 14    while -> WHILE ( condition ) { statements }
+Rule 15    for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+Rule 16    if -> IF ( condition ) { statements }
+Rule 17    else -> ELSE { statements }
+Rule 18    elif -> ELIF ( condition ) { statements }
+Rule 19    condition -> greater
+Rule 20    condition -> greater_equal
+Rule 21    condition -> less
+Rule 22    condition -> less_equal
+Rule 23    condition -> equal_equal
+Rule 24    greater -> term > term
+Rule 25    greater_equal -> term > = term
+Rule 26    less -> term < term
+Rule 27    less_equal -> term < = term
+Rule 28    equal_equal -> term = = term
+Rule 29    assignment -> VARIABLE = term
+Rule 30    assignment -> VARIABLE = array
+Rule 31    assignment -> array_term = term
+Rule 32    operation -> ADD
+Rule 33    operation -> SUB
+Rule 34    operation -> MUL
+Rule 35    operation -> DIV
+Rule 36    operation -> DIV_ext
+Rule 37    operation -> ( operation )
+Rule 38    ADD -> term + term
+Rule 39    SUB -> term - term
+Rule 40    MUL -> term * term
+Rule 41    DIV -> term / term
+Rule 42    DIV_ext -> term / / term
+Rule 43    print -> PRINT ( pcontent )
+Rule 44    array_term -> VARIABLE [ term ]
+Rule 45    array -> [ pcontent ]
+Rule 46    pcontent -> pcontent , term
+Rule 47    pcontent -> term
+Rule 48    term -> VARIABLE
+Rule 49    term -> NUMBER
+Rule 50    term -> operation
+Rule 51    term -> array_term
+Rule 52    term -> len
+Rule 53    len -> LEN ( VARIABLE )
+
+Terminals, with rules where they appear
+
+(                    : 14 15 16 18 37 43 53
+)                    : 14 15 16 18 37 43 53
+*                    : 40
++                    : 15 15 38
+,                    : 46
+-                    : 39
+/                    : 41 42 42
+;                    : 15 15
+<                    : 26 27
+=                    : 25 27 28 28 29 30 31
+>                    : 24 25
+BREAK                : 13
+ELIF                 : 18
+ELSE                 : 17
+FOR                  : 15
+IF                   : 16
+LEN                  : 53
+NUMBER               : 49
+PRINT                : 43
+VARIABLE             : 15 29 30 44 48 53
+WHILE                : 14
+[                    : 44 45
+]                    : 44 45
+error                : 
+{                    : 14 15 16 17 18
+}                    : 14 15 16 17 18
+
+Nonterminals, with rules where they appear
+
+ADD                  : 32
+DIV                  : 35
+DIV_ext              : 36
+MUL                  : 34
+SUB                  : 33
+array                : 30
+array_term           : 31 51
+assignment           : 4 15
+break                : 11
+condition            : 14 15 16 18
+elif                 : 9
+else                 : 8
+equal_equal          : 23
+for                  : 12
+greater              : 19
+greater_equal        : 20
+if                   : 7
+len                  : 52
+less                 : 21
+less_equal           : 22
+operation            : 5 37 50
+pcontent             : 43 45 46
+print                : 6
+segment              : 0
+statement            : 2 3
+statements           : 1 2 14 15 16 17 18
+term                 : 24 24 25 25 26 26 27 27 28 28 29 31 38 38 39 39 40 40 41 41 42 42 44 46 47
+while                : 10
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . segment
+    (1) segment -> . statements
+    (2) statements -> . statements statement
+    (3) statements -> . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    segment                        shift and go to state 1
+    statements                     shift and go to state 2
+    statement                      shift and go to state 3
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 1
+
+    (0) S' -> segment .
+
+
+
+state 2
+
+    (1) segment -> statements .
+    (2) statements -> statements . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    $end            reduce using rule 1 (segment -> statements .)
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    statement                      shift and go to state 32
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 3
+
+    (3) statements -> statement .
+
+    VARIABLE        reduce using rule 3 (statements -> statement .)
+    (               reduce using rule 3 (statements -> statement .)
+    PRINT           reduce using rule 3 (statements -> statement .)
+    IF              reduce using rule 3 (statements -> statement .)
+    ELSE            reduce using rule 3 (statements -> statement .)
+    ELIF            reduce using rule 3 (statements -> statement .)
+    WHILE           reduce using rule 3 (statements -> statement .)
+    BREAK           reduce using rule 3 (statements -> statement .)
+    FOR             reduce using rule 3 (statements -> statement .)
+    NUMBER          reduce using rule 3 (statements -> statement .)
+    LEN             reduce using rule 3 (statements -> statement .)
+    $end            reduce using rule 3 (statements -> statement .)
+    }               reduce using rule 3 (statements -> statement .)
+
+
+state 4
+
+    (4) statement -> assignment .
+
+    VARIABLE        reduce using rule 4 (statement -> assignment .)
+    (               reduce using rule 4 (statement -> assignment .)
+    PRINT           reduce using rule 4 (statement -> assignment .)
+    IF              reduce using rule 4 (statement -> assignment .)
+    ELSE            reduce using rule 4 (statement -> assignment .)
+    ELIF            reduce using rule 4 (statement -> assignment .)
+    WHILE           reduce using rule 4 (statement -> assignment .)
+    BREAK           reduce using rule 4 (statement -> assignment .)
+    FOR             reduce using rule 4 (statement -> assignment .)
+    NUMBER          reduce using rule 4 (statement -> assignment .)
+    LEN             reduce using rule 4 (statement -> assignment .)
+    $end            reduce using rule 4 (statement -> assignment .)
+    }               reduce using rule 4 (statement -> assignment .)
+
+
+state 5
+
+    (5) statement -> operation .
+    (50) term -> operation .
+
+    VARIABLE        reduce using rule 5 (statement -> operation .)
+    (               reduce using rule 5 (statement -> operation .)
+    PRINT           reduce using rule 5 (statement -> operation .)
+    IF              reduce using rule 5 (statement -> operation .)
+    ELSE            reduce using rule 5 (statement -> operation .)
+    ELIF            reduce using rule 5 (statement -> operation .)
+    WHILE           reduce using rule 5 (statement -> operation .)
+    BREAK           reduce using rule 5 (statement -> operation .)
+    FOR             reduce using rule 5 (statement -> operation .)
+    NUMBER          reduce using rule 5 (statement -> operation .)
+    LEN             reduce using rule 5 (statement -> operation .)
+    $end            reduce using rule 5 (statement -> operation .)
+    }               reduce using rule 5 (statement -> operation .)
+    +               reduce using rule 50 (term -> operation .)
+    -               reduce using rule 50 (term -> operation .)
+    *               reduce using rule 50 (term -> operation .)
+    /               reduce using rule 50 (term -> operation .)
+
+
+state 6
+
+    (6) statement -> print .
+
+    VARIABLE        reduce using rule 6 (statement -> print .)
+    (               reduce using rule 6 (statement -> print .)
+    PRINT           reduce using rule 6 (statement -> print .)
+    IF              reduce using rule 6 (statement -> print .)
+    ELSE            reduce using rule 6 (statement -> print .)
+    ELIF            reduce using rule 6 (statement -> print .)
+    WHILE           reduce using rule 6 (statement -> print .)
+    BREAK           reduce using rule 6 (statement -> print .)
+    FOR             reduce using rule 6 (statement -> print .)
+    NUMBER          reduce using rule 6 (statement -> print .)
+    LEN             reduce using rule 6 (statement -> print .)
+    $end            reduce using rule 6 (statement -> print .)
+    }               reduce using rule 6 (statement -> print .)
+
+
+state 7
+
+    (7) statement -> if .
+
+    VARIABLE        reduce using rule 7 (statement -> if .)
+    (               reduce using rule 7 (statement -> if .)
+    PRINT           reduce using rule 7 (statement -> if .)
+    IF              reduce using rule 7 (statement -> if .)
+    ELSE            reduce using rule 7 (statement -> if .)
+    ELIF            reduce using rule 7 (statement -> if .)
+    WHILE           reduce using rule 7 (statement -> if .)
+    BREAK           reduce using rule 7 (statement -> if .)
+    FOR             reduce using rule 7 (statement -> if .)
+    NUMBER          reduce using rule 7 (statement -> if .)
+    LEN             reduce using rule 7 (statement -> if .)
+    $end            reduce using rule 7 (statement -> if .)
+    }               reduce using rule 7 (statement -> if .)
+
+
+state 8
+
+    (8) statement -> else .
+
+    VARIABLE        reduce using rule 8 (statement -> else .)
+    (               reduce using rule 8 (statement -> else .)
+    PRINT           reduce using rule 8 (statement -> else .)
+    IF              reduce using rule 8 (statement -> else .)
+    ELSE            reduce using rule 8 (statement -> else .)
+    ELIF            reduce using rule 8 (statement -> else .)
+    WHILE           reduce using rule 8 (statement -> else .)
+    BREAK           reduce using rule 8 (statement -> else .)
+    FOR             reduce using rule 8 (statement -> else .)
+    NUMBER          reduce using rule 8 (statement -> else .)
+    LEN             reduce using rule 8 (statement -> else .)
+    $end            reduce using rule 8 (statement -> else .)
+    }               reduce using rule 8 (statement -> else .)
+
+
+state 9
+
+    (9) statement -> elif .
+
+    VARIABLE        reduce using rule 9 (statement -> elif .)
+    (               reduce using rule 9 (statement -> elif .)
+    PRINT           reduce using rule 9 (statement -> elif .)
+    IF              reduce using rule 9 (statement -> elif .)
+    ELSE            reduce using rule 9 (statement -> elif .)
+    ELIF            reduce using rule 9 (statement -> elif .)
+    WHILE           reduce using rule 9 (statement -> elif .)
+    BREAK           reduce using rule 9 (statement -> elif .)
+    FOR             reduce using rule 9 (statement -> elif .)
+    NUMBER          reduce using rule 9 (statement -> elif .)
+    LEN             reduce using rule 9 (statement -> elif .)
+    $end            reduce using rule 9 (statement -> elif .)
+    }               reduce using rule 9 (statement -> elif .)
+
+
+state 10
+
+    (10) statement -> while .
+
+    VARIABLE        reduce using rule 10 (statement -> while .)
+    (               reduce using rule 10 (statement -> while .)
+    PRINT           reduce using rule 10 (statement -> while .)
+    IF              reduce using rule 10 (statement -> while .)
+    ELSE            reduce using rule 10 (statement -> while .)
+    ELIF            reduce using rule 10 (statement -> while .)
+    WHILE           reduce using rule 10 (statement -> while .)
+    BREAK           reduce using rule 10 (statement -> while .)
+    FOR             reduce using rule 10 (statement -> while .)
+    NUMBER          reduce using rule 10 (statement -> while .)
+    LEN             reduce using rule 10 (statement -> while .)
+    $end            reduce using rule 10 (statement -> while .)
+    }               reduce using rule 10 (statement -> while .)
+
+
+state 11
+
+    (11) statement -> break .
+
+    VARIABLE        reduce using rule 11 (statement -> break .)
+    (               reduce using rule 11 (statement -> break .)
+    PRINT           reduce using rule 11 (statement -> break .)
+    IF              reduce using rule 11 (statement -> break .)
+    ELSE            reduce using rule 11 (statement -> break .)
+    ELIF            reduce using rule 11 (statement -> break .)
+    WHILE           reduce using rule 11 (statement -> break .)
+    BREAK           reduce using rule 11 (statement -> break .)
+    FOR             reduce using rule 11 (statement -> break .)
+    NUMBER          reduce using rule 11 (statement -> break .)
+    LEN             reduce using rule 11 (statement -> break .)
+    $end            reduce using rule 11 (statement -> break .)
+    }               reduce using rule 11 (statement -> break .)
+
+
+state 12
+
+    (12) statement -> for .
+
+    VARIABLE        reduce using rule 12 (statement -> for .)
+    (               reduce using rule 12 (statement -> for .)
+    PRINT           reduce using rule 12 (statement -> for .)
+    IF              reduce using rule 12 (statement -> for .)
+    ELSE            reduce using rule 12 (statement -> for .)
+    ELIF            reduce using rule 12 (statement -> for .)
+    WHILE           reduce using rule 12 (statement -> for .)
+    BREAK           reduce using rule 12 (statement -> for .)
+    FOR             reduce using rule 12 (statement -> for .)
+    NUMBER          reduce using rule 12 (statement -> for .)
+    LEN             reduce using rule 12 (statement -> for .)
+    $end            reduce using rule 12 (statement -> for .)
+    }               reduce using rule 12 (statement -> for .)
+
+
+state 13
+
+    (29) assignment -> VARIABLE . = term
+    (30) assignment -> VARIABLE . = array
+    (44) array_term -> VARIABLE . [ term ]
+    (48) term -> VARIABLE .
+
+    =               shift and go to state 33
+    [               shift and go to state 34
+    +               reduce using rule 48 (term -> VARIABLE .)
+    -               reduce using rule 48 (term -> VARIABLE .)
+    *               reduce using rule 48 (term -> VARIABLE .)
+    /               reduce using rule 48 (term -> VARIABLE .)
+
+
+state 14
+
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 15
+
+    (31) assignment -> array_term . = term
+    (51) term -> array_term .
+
+    =               shift and go to state 39
+    +               reduce using rule 51 (term -> array_term .)
+    -               reduce using rule 51 (term -> array_term .)
+    *               reduce using rule 51 (term -> array_term .)
+    /               reduce using rule 51 (term -> array_term .)
+
+
+state 16
+
+    (32) operation -> ADD .
+
+    VARIABLE        reduce using rule 32 (operation -> ADD .)
+    (               reduce using rule 32 (operation -> ADD .)
+    PRINT           reduce using rule 32 (operation -> ADD .)
+    IF              reduce using rule 32 (operation -> ADD .)
+    ELSE            reduce using rule 32 (operation -> ADD .)
+    ELIF            reduce using rule 32 (operation -> ADD .)
+    WHILE           reduce using rule 32 (operation -> ADD .)
+    BREAK           reduce using rule 32 (operation -> ADD .)
+    FOR             reduce using rule 32 (operation -> ADD .)
+    NUMBER          reduce using rule 32 (operation -> ADD .)
+    LEN             reduce using rule 32 (operation -> ADD .)
+    $end            reduce using rule 32 (operation -> ADD .)
+    +               reduce using rule 32 (operation -> ADD .)
+    -               reduce using rule 32 (operation -> ADD .)
+    *               reduce using rule 32 (operation -> ADD .)
+    /               reduce using rule 32 (operation -> ADD .)
+    )               reduce using rule 32 (operation -> ADD .)
+    }               reduce using rule 32 (operation -> ADD .)
+    ;               reduce using rule 32 (operation -> ADD .)
+    ]               reduce using rule 32 (operation -> ADD .)
+    ,               reduce using rule 32 (operation -> ADD .)
+    >               reduce using rule 32 (operation -> ADD .)
+    <               reduce using rule 32 (operation -> ADD .)
+    =               reduce using rule 32 (operation -> ADD .)
+
+
+state 17
+
+    (33) operation -> SUB .
+
+    VARIABLE        reduce using rule 33 (operation -> SUB .)
+    (               reduce using rule 33 (operation -> SUB .)
+    PRINT           reduce using rule 33 (operation -> SUB .)
+    IF              reduce using rule 33 (operation -> SUB .)
+    ELSE            reduce using rule 33 (operation -> SUB .)
+    ELIF            reduce using rule 33 (operation -> SUB .)
+    WHILE           reduce using rule 33 (operation -> SUB .)
+    BREAK           reduce using rule 33 (operation -> SUB .)
+    FOR             reduce using rule 33 (operation -> SUB .)
+    NUMBER          reduce using rule 33 (operation -> SUB .)
+    LEN             reduce using rule 33 (operation -> SUB .)
+    $end            reduce using rule 33 (operation -> SUB .)
+    +               reduce using rule 33 (operation -> SUB .)
+    -               reduce using rule 33 (operation -> SUB .)
+    *               reduce using rule 33 (operation -> SUB .)
+    /               reduce using rule 33 (operation -> SUB .)
+    )               reduce using rule 33 (operation -> SUB .)
+    }               reduce using rule 33 (operation -> SUB .)
+    ;               reduce using rule 33 (operation -> SUB .)
+    ]               reduce using rule 33 (operation -> SUB .)
+    ,               reduce using rule 33 (operation -> SUB .)
+    >               reduce using rule 33 (operation -> SUB .)
+    <               reduce using rule 33 (operation -> SUB .)
+    =               reduce using rule 33 (operation -> SUB .)
+
+
+state 18
+
+    (34) operation -> MUL .
+
+    VARIABLE        reduce using rule 34 (operation -> MUL .)
+    (               reduce using rule 34 (operation -> MUL .)
+    PRINT           reduce using rule 34 (operation -> MUL .)
+    IF              reduce using rule 34 (operation -> MUL .)
+    ELSE            reduce using rule 34 (operation -> MUL .)
+    ELIF            reduce using rule 34 (operation -> MUL .)
+    WHILE           reduce using rule 34 (operation -> MUL .)
+    BREAK           reduce using rule 34 (operation -> MUL .)
+    FOR             reduce using rule 34 (operation -> MUL .)
+    NUMBER          reduce using rule 34 (operation -> MUL .)
+    LEN             reduce using rule 34 (operation -> MUL .)
+    $end            reduce using rule 34 (operation -> MUL .)
+    +               reduce using rule 34 (operation -> MUL .)
+    -               reduce using rule 34 (operation -> MUL .)
+    *               reduce using rule 34 (operation -> MUL .)
+    /               reduce using rule 34 (operation -> MUL .)
+    )               reduce using rule 34 (operation -> MUL .)
+    }               reduce using rule 34 (operation -> MUL .)
+    ;               reduce using rule 34 (operation -> MUL .)
+    ]               reduce using rule 34 (operation -> MUL .)
+    ,               reduce using rule 34 (operation -> MUL .)
+    >               reduce using rule 34 (operation -> MUL .)
+    <               reduce using rule 34 (operation -> MUL .)
+    =               reduce using rule 34 (operation -> MUL .)
+
+
+state 19
+
+    (35) operation -> DIV .
+
+    VARIABLE        reduce using rule 35 (operation -> DIV .)
+    (               reduce using rule 35 (operation -> DIV .)
+    PRINT           reduce using rule 35 (operation -> DIV .)
+    IF              reduce using rule 35 (operation -> DIV .)
+    ELSE            reduce using rule 35 (operation -> DIV .)
+    ELIF            reduce using rule 35 (operation -> DIV .)
+    WHILE           reduce using rule 35 (operation -> DIV .)
+    BREAK           reduce using rule 35 (operation -> DIV .)
+    FOR             reduce using rule 35 (operation -> DIV .)
+    NUMBER          reduce using rule 35 (operation -> DIV .)
+    LEN             reduce using rule 35 (operation -> DIV .)
+    $end            reduce using rule 35 (operation -> DIV .)
+    +               reduce using rule 35 (operation -> DIV .)
+    -               reduce using rule 35 (operation -> DIV .)
+    *               reduce using rule 35 (operation -> DIV .)
+    /               reduce using rule 35 (operation -> DIV .)
+    )               reduce using rule 35 (operation -> DIV .)
+    }               reduce using rule 35 (operation -> DIV .)
+    ;               reduce using rule 35 (operation -> DIV .)
+    ]               reduce using rule 35 (operation -> DIV .)
+    ,               reduce using rule 35 (operation -> DIV .)
+    >               reduce using rule 35 (operation -> DIV .)
+    <               reduce using rule 35 (operation -> DIV .)
+    =               reduce using rule 35 (operation -> DIV .)
+
+
+state 20
+
+    (36) operation -> DIV_ext .
+
+    VARIABLE        reduce using rule 36 (operation -> DIV_ext .)
+    (               reduce using rule 36 (operation -> DIV_ext .)
+    PRINT           reduce using rule 36 (operation -> DIV_ext .)
+    IF              reduce using rule 36 (operation -> DIV_ext .)
+    ELSE            reduce using rule 36 (operation -> DIV_ext .)
+    ELIF            reduce using rule 36 (operation -> DIV_ext .)
+    WHILE           reduce using rule 36 (operation -> DIV_ext .)
+    BREAK           reduce using rule 36 (operation -> DIV_ext .)
+    FOR             reduce using rule 36 (operation -> DIV_ext .)
+    NUMBER          reduce using rule 36 (operation -> DIV_ext .)
+    LEN             reduce using rule 36 (operation -> DIV_ext .)
+    $end            reduce using rule 36 (operation -> DIV_ext .)
+    +               reduce using rule 36 (operation -> DIV_ext .)
+    -               reduce using rule 36 (operation -> DIV_ext .)
+    *               reduce using rule 36 (operation -> DIV_ext .)
+    /               reduce using rule 36 (operation -> DIV_ext .)
+    )               reduce using rule 36 (operation -> DIV_ext .)
+    }               reduce using rule 36 (operation -> DIV_ext .)
+    ;               reduce using rule 36 (operation -> DIV_ext .)
+    ]               reduce using rule 36 (operation -> DIV_ext .)
+    ,               reduce using rule 36 (operation -> DIV_ext .)
+    >               reduce using rule 36 (operation -> DIV_ext .)
+    <               reduce using rule 36 (operation -> DIV_ext .)
+    =               reduce using rule 36 (operation -> DIV_ext .)
+
+
+state 21
+
+    (37) operation -> ( . operation )
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+
+    (               shift and go to state 21
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    operation                      shift and go to state 40
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    term                           shift and go to state 14
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+
+state 22
+
+    (43) print -> PRINT . ( pcontent )
+
+    (               shift and go to state 43
+
+
+state 23
+
+    (16) if -> IF . ( condition ) { statements }
+
+    (               shift and go to state 44
+
+
+state 24
+
+    (17) else -> ELSE . { statements }
+
+    {               shift and go to state 45
+
+
+state 25
+
+    (18) elif -> ELIF . ( condition ) { statements }
+
+    (               shift and go to state 46
+
+
+state 26
+
+    (14) while -> WHILE . ( condition ) { statements }
+
+    (               shift and go to state 47
+
+
+state 27
+
+    (13) break -> BREAK .
+
+    VARIABLE        reduce using rule 13 (break -> BREAK .)
+    (               reduce using rule 13 (break -> BREAK .)
+    PRINT           reduce using rule 13 (break -> BREAK .)
+    IF              reduce using rule 13 (break -> BREAK .)
+    ELSE            reduce using rule 13 (break -> BREAK .)
+    ELIF            reduce using rule 13 (break -> BREAK .)
+    WHILE           reduce using rule 13 (break -> BREAK .)
+    BREAK           reduce using rule 13 (break -> BREAK .)
+    FOR             reduce using rule 13 (break -> BREAK .)
+    NUMBER          reduce using rule 13 (break -> BREAK .)
+    LEN             reduce using rule 13 (break -> BREAK .)
+    $end            reduce using rule 13 (break -> BREAK .)
+    }               reduce using rule 13 (break -> BREAK .)
+
+
+state 28
+
+    (15) for -> FOR . ( assignment ; condition ; VARIABLE + + ) { statements }
+
+    (               shift and go to state 48
+
+
+state 29
+
+    (49) term -> NUMBER .
+
+    +               reduce using rule 49 (term -> NUMBER .)
+    -               reduce using rule 49 (term -> NUMBER .)
+    *               reduce using rule 49 (term -> NUMBER .)
+    /               reduce using rule 49 (term -> NUMBER .)
+    VARIABLE        reduce using rule 49 (term -> NUMBER .)
+    (               reduce using rule 49 (term -> NUMBER .)
+    PRINT           reduce using rule 49 (term -> NUMBER .)
+    IF              reduce using rule 49 (term -> NUMBER .)
+    ELSE            reduce using rule 49 (term -> NUMBER .)
+    ELIF            reduce using rule 49 (term -> NUMBER .)
+    WHILE           reduce using rule 49 (term -> NUMBER .)
+    BREAK           reduce using rule 49 (term -> NUMBER .)
+    FOR             reduce using rule 49 (term -> NUMBER .)
+    NUMBER          reduce using rule 49 (term -> NUMBER .)
+    LEN             reduce using rule 49 (term -> NUMBER .)
+    $end            reduce using rule 49 (term -> NUMBER .)
+    }               reduce using rule 49 (term -> NUMBER .)
+    ;               reduce using rule 49 (term -> NUMBER .)
+    ]               reduce using rule 49 (term -> NUMBER .)
+    )               reduce using rule 49 (term -> NUMBER .)
+    ,               reduce using rule 49 (term -> NUMBER .)
+    >               reduce using rule 49 (term -> NUMBER .)
+    <               reduce using rule 49 (term -> NUMBER .)
+    =               reduce using rule 49 (term -> NUMBER .)
+
+
+state 30
+
+    (52) term -> len .
+
+    +               reduce using rule 52 (term -> len .)
+    -               reduce using rule 52 (term -> len .)
+    *               reduce using rule 52 (term -> len .)
+    /               reduce using rule 52 (term -> len .)
+    VARIABLE        reduce using rule 52 (term -> len .)
+    (               reduce using rule 52 (term -> len .)
+    PRINT           reduce using rule 52 (term -> len .)
+    IF              reduce using rule 52 (term -> len .)
+    ELSE            reduce using rule 52 (term -> len .)
+    ELIF            reduce using rule 52 (term -> len .)
+    WHILE           reduce using rule 52 (term -> len .)
+    BREAK           reduce using rule 52 (term -> len .)
+    FOR             reduce using rule 52 (term -> len .)
+    NUMBER          reduce using rule 52 (term -> len .)
+    LEN             reduce using rule 52 (term -> len .)
+    $end            reduce using rule 52 (term -> len .)
+    }               reduce using rule 52 (term -> len .)
+    ;               reduce using rule 52 (term -> len .)
+    ]               reduce using rule 52 (term -> len .)
+    )               reduce using rule 52 (term -> len .)
+    ,               reduce using rule 52 (term -> len .)
+    >               reduce using rule 52 (term -> len .)
+    <               reduce using rule 52 (term -> len .)
+    =               reduce using rule 52 (term -> len .)
+
+
+state 31
+
+    (53) len -> LEN . ( VARIABLE )
+
+    (               shift and go to state 49
+
+
+state 32
+
+    (2) statements -> statements statement .
+
+    VARIABLE        reduce using rule 2 (statements -> statements statement .)
+    (               reduce using rule 2 (statements -> statements statement .)
+    PRINT           reduce using rule 2 (statements -> statements statement .)
+    IF              reduce using rule 2 (statements -> statements statement .)
+    ELSE            reduce using rule 2 (statements -> statements statement .)
+    ELIF            reduce using rule 2 (statements -> statements statement .)
+    WHILE           reduce using rule 2 (statements -> statements statement .)
+    BREAK           reduce using rule 2 (statements -> statements statement .)
+    FOR             reduce using rule 2 (statements -> statements statement .)
+    NUMBER          reduce using rule 2 (statements -> statements statement .)
+    LEN             reduce using rule 2 (statements -> statements statement .)
+    $end            reduce using rule 2 (statements -> statements statement .)
+    }               reduce using rule 2 (statements -> statements statement .)
+
+
+state 33
+
+    (29) assignment -> VARIABLE = . term
+    (30) assignment -> VARIABLE = . array
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (45) array -> . [ pcontent ]
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    [               shift and go to state 53
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 50
+    array                          shift and go to state 51
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 34
+
+    (44) array_term -> VARIABLE [ . term ]
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 54
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 35
+
+    (38) ADD -> term + . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 55
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 36
+
+    (39) SUB -> term - . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 56
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 37
+
+    (40) MUL -> term * . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 57
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 38
+
+    (41) DIV -> term / . term
+    (42) DIV_ext -> term / . / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    /               shift and go to state 59
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 58
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 39
+
+    (31) assignment -> array_term = . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    array_term                     shift and go to state 42
+    term                           shift and go to state 60
+    operation                      shift and go to state 52
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 40
+
+    (37) operation -> ( operation . )
+    (50) term -> operation .
+
+    )               shift and go to state 61
+    +               reduce using rule 50 (term -> operation .)
+    -               reduce using rule 50 (term -> operation .)
+    *               reduce using rule 50 (term -> operation .)
+    /               reduce using rule 50 (term -> operation .)
+
+
+state 41
+
+    (48) term -> VARIABLE .
+    (44) array_term -> VARIABLE . [ term ]
+
+    +               reduce using rule 48 (term -> VARIABLE .)
+    -               reduce using rule 48 (term -> VARIABLE .)
+    *               reduce using rule 48 (term -> VARIABLE .)
+    /               reduce using rule 48 (term -> VARIABLE .)
+    VARIABLE        reduce using rule 48 (term -> VARIABLE .)
+    (               reduce using rule 48 (term -> VARIABLE .)
+    PRINT           reduce using rule 48 (term -> VARIABLE .)
+    IF              reduce using rule 48 (term -> VARIABLE .)
+    ELSE            reduce using rule 48 (term -> VARIABLE .)
+    ELIF            reduce using rule 48 (term -> VARIABLE .)
+    WHILE           reduce using rule 48 (term -> VARIABLE .)
+    BREAK           reduce using rule 48 (term -> VARIABLE .)
+    FOR             reduce using rule 48 (term -> VARIABLE .)
+    NUMBER          reduce using rule 48 (term -> VARIABLE .)
+    LEN             reduce using rule 48 (term -> VARIABLE .)
+    $end            reduce using rule 48 (term -> VARIABLE .)
+    }               reduce using rule 48 (term -> VARIABLE .)
+    ;               reduce using rule 48 (term -> VARIABLE .)
+    ]               reduce using rule 48 (term -> VARIABLE .)
+    )               reduce using rule 48 (term -> VARIABLE .)
+    ,               reduce using rule 48 (term -> VARIABLE .)
+    >               reduce using rule 48 (term -> VARIABLE .)
+    <               reduce using rule 48 (term -> VARIABLE .)
+    =               reduce using rule 48 (term -> VARIABLE .)
+    [               shift and go to state 34
+
+
+state 42
+
+    (51) term -> array_term .
+
+    +               reduce using rule 51 (term -> array_term .)
+    -               reduce using rule 51 (term -> array_term .)
+    *               reduce using rule 51 (term -> array_term .)
+    /               reduce using rule 51 (term -> array_term .)
+    VARIABLE        reduce using rule 51 (term -> array_term .)
+    (               reduce using rule 51 (term -> array_term .)
+    PRINT           reduce using rule 51 (term -> array_term .)
+    IF              reduce using rule 51 (term -> array_term .)
+    ELSE            reduce using rule 51 (term -> array_term .)
+    ELIF            reduce using rule 51 (term -> array_term .)
+    WHILE           reduce using rule 51 (term -> array_term .)
+    BREAK           reduce using rule 51 (term -> array_term .)
+    FOR             reduce using rule 51 (term -> array_term .)
+    NUMBER          reduce using rule 51 (term -> array_term .)
+    LEN             reduce using rule 51 (term -> array_term .)
+    $end            reduce using rule 51 (term -> array_term .)
+    }               reduce using rule 51 (term -> array_term .)
+    ;               reduce using rule 51 (term -> array_term .)
+    ]               reduce using rule 51 (term -> array_term .)
+    )               reduce using rule 51 (term -> array_term .)
+    ,               reduce using rule 51 (term -> array_term .)
+    >               reduce using rule 51 (term -> array_term .)
+    <               reduce using rule 51 (term -> array_term .)
+    =               reduce using rule 51 (term -> array_term .)
+
+
+state 43
+
+    (43) print -> PRINT ( . pcontent )
+    (46) pcontent -> . pcontent , term
+    (47) pcontent -> . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    pcontent                       shift and go to state 62
+    term                           shift and go to state 63
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 44
+
+    (16) if -> IF ( . condition ) { statements }
+    (19) condition -> . greater
+    (20) condition -> . greater_equal
+    (21) condition -> . less
+    (22) condition -> . less_equal
+    (23) condition -> . equal_equal
+    (24) greater -> . term > term
+    (25) greater_equal -> . term > = term
+    (26) less -> . term < term
+    (27) less_equal -> . term < = term
+    (28) equal_equal -> . term = = term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    condition                      shift and go to state 64
+    greater                        shift and go to state 65
+    greater_equal                  shift and go to state 66
+    less                           shift and go to state 67
+    less_equal                     shift and go to state 68
+    equal_equal                    shift and go to state 69
+    term                           shift and go to state 70
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 45
+
+    (17) else -> ELSE { . statements }
+    (2) statements -> . statements statement
+    (3) statements -> . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    statements                     shift and go to state 71
+    statement                      shift and go to state 3
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 46
+
+    (18) elif -> ELIF ( . condition ) { statements }
+    (19) condition -> . greater
+    (20) condition -> . greater_equal
+    (21) condition -> . less
+    (22) condition -> . less_equal
+    (23) condition -> . equal_equal
+    (24) greater -> . term > term
+    (25) greater_equal -> . term > = term
+    (26) less -> . term < term
+    (27) less_equal -> . term < = term
+    (28) equal_equal -> . term = = term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    condition                      shift and go to state 72
+    greater                        shift and go to state 65
+    greater_equal                  shift and go to state 66
+    less                           shift and go to state 67
+    less_equal                     shift and go to state 68
+    equal_equal                    shift and go to state 69
+    term                           shift and go to state 70
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 47
+
+    (14) while -> WHILE ( . condition ) { statements }
+    (19) condition -> . greater
+    (20) condition -> . greater_equal
+    (21) condition -> . less
+    (22) condition -> . less_equal
+    (23) condition -> . equal_equal
+    (24) greater -> . term > term
+    (25) greater_equal -> . term > = term
+    (26) less -> . term < term
+    (27) less_equal -> . term < = term
+    (28) equal_equal -> . term = = term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    condition                      shift and go to state 73
+    greater                        shift and go to state 65
+    greater_equal                  shift and go to state 66
+    less                           shift and go to state 67
+    less_equal                     shift and go to state 68
+    equal_equal                    shift and go to state 69
+    term                           shift and go to state 70
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 48
+
+    (15) for -> FOR ( . assignment ; condition ; VARIABLE + + ) { statements }
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (44) array_term -> . VARIABLE [ term ]
+
+    VARIABLE        shift and go to state 75
+
+    assignment                     shift and go to state 74
+    array_term                     shift and go to state 76
+
+state 49
+
+    (53) len -> LEN ( . VARIABLE )
+
+    VARIABLE        shift and go to state 77
+
+
+state 50
+
+    (29) assignment -> VARIABLE = term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    VARIABLE        reduce using rule 29 (assignment -> VARIABLE = term .)
+    (               reduce using rule 29 (assignment -> VARIABLE = term .)
+    PRINT           reduce using rule 29 (assignment -> VARIABLE = term .)
+    IF              reduce using rule 29 (assignment -> VARIABLE = term .)
+    ELSE            reduce using rule 29 (assignment -> VARIABLE = term .)
+    ELIF            reduce using rule 29 (assignment -> VARIABLE = term .)
+    WHILE           reduce using rule 29 (assignment -> VARIABLE = term .)
+    BREAK           reduce using rule 29 (assignment -> VARIABLE = term .)
+    FOR             reduce using rule 29 (assignment -> VARIABLE = term .)
+    NUMBER          reduce using rule 29 (assignment -> VARIABLE = term .)
+    LEN             reduce using rule 29 (assignment -> VARIABLE = term .)
+    $end            reduce using rule 29 (assignment -> VARIABLE = term .)
+    }               reduce using rule 29 (assignment -> VARIABLE = term .)
+    ;               reduce using rule 29 (assignment -> VARIABLE = term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 51
+
+    (30) assignment -> VARIABLE = array .
+
+    VARIABLE        reduce using rule 30 (assignment -> VARIABLE = array .)
+    (               reduce using rule 30 (assignment -> VARIABLE = array .)
+    PRINT           reduce using rule 30 (assignment -> VARIABLE = array .)
+    IF              reduce using rule 30 (assignment -> VARIABLE = array .)
+    ELSE            reduce using rule 30 (assignment -> VARIABLE = array .)
+    ELIF            reduce using rule 30 (assignment -> VARIABLE = array .)
+    WHILE           reduce using rule 30 (assignment -> VARIABLE = array .)
+    BREAK           reduce using rule 30 (assignment -> VARIABLE = array .)
+    FOR             reduce using rule 30 (assignment -> VARIABLE = array .)
+    NUMBER          reduce using rule 30 (assignment -> VARIABLE = array .)
+    LEN             reduce using rule 30 (assignment -> VARIABLE = array .)
+    $end            reduce using rule 30 (assignment -> VARIABLE = array .)
+    }               reduce using rule 30 (assignment -> VARIABLE = array .)
+    ;               reduce using rule 30 (assignment -> VARIABLE = array .)
+
+
+state 52
+
+    (50) term -> operation .
+
+    +               reduce using rule 50 (term -> operation .)
+    -               reduce using rule 50 (term -> operation .)
+    *               reduce using rule 50 (term -> operation .)
+    /               reduce using rule 50 (term -> operation .)
+    VARIABLE        reduce using rule 50 (term -> operation .)
+    (               reduce using rule 50 (term -> operation .)
+    PRINT           reduce using rule 50 (term -> operation .)
+    IF              reduce using rule 50 (term -> operation .)
+    ELSE            reduce using rule 50 (term -> operation .)
+    ELIF            reduce using rule 50 (term -> operation .)
+    WHILE           reduce using rule 50 (term -> operation .)
+    BREAK           reduce using rule 50 (term -> operation .)
+    FOR             reduce using rule 50 (term -> operation .)
+    NUMBER          reduce using rule 50 (term -> operation .)
+    LEN             reduce using rule 50 (term -> operation .)
+    $end            reduce using rule 50 (term -> operation .)
+    }               reduce using rule 50 (term -> operation .)
+    ;               reduce using rule 50 (term -> operation .)
+    ]               reduce using rule 50 (term -> operation .)
+    )               reduce using rule 50 (term -> operation .)
+    ,               reduce using rule 50 (term -> operation .)
+    >               reduce using rule 50 (term -> operation .)
+    <               reduce using rule 50 (term -> operation .)
+    =               reduce using rule 50 (term -> operation .)
+
+
+state 53
+
+    (45) array -> [ . pcontent ]
+    (46) pcontent -> . pcontent , term
+    (47) pcontent -> . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    pcontent                       shift and go to state 78
+    term                           shift and go to state 63
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 54
+
+    (44) array_term -> VARIABLE [ term . ]
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    ]               shift and go to state 79
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 55
+
+    (38) ADD -> term + term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+  ! shift/reduce conflict for + resolved as shift
+  ! shift/reduce conflict for - resolved as shift
+  ! shift/reduce conflict for * resolved as shift
+  ! shift/reduce conflict for / resolved as shift
+    VARIABLE        reduce using rule 38 (ADD -> term + term .)
+    (               reduce using rule 38 (ADD -> term + term .)
+    PRINT           reduce using rule 38 (ADD -> term + term .)
+    IF              reduce using rule 38 (ADD -> term + term .)
+    ELSE            reduce using rule 38 (ADD -> term + term .)
+    ELIF            reduce using rule 38 (ADD -> term + term .)
+    WHILE           reduce using rule 38 (ADD -> term + term .)
+    BREAK           reduce using rule 38 (ADD -> term + term .)
+    FOR             reduce using rule 38 (ADD -> term + term .)
+    NUMBER          reduce using rule 38 (ADD -> term + term .)
+    LEN             reduce using rule 38 (ADD -> term + term .)
+    $end            reduce using rule 38 (ADD -> term + term .)
+    )               reduce using rule 38 (ADD -> term + term .)
+    }               reduce using rule 38 (ADD -> term + term .)
+    ;               reduce using rule 38 (ADD -> term + term .)
+    ]               reduce using rule 38 (ADD -> term + term .)
+    ,               reduce using rule 38 (ADD -> term + term .)
+    >               reduce using rule 38 (ADD -> term + term .)
+    <               reduce using rule 38 (ADD -> term + term .)
+    =               reduce using rule 38 (ADD -> term + term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+  ! +               [ reduce using rule 38 (ADD -> term + term .) ]
+  ! -               [ reduce using rule 38 (ADD -> term + term .) ]
+  ! *               [ reduce using rule 38 (ADD -> term + term .) ]
+  ! /               [ reduce using rule 38 (ADD -> term + term .) ]
+
+
+state 56
+
+    (39) SUB -> term - term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+  ! shift/reduce conflict for + resolved as shift
+  ! shift/reduce conflict for - resolved as shift
+  ! shift/reduce conflict for * resolved as shift
+  ! shift/reduce conflict for / resolved as shift
+    VARIABLE        reduce using rule 39 (SUB -> term - term .)
+    (               reduce using rule 39 (SUB -> term - term .)
+    PRINT           reduce using rule 39 (SUB -> term - term .)
+    IF              reduce using rule 39 (SUB -> term - term .)
+    ELSE            reduce using rule 39 (SUB -> term - term .)
+    ELIF            reduce using rule 39 (SUB -> term - term .)
+    WHILE           reduce using rule 39 (SUB -> term - term .)
+    BREAK           reduce using rule 39 (SUB -> term - term .)
+    FOR             reduce using rule 39 (SUB -> term - term .)
+    NUMBER          reduce using rule 39 (SUB -> term - term .)
+    LEN             reduce using rule 39 (SUB -> term - term .)
+    $end            reduce using rule 39 (SUB -> term - term .)
+    )               reduce using rule 39 (SUB -> term - term .)
+    }               reduce using rule 39 (SUB -> term - term .)
+    ;               reduce using rule 39 (SUB -> term - term .)
+    ]               reduce using rule 39 (SUB -> term - term .)
+    ,               reduce using rule 39 (SUB -> term - term .)
+    >               reduce using rule 39 (SUB -> term - term .)
+    <               reduce using rule 39 (SUB -> term - term .)
+    =               reduce using rule 39 (SUB -> term - term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+  ! +               [ reduce using rule 39 (SUB -> term - term .) ]
+  ! -               [ reduce using rule 39 (SUB -> term - term .) ]
+  ! *               [ reduce using rule 39 (SUB -> term - term .) ]
+  ! /               [ reduce using rule 39 (SUB -> term - term .) ]
+
+
+state 57
+
+    (40) MUL -> term * term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+  ! shift/reduce conflict for + resolved as shift
+  ! shift/reduce conflict for - resolved as shift
+  ! shift/reduce conflict for * resolved as shift
+  ! shift/reduce conflict for / resolved as shift
+    VARIABLE        reduce using rule 40 (MUL -> term * term .)
+    (               reduce using rule 40 (MUL -> term * term .)
+    PRINT           reduce using rule 40 (MUL -> term * term .)
+    IF              reduce using rule 40 (MUL -> term * term .)
+    ELSE            reduce using rule 40 (MUL -> term * term .)
+    ELIF            reduce using rule 40 (MUL -> term * term .)
+    WHILE           reduce using rule 40 (MUL -> term * term .)
+    BREAK           reduce using rule 40 (MUL -> term * term .)
+    FOR             reduce using rule 40 (MUL -> term * term .)
+    NUMBER          reduce using rule 40 (MUL -> term * term .)
+    LEN             reduce using rule 40 (MUL -> term * term .)
+    $end            reduce using rule 40 (MUL -> term * term .)
+    )               reduce using rule 40 (MUL -> term * term .)
+    }               reduce using rule 40 (MUL -> term * term .)
+    ;               reduce using rule 40 (MUL -> term * term .)
+    ]               reduce using rule 40 (MUL -> term * term .)
+    ,               reduce using rule 40 (MUL -> term * term .)
+    >               reduce using rule 40 (MUL -> term * term .)
+    <               reduce using rule 40 (MUL -> term * term .)
+    =               reduce using rule 40 (MUL -> term * term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+  ! +               [ reduce using rule 40 (MUL -> term * term .) ]
+  ! -               [ reduce using rule 40 (MUL -> term * term .) ]
+  ! *               [ reduce using rule 40 (MUL -> term * term .) ]
+  ! /               [ reduce using rule 40 (MUL -> term * term .) ]
+
+
+state 58
+
+    (41) DIV -> term / term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+  ! shift/reduce conflict for + resolved as shift
+  ! shift/reduce conflict for - resolved as shift
+  ! shift/reduce conflict for * resolved as shift
+  ! shift/reduce conflict for / resolved as shift
+    VARIABLE        reduce using rule 41 (DIV -> term / term .)
+    (               reduce using rule 41 (DIV -> term / term .)
+    PRINT           reduce using rule 41 (DIV -> term / term .)
+    IF              reduce using rule 41 (DIV -> term / term .)
+    ELSE            reduce using rule 41 (DIV -> term / term .)
+    ELIF            reduce using rule 41 (DIV -> term / term .)
+    WHILE           reduce using rule 41 (DIV -> term / term .)
+    BREAK           reduce using rule 41 (DIV -> term / term .)
+    FOR             reduce using rule 41 (DIV -> term / term .)
+    NUMBER          reduce using rule 41 (DIV -> term / term .)
+    LEN             reduce using rule 41 (DIV -> term / term .)
+    $end            reduce using rule 41 (DIV -> term / term .)
+    )               reduce using rule 41 (DIV -> term / term .)
+    }               reduce using rule 41 (DIV -> term / term .)
+    ;               reduce using rule 41 (DIV -> term / term .)
+    ]               reduce using rule 41 (DIV -> term / term .)
+    ,               reduce using rule 41 (DIV -> term / term .)
+    >               reduce using rule 41 (DIV -> term / term .)
+    <               reduce using rule 41 (DIV -> term / term .)
+    =               reduce using rule 41 (DIV -> term / term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+  ! +               [ reduce using rule 41 (DIV -> term / term .) ]
+  ! -               [ reduce using rule 41 (DIV -> term / term .) ]
+  ! *               [ reduce using rule 41 (DIV -> term / term .) ]
+  ! /               [ reduce using rule 41 (DIV -> term / term .) ]
+
+
+state 59
+
+    (42) DIV_ext -> term / / . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 80
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 60
+
+    (31) assignment -> array_term = term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    VARIABLE        reduce using rule 31 (assignment -> array_term = term .)
+    (               reduce using rule 31 (assignment -> array_term = term .)
+    PRINT           reduce using rule 31 (assignment -> array_term = term .)
+    IF              reduce using rule 31 (assignment -> array_term = term .)
+    ELSE            reduce using rule 31 (assignment -> array_term = term .)
+    ELIF            reduce using rule 31 (assignment -> array_term = term .)
+    WHILE           reduce using rule 31 (assignment -> array_term = term .)
+    BREAK           reduce using rule 31 (assignment -> array_term = term .)
+    FOR             reduce using rule 31 (assignment -> array_term = term .)
+    NUMBER          reduce using rule 31 (assignment -> array_term = term .)
+    LEN             reduce using rule 31 (assignment -> array_term = term .)
+    $end            reduce using rule 31 (assignment -> array_term = term .)
+    }               reduce using rule 31 (assignment -> array_term = term .)
+    ;               reduce using rule 31 (assignment -> array_term = term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 61
+
+    (37) operation -> ( operation ) .
+
+    VARIABLE        reduce using rule 37 (operation -> ( operation ) .)
+    (               reduce using rule 37 (operation -> ( operation ) .)
+    PRINT           reduce using rule 37 (operation -> ( operation ) .)
+    IF              reduce using rule 37 (operation -> ( operation ) .)
+    ELSE            reduce using rule 37 (operation -> ( operation ) .)
+    ELIF            reduce using rule 37 (operation -> ( operation ) .)
+    WHILE           reduce using rule 37 (operation -> ( operation ) .)
+    BREAK           reduce using rule 37 (operation -> ( operation ) .)
+    FOR             reduce using rule 37 (operation -> ( operation ) .)
+    NUMBER          reduce using rule 37 (operation -> ( operation ) .)
+    LEN             reduce using rule 37 (operation -> ( operation ) .)
+    $end            reduce using rule 37 (operation -> ( operation ) .)
+    +               reduce using rule 37 (operation -> ( operation ) .)
+    -               reduce using rule 37 (operation -> ( operation ) .)
+    *               reduce using rule 37 (operation -> ( operation ) .)
+    /               reduce using rule 37 (operation -> ( operation ) .)
+    )               reduce using rule 37 (operation -> ( operation ) .)
+    }               reduce using rule 37 (operation -> ( operation ) .)
+    ;               reduce using rule 37 (operation -> ( operation ) .)
+    ]               reduce using rule 37 (operation -> ( operation ) .)
+    ,               reduce using rule 37 (operation -> ( operation ) .)
+    >               reduce using rule 37 (operation -> ( operation ) .)
+    <               reduce using rule 37 (operation -> ( operation ) .)
+    =               reduce using rule 37 (operation -> ( operation ) .)
+
+
+state 62
+
+    (43) print -> PRINT ( pcontent . )
+    (46) pcontent -> pcontent . , term
+
+    )               shift and go to state 81
+    ,               shift and go to state 82
+
+
+state 63
+
+    (47) pcontent -> term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    )               reduce using rule 47 (pcontent -> term .)
+    ,               reduce using rule 47 (pcontent -> term .)
+    ]               reduce using rule 47 (pcontent -> term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 64
+
+    (16) if -> IF ( condition . ) { statements }
+
+    )               shift and go to state 83
+
+
+state 65
+
+    (19) condition -> greater .
+
+    )               reduce using rule 19 (condition -> greater .)
+    ;               reduce using rule 19 (condition -> greater .)
+
+
+state 66
+
+    (20) condition -> greater_equal .
+
+    )               reduce using rule 20 (condition -> greater_equal .)
+    ;               reduce using rule 20 (condition -> greater_equal .)
+
+
+state 67
+
+    (21) condition -> less .
+
+    )               reduce using rule 21 (condition -> less .)
+    ;               reduce using rule 21 (condition -> less .)
+
+
+state 68
+
+    (22) condition -> less_equal .
+
+    )               reduce using rule 22 (condition -> less_equal .)
+    ;               reduce using rule 22 (condition -> less_equal .)
+
+
+state 69
+
+    (23) condition -> equal_equal .
+
+    )               reduce using rule 23 (condition -> equal_equal .)
+    ;               reduce using rule 23 (condition -> equal_equal .)
+
+
+state 70
+
+    (24) greater -> term . > term
+    (25) greater_equal -> term . > = term
+    (26) less -> term . < term
+    (27) less_equal -> term . < = term
+    (28) equal_equal -> term . = = term
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    >               shift and go to state 84
+    <               shift and go to state 86
+    =               shift and go to state 85
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 71
+
+    (17) else -> ELSE { statements . }
+    (2) statements -> statements . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    }               shift and go to state 87
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    statement                      shift and go to state 32
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 72
+
+    (18) elif -> ELIF ( condition . ) { statements }
+
+    )               shift and go to state 88
+
+
+state 73
+
+    (14) while -> WHILE ( condition . ) { statements }
+
+    )               shift and go to state 89
+
+
+state 74
+
+    (15) for -> FOR ( assignment . ; condition ; VARIABLE + + ) { statements }
+
+    ;               shift and go to state 90
+
+
+state 75
+
+    (29) assignment -> VARIABLE . = term
+    (30) assignment -> VARIABLE . = array
+    (44) array_term -> VARIABLE . [ term ]
+
+    =               shift and go to state 33
+    [               shift and go to state 34
+
+
+state 76
+
+    (31) assignment -> array_term . = term
+
+    =               shift and go to state 39
+
+
+state 77
+
+    (53) len -> LEN ( VARIABLE . )
+
+    )               shift and go to state 91
+
+
+state 78
+
+    (45) array -> [ pcontent . ]
+    (46) pcontent -> pcontent . , term
+
+    ]               shift and go to state 92
+    ,               shift and go to state 82
+
+
+state 79
+
+    (44) array_term -> VARIABLE [ term ] .
+
+    =               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    +               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    -               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    *               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    /               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    VARIABLE        reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    (               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    PRINT           reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    IF              reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    ELSE            reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    ELIF            reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    WHILE           reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    BREAK           reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    FOR             reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    NUMBER          reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    LEN             reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    $end            reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    }               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    ;               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    ]               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    )               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    ,               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    >               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+    <               reduce using rule 44 (array_term -> VARIABLE [ term ] .)
+
+
+state 80
+
+    (42) DIV_ext -> term / / term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+  ! shift/reduce conflict for + resolved as shift
+  ! shift/reduce conflict for - resolved as shift
+  ! shift/reduce conflict for * resolved as shift
+  ! shift/reduce conflict for / resolved as shift
+    VARIABLE        reduce using rule 42 (DIV_ext -> term / / term .)
+    (               reduce using rule 42 (DIV_ext -> term / / term .)
+    PRINT           reduce using rule 42 (DIV_ext -> term / / term .)
+    IF              reduce using rule 42 (DIV_ext -> term / / term .)
+    ELSE            reduce using rule 42 (DIV_ext -> term / / term .)
+    ELIF            reduce using rule 42 (DIV_ext -> term / / term .)
+    WHILE           reduce using rule 42 (DIV_ext -> term / / term .)
+    BREAK           reduce using rule 42 (DIV_ext -> term / / term .)
+    FOR             reduce using rule 42 (DIV_ext -> term / / term .)
+    NUMBER          reduce using rule 42 (DIV_ext -> term / / term .)
+    LEN             reduce using rule 42 (DIV_ext -> term / / term .)
+    $end            reduce using rule 42 (DIV_ext -> term / / term .)
+    )               reduce using rule 42 (DIV_ext -> term / / term .)
+    }               reduce using rule 42 (DIV_ext -> term / / term .)
+    ;               reduce using rule 42 (DIV_ext -> term / / term .)
+    ]               reduce using rule 42 (DIV_ext -> term / / term .)
+    ,               reduce using rule 42 (DIV_ext -> term / / term .)
+    >               reduce using rule 42 (DIV_ext -> term / / term .)
+    <               reduce using rule 42 (DIV_ext -> term / / term .)
+    =               reduce using rule 42 (DIV_ext -> term / / term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+  ! +               [ reduce using rule 42 (DIV_ext -> term / / term .) ]
+  ! -               [ reduce using rule 42 (DIV_ext -> term / / term .) ]
+  ! *               [ reduce using rule 42 (DIV_ext -> term / / term .) ]
+  ! /               [ reduce using rule 42 (DIV_ext -> term / / term .) ]
+
+
+state 81
+
+    (43) print -> PRINT ( pcontent ) .
+
+    VARIABLE        reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    (               reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    PRINT           reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    IF              reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    ELSE            reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    ELIF            reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    WHILE           reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    BREAK           reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    FOR             reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    NUMBER          reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    LEN             reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    $end            reduce using rule 43 (print -> PRINT ( pcontent ) .)
+    }               reduce using rule 43 (print -> PRINT ( pcontent ) .)
+
+
+state 82
+
+    (46) pcontent -> pcontent , . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 93
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 83
+
+    (16) if -> IF ( condition ) . { statements }
+
+    {               shift and go to state 94
+
+
+state 84
+
+    (24) greater -> term > . term
+    (25) greater_equal -> term > . = term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    =               shift and go to state 96
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 95
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 85
+
+    (28) equal_equal -> term = . = term
+
+    =               shift and go to state 97
+
+
+state 86
+
+    (26) less -> term < . term
+    (27) less_equal -> term < . = term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    =               shift and go to state 99
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 98
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 87
+
+    (17) else -> ELSE { statements } .
+
+    VARIABLE        reduce using rule 17 (else -> ELSE { statements } .)
+    (               reduce using rule 17 (else -> ELSE { statements } .)
+    PRINT           reduce using rule 17 (else -> ELSE { statements } .)
+    IF              reduce using rule 17 (else -> ELSE { statements } .)
+    ELSE            reduce using rule 17 (else -> ELSE { statements } .)
+    ELIF            reduce using rule 17 (else -> ELSE { statements } .)
+    WHILE           reduce using rule 17 (else -> ELSE { statements } .)
+    BREAK           reduce using rule 17 (else -> ELSE { statements } .)
+    FOR             reduce using rule 17 (else -> ELSE { statements } .)
+    NUMBER          reduce using rule 17 (else -> ELSE { statements } .)
+    LEN             reduce using rule 17 (else -> ELSE { statements } .)
+    $end            reduce using rule 17 (else -> ELSE { statements } .)
+    }               reduce using rule 17 (else -> ELSE { statements } .)
+
+
+state 88
+
+    (18) elif -> ELIF ( condition ) . { statements }
+
+    {               shift and go to state 100
+
+
+state 89
+
+    (14) while -> WHILE ( condition ) . { statements }
+
+    {               shift and go to state 101
+
+
+state 90
+
+    (15) for -> FOR ( assignment ; . condition ; VARIABLE + + ) { statements }
+    (19) condition -> . greater
+    (20) condition -> . greater_equal
+    (21) condition -> . less
+    (22) condition -> . less_equal
+    (23) condition -> . equal_equal
+    (24) greater -> . term > term
+    (25) greater_equal -> . term > = term
+    (26) less -> . term < term
+    (27) less_equal -> . term < = term
+    (28) equal_equal -> . term = = term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    condition                      shift and go to state 102
+    greater                        shift and go to state 65
+    greater_equal                  shift and go to state 66
+    less                           shift and go to state 67
+    less_equal                     shift and go to state 68
+    equal_equal                    shift and go to state 69
+    term                           shift and go to state 70
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 91
+
+    (53) len -> LEN ( VARIABLE ) .
+
+    +               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    -               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    *               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    /               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    VARIABLE        reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    (               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    PRINT           reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    IF              reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    ELSE            reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    ELIF            reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    WHILE           reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    BREAK           reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    FOR             reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    NUMBER          reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    LEN             reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    $end            reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    }               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    ;               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    ]               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    )               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    ,               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    >               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    <               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+    =               reduce using rule 53 (len -> LEN ( VARIABLE ) .)
+
+
+state 92
+
+    (45) array -> [ pcontent ] .
+
+    VARIABLE        reduce using rule 45 (array -> [ pcontent ] .)
+    (               reduce using rule 45 (array -> [ pcontent ] .)
+    PRINT           reduce using rule 45 (array -> [ pcontent ] .)
+    IF              reduce using rule 45 (array -> [ pcontent ] .)
+    ELSE            reduce using rule 45 (array -> [ pcontent ] .)
+    ELIF            reduce using rule 45 (array -> [ pcontent ] .)
+    WHILE           reduce using rule 45 (array -> [ pcontent ] .)
+    BREAK           reduce using rule 45 (array -> [ pcontent ] .)
+    FOR             reduce using rule 45 (array -> [ pcontent ] .)
+    NUMBER          reduce using rule 45 (array -> [ pcontent ] .)
+    LEN             reduce using rule 45 (array -> [ pcontent ] .)
+    $end            reduce using rule 45 (array -> [ pcontent ] .)
+    }               reduce using rule 45 (array -> [ pcontent ] .)
+    ;               reduce using rule 45 (array -> [ pcontent ] .)
+
+
+state 93
+
+    (46) pcontent -> pcontent , term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    )               reduce using rule 46 (pcontent -> pcontent , term .)
+    ,               reduce using rule 46 (pcontent -> pcontent , term .)
+    ]               reduce using rule 46 (pcontent -> pcontent , term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 94
+
+    (16) if -> IF ( condition ) { . statements }
+    (2) statements -> . statements statement
+    (3) statements -> . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    statements                     shift and go to state 103
+    statement                      shift and go to state 3
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 95
+
+    (24) greater -> term > term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    )               reduce using rule 24 (greater -> term > term .)
+    ;               reduce using rule 24 (greater -> term > term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 96
+
+    (25) greater_equal -> term > = . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 104
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 97
+
+    (28) equal_equal -> term = = . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 105
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 98
+
+    (26) less -> term < term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    )               reduce using rule 26 (less -> term < term .)
+    ;               reduce using rule 26 (less -> term < term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 99
+
+    (27) less_equal -> term < = . term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (44) array_term -> . VARIABLE [ term ]
+    (53) len -> . LEN ( VARIABLE )
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+
+    VARIABLE        shift and go to state 41
+    NUMBER          shift and go to state 29
+    (               shift and go to state 21
+    LEN             shift and go to state 31
+
+    term                           shift and go to state 106
+    operation                      shift and go to state 52
+    array_term                     shift and go to state 42
+    len                            shift and go to state 30
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+
+state 100
+
+    (18) elif -> ELIF ( condition ) { . statements }
+    (2) statements -> . statements statement
+    (3) statements -> . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    statements                     shift and go to state 107
+    statement                      shift and go to state 3
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 101
+
+    (14) while -> WHILE ( condition ) { . statements }
+    (2) statements -> . statements statement
+    (3) statements -> . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    statements                     shift and go to state 108
+    statement                      shift and go to state 3
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 102
+
+    (15) for -> FOR ( assignment ; condition . ; VARIABLE + + ) { statements }
+
+    ;               shift and go to state 109
+
+
+state 103
+
+    (16) if -> IF ( condition ) { statements . }
+    (2) statements -> statements . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    }               shift and go to state 110
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    statement                      shift and go to state 32
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 104
+
+    (25) greater_equal -> term > = term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    )               reduce using rule 25 (greater_equal -> term > = term .)
+    ;               reduce using rule 25 (greater_equal -> term > = term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 105
+
+    (28) equal_equal -> term = = term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    )               reduce using rule 28 (equal_equal -> term = = term .)
+    ;               reduce using rule 28 (equal_equal -> term = = term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 106
+
+    (27) less_equal -> term < = term .
+    (38) ADD -> term . + term
+    (39) SUB -> term . - term
+    (40) MUL -> term . * term
+    (41) DIV -> term . / term
+    (42) DIV_ext -> term . / / term
+
+    )               reduce using rule 27 (less_equal -> term < = term .)
+    ;               reduce using rule 27 (less_equal -> term < = term .)
+    +               shift and go to state 35
+    -               shift and go to state 36
+    *               shift and go to state 37
+    /               shift and go to state 38
+
+
+state 107
+
+    (18) elif -> ELIF ( condition ) { statements . }
+    (2) statements -> statements . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    }               shift and go to state 111
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    statement                      shift and go to state 32
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 108
+
+    (14) while -> WHILE ( condition ) { statements . }
+    (2) statements -> statements . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    }               shift and go to state 112
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    statement                      shift and go to state 32
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 109
+
+    (15) for -> FOR ( assignment ; condition ; . VARIABLE + + ) { statements }
+
+    VARIABLE        shift and go to state 113
+
+
+state 110
+
+    (16) if -> IF ( condition ) { statements } .
+
+    VARIABLE        reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    (               reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    PRINT           reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    IF              reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    ELSE            reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    ELIF            reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    WHILE           reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    BREAK           reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    FOR             reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    NUMBER          reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    LEN             reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    $end            reduce using rule 16 (if -> IF ( condition ) { statements } .)
+    }               reduce using rule 16 (if -> IF ( condition ) { statements } .)
+
+
+state 111
+
+    (18) elif -> ELIF ( condition ) { statements } .
+
+    VARIABLE        reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    (               reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    PRINT           reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    IF              reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    ELSE            reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    ELIF            reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    WHILE           reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    BREAK           reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    FOR             reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    NUMBER          reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    LEN             reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    $end            reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+    }               reduce using rule 18 (elif -> ELIF ( condition ) { statements } .)
+
+
+state 112
+
+    (14) while -> WHILE ( condition ) { statements } .
+
+    VARIABLE        reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    (               reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    PRINT           reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    IF              reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    ELSE            reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    ELIF            reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    WHILE           reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    BREAK           reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    FOR             reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    NUMBER          reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    LEN             reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    $end            reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+    }               reduce using rule 14 (while -> WHILE ( condition ) { statements } .)
+
+
+state 113
+
+    (15) for -> FOR ( assignment ; condition ; VARIABLE . + + ) { statements }
+
+    +               shift and go to state 114
+
+
+state 114
+
+    (15) for -> FOR ( assignment ; condition ; VARIABLE + . + ) { statements }
+
+    +               shift and go to state 115
+
+
+state 115
+
+    (15) for -> FOR ( assignment ; condition ; VARIABLE + + . ) { statements }
+
+    )               shift and go to state 116
+
+
+state 116
+
+    (15) for -> FOR ( assignment ; condition ; VARIABLE + + ) . { statements }
+
+    {               shift and go to state 117
+
+
+state 117
+
+    (15) for -> FOR ( assignment ; condition ; VARIABLE + + ) { . statements }
+    (2) statements -> . statements statement
+    (3) statements -> . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    assignment                     shift and go to state 4
+    statements                     shift and go to state 118
+    statement                      shift and go to state 3
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 118
+
+    (15) for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements . }
+    (2) statements -> statements . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) statement -> . if
+    (8) statement -> . else
+    (9) statement -> . elif
+    (10) statement -> . while
+    (11) statement -> . break
+    (12) statement -> . for
+    (29) assignment -> . VARIABLE = term
+    (30) assignment -> . VARIABLE = array
+    (31) assignment -> . array_term = term
+    (32) operation -> . ADD
+    (33) operation -> . SUB
+    (34) operation -> . MUL
+    (35) operation -> . DIV
+    (36) operation -> . DIV_ext
+    (37) operation -> . ( operation )
+    (43) print -> . PRINT ( pcontent )
+    (16) if -> . IF ( condition ) { statements }
+    (17) else -> . ELSE { statements }
+    (18) elif -> . ELIF ( condition ) { statements }
+    (14) while -> . WHILE ( condition ) { statements }
+    (13) break -> . BREAK
+    (15) for -> . FOR ( assignment ; condition ; VARIABLE + + ) { statements }
+    (44) array_term -> . VARIABLE [ term ]
+    (38) ADD -> . term + term
+    (39) SUB -> . term - term
+    (40) MUL -> . term * term
+    (41) DIV -> . term / term
+    (42) DIV_ext -> . term / / term
+    (48) term -> . VARIABLE
+    (49) term -> . NUMBER
+    (50) term -> . operation
+    (51) term -> . array_term
+    (52) term -> . len
+    (53) len -> . LEN ( VARIABLE )
+
+    }               shift and go to state 119
+    VARIABLE        shift and go to state 13
+    (               shift and go to state 21
+    PRINT           shift and go to state 22
+    IF              shift and go to state 23
+    ELSE            shift and go to state 24
+    ELIF            shift and go to state 25
+    WHILE           shift and go to state 26
+    BREAK           shift and go to state 27
+    FOR             shift and go to state 28
+    NUMBER          shift and go to state 29
+    LEN             shift and go to state 31
+
+    assignment                     shift and go to state 4
+    statement                      shift and go to state 32
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    if                             shift and go to state 7
+    else                           shift and go to state 8
+    elif                           shift and go to state 9
+    while                          shift and go to state 10
+    break                          shift and go to state 11
+    for                            shift and go to state 12
+    term                           shift and go to state 14
+    array_term                     shift and go to state 15
+    ADD                            shift and go to state 16
+    SUB                            shift and go to state 17
+    MUL                            shift and go to state 18
+    DIV                            shift and go to state 19
+    DIV_ext                        shift and go to state 20
+    len                            shift and go to state 30
+
+state 119
+
+    (15) for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .
+
+    VARIABLE        reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    (               reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    PRINT           reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    IF              reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    ELSE            reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    ELIF            reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    WHILE           reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    BREAK           reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    FOR             reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    NUMBER          reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    LEN             reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    $end            reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+    }               reduce using rule 15 (for -> FOR ( assignment ; condition ; VARIABLE + + ) { statements } .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for + in state 55 resolved as shift
+WARNING: shift/reduce conflict for - in state 55 resolved as shift
+WARNING: shift/reduce conflict for * in state 55 resolved as shift
+WARNING: shift/reduce conflict for / in state 55 resolved as shift
+WARNING: shift/reduce conflict for + in state 56 resolved as shift
+WARNING: shift/reduce conflict for - in state 56 resolved as shift
+WARNING: shift/reduce conflict for * in state 56 resolved as shift
+WARNING: shift/reduce conflict for / in state 56 resolved as shift
+WARNING: shift/reduce conflict for + in state 57 resolved as shift
+WARNING: shift/reduce conflict for - in state 57 resolved as shift
+WARNING: shift/reduce conflict for * in state 57 resolved as shift
+WARNING: shift/reduce conflict for / in state 57 resolved as shift
+WARNING: shift/reduce conflict for + in state 58 resolved as shift
+WARNING: shift/reduce conflict for - in state 58 resolved as shift
+WARNING: shift/reduce conflict for * in state 58 resolved as shift
+WARNING: shift/reduce conflict for / in state 58 resolved as shift
+WARNING: shift/reduce conflict for + in state 80 resolved as shift
+WARNING: shift/reduce conflict for - in state 80 resolved as shift
+WARNING: shift/reduce conflict for * in state 80 resolved as shift
+WARNING: shift/reduce conflict for / in state 80 resolved as shift
