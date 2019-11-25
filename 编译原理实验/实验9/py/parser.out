@@ -1,0 +1,1201 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> segment
+Rule 1     segment -> statements
+Rule 2     statements -> statements statement
+Rule 3     statements -> statement
+Rule 4     statement -> assignment
+Rule 5     statement -> operation
+Rule 6     statement -> print
+Rule 7     assignment -> VARIABLE = VARIABLE
+Rule 8     assignment -> VARIABLE = operation
+Rule 9     assignment -> VARIABLE = NUMBER
+Rule 10    operation -> ADD
+Rule 11    operation -> SUB
+Rule 12    operation -> MUL
+Rule 13    operation -> DIV
+Rule 14    ADD -> NUMBER + NUMBER
+Rule 15    ADD -> NUMBER + VARIABLE
+Rule 16    ADD -> VARIABLE + VARIABLE
+Rule 17    ADD -> VARIABLE + NUMBER
+Rule 18    ADD -> operation + NUMBER
+Rule 19    ADD -> operation + VARIABLE
+Rule 20    SUB -> NUMBER - NUMBER
+Rule 21    SUB -> NUMBER - VARIABLE
+Rule 22    SUB -> VARIABLE - VARIABLE
+Rule 23    SUB -> VARIABLE - NUMBER
+Rule 24    SUB -> operation - NUMBER
+Rule 25    SUB -> operation - VARIABLE
+Rule 26    MUL -> NUMBER * NUMBER
+Rule 27    MUL -> NUMBER * VARIABLE
+Rule 28    MUL -> VARIABLE * VARIABLE
+Rule 29    MUL -> VARIABLE * NUMBER
+Rule 30    MUL -> operation * NUMBER
+Rule 31    MUL -> operation * VARIABLE
+Rule 32    DIV -> NUMBER / NUMBER
+Rule 33    DIV -> NUMBER / VARIABLE
+Rule 34    DIV -> VARIABLE / VARIABLE
+Rule 35    DIV -> VARIABLE / NUMBER
+Rule 36    DIV -> operation / NUMBER
+Rule 37    DIV -> operation / VARIABLE
+Rule 38    print -> PRINT LP pcontent RP
+Rule 39    pcontent -> pcontent , VARIABLE
+Rule 40    pcontent -> pcontent , NUMBER
+Rule 41    pcontent -> pcontent , operation
+Rule 42    pcontent -> VARIABLE
+Rule 43    pcontent -> NUMBER
+Rule 44    pcontent -> operation
+
+Terminals, with rules where they appear
+
+*                    : 26 27 28 29 30 31
++                    : 14 15 16 17 18 19
+,                    : 39 40 41
+-                    : 20 21 22 23 24 25
+/                    : 32 33 34 35 36 37
+=                    : 7 8 9
+LP                   : 38
+NUMBER               : 9 14 14 15 17 18 20 20 21 23 24 26 26 27 29 30 32 32 33 35 36 40 43
+PRINT                : 38
+RP                   : 38
+VARIABLE             : 7 7 8 9 15 16 16 17 19 21 22 22 23 25 27 28 28 29 31 33 34 34 35 37 39 42
+error                : 
+
+Nonterminals, with rules where they appear
+
+ADD                  : 10
+DIV                  : 13
+MUL                  : 12
+SUB                  : 11
+assignment           : 4
+operation            : 5 8 18 19 24 25 30 31 36 37 41 44
+pcontent             : 38 39 40 41
+print                : 6
+segment              : 0
+statement            : 2 3
+statements           : 1 2
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . segment
+    (1) segment -> . statements
+    (2) statements -> . statements statement
+    (3) statements -> . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) assignment -> . VARIABLE = VARIABLE
+    (8) assignment -> . VARIABLE = operation
+    (9) assignment -> . VARIABLE = NUMBER
+    (10) operation -> . ADD
+    (11) operation -> . SUB
+    (12) operation -> . MUL
+    (13) operation -> . DIV
+    (38) print -> . PRINT LP pcontent RP
+    (14) ADD -> . NUMBER + NUMBER
+    (15) ADD -> . NUMBER + VARIABLE
+    (16) ADD -> . VARIABLE + VARIABLE
+    (17) ADD -> . VARIABLE + NUMBER
+    (18) ADD -> . operation + NUMBER
+    (19) ADD -> . operation + VARIABLE
+    (20) SUB -> . NUMBER - NUMBER
+    (21) SUB -> . NUMBER - VARIABLE
+    (22) SUB -> . VARIABLE - VARIABLE
+    (23) SUB -> . VARIABLE - NUMBER
+    (24) SUB -> . operation - NUMBER
+    (25) SUB -> . operation - VARIABLE
+    (26) MUL -> . NUMBER * NUMBER
+    (27) MUL -> . NUMBER * VARIABLE
+    (28) MUL -> . VARIABLE * VARIABLE
+    (29) MUL -> . VARIABLE * NUMBER
+    (30) MUL -> . operation * NUMBER
+    (31) MUL -> . operation * VARIABLE
+    (32) DIV -> . NUMBER / NUMBER
+    (33) DIV -> . NUMBER / VARIABLE
+    (34) DIV -> . VARIABLE / VARIABLE
+    (35) DIV -> . VARIABLE / NUMBER
+    (36) DIV -> . operation / NUMBER
+    (37) DIV -> . operation / VARIABLE
+
+    VARIABLE        shift and go to state 7
+    PRINT           shift and go to state 13
+    NUMBER          shift and go to state 8
+
+    segment                        shift and go to state 1
+    statements                     shift and go to state 2
+    statement                      shift and go to state 3
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    ADD                            shift and go to state 9
+    SUB                            shift and go to state 10
+    MUL                            shift and go to state 11
+    DIV                            shift and go to state 12
+
+state 1
+
+    (0) S' -> segment .
+
+
+
+state 2
+
+    (1) segment -> statements .
+    (2) statements -> statements . statement
+    (4) statement -> . assignment
+    (5) statement -> . operation
+    (6) statement -> . print
+    (7) assignment -> . VARIABLE = VARIABLE
+    (8) assignment -> . VARIABLE = operation
+    (9) assignment -> . VARIABLE = NUMBER
+    (10) operation -> . ADD
+    (11) operation -> . SUB
+    (12) operation -> . MUL
+    (13) operation -> . DIV
+    (38) print -> . PRINT LP pcontent RP
+    (14) ADD -> . NUMBER + NUMBER
+    (15) ADD -> . NUMBER + VARIABLE
+    (16) ADD -> . VARIABLE + VARIABLE
+    (17) ADD -> . VARIABLE + NUMBER
+    (18) ADD -> . operation + NUMBER
+    (19) ADD -> . operation + VARIABLE
+    (20) SUB -> . NUMBER - NUMBER
+    (21) SUB -> . NUMBER - VARIABLE
+    (22) SUB -> . VARIABLE - VARIABLE
+    (23) SUB -> . VARIABLE - NUMBER
+    (24) SUB -> . operation - NUMBER
+    (25) SUB -> . operation - VARIABLE
+    (26) MUL -> . NUMBER * NUMBER
+    (27) MUL -> . NUMBER * VARIABLE
+    (28) MUL -> . VARIABLE * VARIABLE
+    (29) MUL -> . VARIABLE * NUMBER
+    (30) MUL -> . operation * NUMBER
+    (31) MUL -> . operation * VARIABLE
+    (32) DIV -> . NUMBER / NUMBER
+    (33) DIV -> . NUMBER / VARIABLE
+    (34) DIV -> . VARIABLE / VARIABLE
+    (35) DIV -> . VARIABLE / NUMBER
+    (36) DIV -> . operation / NUMBER
+    (37) DIV -> . operation / VARIABLE
+
+    $end            reduce using rule 1 (segment -> statements .)
+    VARIABLE        shift and go to state 7
+    PRINT           shift and go to state 13
+    NUMBER          shift and go to state 8
+
+    statement                      shift and go to state 14
+    assignment                     shift and go to state 4
+    operation                      shift and go to state 5
+    print                          shift and go to state 6
+    ADD                            shift and go to state 9
+    SUB                            shift and go to state 10
+    MUL                            shift and go to state 11
+    DIV                            shift and go to state 12
+
+state 3
+
+    (3) statements -> statement .
+
+    VARIABLE        reduce using rule 3 (statements -> statement .)
+    PRINT           reduce using rule 3 (statements -> statement .)
+    NUMBER          reduce using rule 3 (statements -> statement .)
+    $end            reduce using rule 3 (statements -> statement .)
+
+
+state 4
+
+    (4) statement -> assignment .
+
+    VARIABLE        reduce using rule 4 (statement -> assignment .)
+    PRINT           reduce using rule 4 (statement -> assignment .)
+    NUMBER          reduce using rule 4 (statement -> assignment .)
+    $end            reduce using rule 4 (statement -> assignment .)
+
+
+state 5
+
+    (5) statement -> operation .
+    (18) ADD -> operation . + NUMBER
+    (19) ADD -> operation . + VARIABLE
+    (24) SUB -> operation . - NUMBER
+    (25) SUB -> operation . - VARIABLE
+    (30) MUL -> operation . * NUMBER
+    (31) MUL -> operation . * VARIABLE
+    (36) DIV -> operation . / NUMBER
+    (37) DIV -> operation . / VARIABLE
+
+    VARIABLE        reduce using rule 5 (statement -> operation .)
+    PRINT           reduce using rule 5 (statement -> operation .)
+    NUMBER          reduce using rule 5 (statement -> operation .)
+    $end            reduce using rule 5 (statement -> operation .)
+    +               shift and go to state 15
+    -               shift and go to state 16
+    *               shift and go to state 17
+    /               shift and go to state 18
+
+
+state 6
+
+    (6) statement -> print .
+
+    VARIABLE        reduce using rule 6 (statement -> print .)
+    PRINT           reduce using rule 6 (statement -> print .)
+    NUMBER          reduce using rule 6 (statement -> print .)
+    $end            reduce using rule 6 (statement -> print .)
+
+
+state 7
+
+    (7) assignment -> VARIABLE . = VARIABLE
+    (8) assignment -> VARIABLE . = operation
+    (9) assignment -> VARIABLE . = NUMBER
+    (16) ADD -> VARIABLE . + VARIABLE
+    (17) ADD -> VARIABLE . + NUMBER
+    (22) SUB -> VARIABLE . - VARIABLE
+    (23) SUB -> VARIABLE . - NUMBER
+    (28) MUL -> VARIABLE . * VARIABLE
+    (29) MUL -> VARIABLE . * NUMBER
+    (34) DIV -> VARIABLE . / VARIABLE
+    (35) DIV -> VARIABLE . / NUMBER
+
+    =               shift and go to state 19
+    +               shift and go to state 20
+    -               shift and go to state 21
+    *               shift and go to state 22
+    /               shift and go to state 23
+
+
+state 8
+
+    (14) ADD -> NUMBER . + NUMBER
+    (15) ADD -> NUMBER . + VARIABLE
+    (20) SUB -> NUMBER . - NUMBER
+    (21) SUB -> NUMBER . - VARIABLE
+    (26) MUL -> NUMBER . * NUMBER
+    (27) MUL -> NUMBER . * VARIABLE
+    (32) DIV -> NUMBER . / NUMBER
+    (33) DIV -> NUMBER . / VARIABLE
+
+    +               shift and go to state 24
+    -               shift and go to state 25
+    *               shift and go to state 26
+    /               shift and go to state 27
+
+
+state 9
+
+    (10) operation -> ADD .
+
+    +               reduce using rule 10 (operation -> ADD .)
+    -               reduce using rule 10 (operation -> ADD .)
+    *               reduce using rule 10 (operation -> ADD .)
+    /               reduce using rule 10 (operation -> ADD .)
+    VARIABLE        reduce using rule 10 (operation -> ADD .)
+    PRINT           reduce using rule 10 (operation -> ADD .)
+    NUMBER          reduce using rule 10 (operation -> ADD .)
+    $end            reduce using rule 10 (operation -> ADD .)
+    RP              reduce using rule 10 (operation -> ADD .)
+    ,               reduce using rule 10 (operation -> ADD .)
+
+
+state 10
+
+    (11) operation -> SUB .
+
+    +               reduce using rule 11 (operation -> SUB .)
+    -               reduce using rule 11 (operation -> SUB .)
+    *               reduce using rule 11 (operation -> SUB .)
+    /               reduce using rule 11 (operation -> SUB .)
+    VARIABLE        reduce using rule 11 (operation -> SUB .)
+    PRINT           reduce using rule 11 (operation -> SUB .)
+    NUMBER          reduce using rule 11 (operation -> SUB .)
+    $end            reduce using rule 11 (operation -> SUB .)
+    RP              reduce using rule 11 (operation -> SUB .)
+    ,               reduce using rule 11 (operation -> SUB .)
+
+
+state 11
+
+    (12) operation -> MUL .
+
+    +               reduce using rule 12 (operation -> MUL .)
+    -               reduce using rule 12 (operation -> MUL .)
+    *               reduce using rule 12 (operation -> MUL .)
+    /               reduce using rule 12 (operation -> MUL .)
+    VARIABLE        reduce using rule 12 (operation -> MUL .)
+    PRINT           reduce using rule 12 (operation -> MUL .)
+    NUMBER          reduce using rule 12 (operation -> MUL .)
+    $end            reduce using rule 12 (operation -> MUL .)
+    RP              reduce using rule 12 (operation -> MUL .)
+    ,               reduce using rule 12 (operation -> MUL .)
+
+
+state 12
+
+    (13) operation -> DIV .
+
+    +               reduce using rule 13 (operation -> DIV .)
+    -               reduce using rule 13 (operation -> DIV .)
+    *               reduce using rule 13 (operation -> DIV .)
+    /               reduce using rule 13 (operation -> DIV .)
+    VARIABLE        reduce using rule 13 (operation -> DIV .)
+    PRINT           reduce using rule 13 (operation -> DIV .)
+    NUMBER          reduce using rule 13 (operation -> DIV .)
+    $end            reduce using rule 13 (operation -> DIV .)
+    RP              reduce using rule 13 (operation -> DIV .)
+    ,               reduce using rule 13 (operation -> DIV .)
+
+
+state 13
+
+    (38) print -> PRINT . LP pcontent RP
+
+    LP              shift and go to state 28
+
+
+state 14
+
+    (2) statements -> statements statement .
+
+    VARIABLE        reduce using rule 2 (statements -> statements statement .)
+    PRINT           reduce using rule 2 (statements -> statements statement .)
+    NUMBER          reduce using rule 2 (statements -> statements statement .)
+    $end            reduce using rule 2 (statements -> statements statement .)
+
+
+state 15
+
+    (18) ADD -> operation + . NUMBER
+    (19) ADD -> operation + . VARIABLE
+
+    NUMBER          shift and go to state 29
+    VARIABLE        shift and go to state 30
+
+
+state 16
+
+    (24) SUB -> operation - . NUMBER
+    (25) SUB -> operation - . VARIABLE
+
+    NUMBER          shift and go to state 31
+    VARIABLE        shift and go to state 32
+
+
+state 17
+
+    (30) MUL -> operation * . NUMBER
+    (31) MUL -> operation * . VARIABLE
+
+    NUMBER          shift and go to state 33
+    VARIABLE        shift and go to state 34
+
+
+state 18
+
+    (36) DIV -> operation / . NUMBER
+    (37) DIV -> operation / . VARIABLE
+
+    NUMBER          shift and go to state 35
+    VARIABLE        shift and go to state 36
+
+
+state 19
+
+    (7) assignment -> VARIABLE = . VARIABLE
+    (8) assignment -> VARIABLE = . operation
+    (9) assignment -> VARIABLE = . NUMBER
+    (10) operation -> . ADD
+    (11) operation -> . SUB
+    (12) operation -> . MUL
+    (13) operation -> . DIV
+    (14) ADD -> . NUMBER + NUMBER
+    (15) ADD -> . NUMBER + VARIABLE
+    (16) ADD -> . VARIABLE + VARIABLE
+    (17) ADD -> . VARIABLE + NUMBER
+    (18) ADD -> . operation + NUMBER
+    (19) ADD -> . operation + VARIABLE
+    (20) SUB -> . NUMBER - NUMBER
+    (21) SUB -> . NUMBER - VARIABLE
+    (22) SUB -> . VARIABLE - VARIABLE
+    (23) SUB -> . VARIABLE - NUMBER
+    (24) SUB -> . operation - NUMBER
+    (25) SUB -> . operation - VARIABLE
+    (26) MUL -> . NUMBER * NUMBER
+    (27) MUL -> . NUMBER * VARIABLE
+    (28) MUL -> . VARIABLE * VARIABLE
+    (29) MUL -> . VARIABLE * NUMBER
+    (30) MUL -> . operation * NUMBER
+    (31) MUL -> . operation * VARIABLE
+    (32) DIV -> . NUMBER / NUMBER
+    (33) DIV -> . NUMBER / VARIABLE
+    (34) DIV -> . VARIABLE / VARIABLE
+    (35) DIV -> . VARIABLE / NUMBER
+    (36) DIV -> . operation / NUMBER
+    (37) DIV -> . operation / VARIABLE
+
+    VARIABLE        shift and go to state 37
+    NUMBER          shift and go to state 39
+
+    operation                      shift and go to state 38
+    ADD                            shift and go to state 9
+    SUB                            shift and go to state 10
+    MUL                            shift and go to state 11
+    DIV                            shift and go to state 12
+
+state 20
+
+    (16) ADD -> VARIABLE + . VARIABLE
+    (17) ADD -> VARIABLE + . NUMBER
+
+    VARIABLE        shift and go to state 40
+    NUMBER          shift and go to state 41
+
+
+state 21
+
+    (22) SUB -> VARIABLE - . VARIABLE
+    (23) SUB -> VARIABLE - . NUMBER
+
+    VARIABLE        shift and go to state 42
+    NUMBER          shift and go to state 43
+
+
+state 22
+
+    (28) MUL -> VARIABLE * . VARIABLE
+    (29) MUL -> VARIABLE * . NUMBER
+
+    VARIABLE        shift and go to state 44
+    NUMBER          shift and go to state 45
+
+
+state 23
+
+    (34) DIV -> VARIABLE / . VARIABLE
+    (35) DIV -> VARIABLE / . NUMBER
+
+    VARIABLE        shift and go to state 46
+    NUMBER          shift and go to state 47
+
+
+state 24
+
+    (14) ADD -> NUMBER + . NUMBER
+    (15) ADD -> NUMBER + . VARIABLE
+
+    NUMBER          shift and go to state 48
+    VARIABLE        shift and go to state 49
+
+
+state 25
+
+    (20) SUB -> NUMBER - . NUMBER
+    (21) SUB -> NUMBER - . VARIABLE
+
+    NUMBER          shift and go to state 50
+    VARIABLE        shift and go to state 51
+
+
+state 26
+
+    (26) MUL -> NUMBER * . NUMBER
+    (27) MUL -> NUMBER * . VARIABLE
+
+    NUMBER          shift and go to state 52
+    VARIABLE        shift and go to state 53
+
+
+state 27
+
+    (32) DIV -> NUMBER / . NUMBER
+    (33) DIV -> NUMBER / . VARIABLE
+
+    NUMBER          shift and go to state 54
+    VARIABLE        shift and go to state 55
+
+
+state 28
+
+    (38) print -> PRINT LP . pcontent RP
+    (39) pcontent -> . pcontent , VARIABLE
+    (40) pcontent -> . pcontent , NUMBER
+    (41) pcontent -> . pcontent , operation
+    (42) pcontent -> . VARIABLE
+    (43) pcontent -> . NUMBER
+    (44) pcontent -> . operation
+    (10) operation -> . ADD
+    (11) operation -> . SUB
+    (12) operation -> . MUL
+    (13) operation -> . DIV
+    (14) ADD -> . NUMBER + NUMBER
+    (15) ADD -> . NUMBER + VARIABLE
+    (16) ADD -> . VARIABLE + VARIABLE
+    (17) ADD -> . VARIABLE + NUMBER
+    (18) ADD -> . operation + NUMBER
+    (19) ADD -> . operation + VARIABLE
+    (20) SUB -> . NUMBER - NUMBER
+    (21) SUB -> . NUMBER - VARIABLE
+    (22) SUB -> . VARIABLE - VARIABLE
+    (23) SUB -> . VARIABLE - NUMBER
+    (24) SUB -> . operation - NUMBER
+    (25) SUB -> . operation - VARIABLE
+    (26) MUL -> . NUMBER * NUMBER
+    (27) MUL -> . NUMBER * VARIABLE
+    (28) MUL -> . VARIABLE * VARIABLE
+    (29) MUL -> . VARIABLE * NUMBER
+    (30) MUL -> . operation * NUMBER
+    (31) MUL -> . operation * VARIABLE
+    (32) DIV -> . NUMBER / NUMBER
+    (33) DIV -> . NUMBER / VARIABLE
+    (34) DIV -> . VARIABLE / VARIABLE
+    (35) DIV -> . VARIABLE / NUMBER
+    (36) DIV -> . operation / NUMBER
+    (37) DIV -> . operation / VARIABLE
+
+    VARIABLE        shift and go to state 57
+    NUMBER          shift and go to state 58
+
+    pcontent                       shift and go to state 56
+    operation                      shift and go to state 59
+    ADD                            shift and go to state 9
+    SUB                            shift and go to state 10
+    MUL                            shift and go to state 11
+    DIV                            shift and go to state 12
+
+state 29
+
+    (18) ADD -> operation + NUMBER .
+
+    +               reduce using rule 18 (ADD -> operation + NUMBER .)
+    -               reduce using rule 18 (ADD -> operation + NUMBER .)
+    *               reduce using rule 18 (ADD -> operation + NUMBER .)
+    /               reduce using rule 18 (ADD -> operation + NUMBER .)
+    VARIABLE        reduce using rule 18 (ADD -> operation + NUMBER .)
+    PRINT           reduce using rule 18 (ADD -> operation + NUMBER .)
+    NUMBER          reduce using rule 18 (ADD -> operation + NUMBER .)
+    $end            reduce using rule 18 (ADD -> operation + NUMBER .)
+    RP              reduce using rule 18 (ADD -> operation + NUMBER .)
+    ,               reduce using rule 18 (ADD -> operation + NUMBER .)
+
+
+state 30
+
+    (19) ADD -> operation + VARIABLE .
+
+    +               reduce using rule 19 (ADD -> operation + VARIABLE .)
+    -               reduce using rule 19 (ADD -> operation + VARIABLE .)
+    *               reduce using rule 19 (ADD -> operation + VARIABLE .)
+    /               reduce using rule 19 (ADD -> operation + VARIABLE .)
+    VARIABLE        reduce using rule 19 (ADD -> operation + VARIABLE .)
+    PRINT           reduce using rule 19 (ADD -> operation + VARIABLE .)
+    NUMBER          reduce using rule 19 (ADD -> operation + VARIABLE .)
+    $end            reduce using rule 19 (ADD -> operation + VARIABLE .)
+    RP              reduce using rule 19 (ADD -> operation + VARIABLE .)
+    ,               reduce using rule 19 (ADD -> operation + VARIABLE .)
+
+
+state 31
+
+    (24) SUB -> operation - NUMBER .
+
+    +               reduce using rule 24 (SUB -> operation - NUMBER .)
+    -               reduce using rule 24 (SUB -> operation - NUMBER .)
+    *               reduce using rule 24 (SUB -> operation - NUMBER .)
+    /               reduce using rule 24 (SUB -> operation - NUMBER .)
+    VARIABLE        reduce using rule 24 (SUB -> operation - NUMBER .)
+    PRINT           reduce using rule 24 (SUB -> operation - NUMBER .)
+    NUMBER          reduce using rule 24 (SUB -> operation - NUMBER .)
+    $end            reduce using rule 24 (SUB -> operation - NUMBER .)
+    RP              reduce using rule 24 (SUB -> operation - NUMBER .)
+    ,               reduce using rule 24 (SUB -> operation - NUMBER .)
+
+
+state 32
+
+    (25) SUB -> operation - VARIABLE .
+
+    +               reduce using rule 25 (SUB -> operation - VARIABLE .)
+    -               reduce using rule 25 (SUB -> operation - VARIABLE .)
+    *               reduce using rule 25 (SUB -> operation - VARIABLE .)
+    /               reduce using rule 25 (SUB -> operation - VARIABLE .)
+    VARIABLE        reduce using rule 25 (SUB -> operation - VARIABLE .)
+    PRINT           reduce using rule 25 (SUB -> operation - VARIABLE .)
+    NUMBER          reduce using rule 25 (SUB -> operation - VARIABLE .)
+    $end            reduce using rule 25 (SUB -> operation - VARIABLE .)
+    RP              reduce using rule 25 (SUB -> operation - VARIABLE .)
+    ,               reduce using rule 25 (SUB -> operation - VARIABLE .)
+
+
+state 33
+
+    (30) MUL -> operation * NUMBER .
+
+    +               reduce using rule 30 (MUL -> operation * NUMBER .)
+    -               reduce using rule 30 (MUL -> operation * NUMBER .)
+    *               reduce using rule 30 (MUL -> operation * NUMBER .)
+    /               reduce using rule 30 (MUL -> operation * NUMBER .)
+    VARIABLE        reduce using rule 30 (MUL -> operation * NUMBER .)
+    PRINT           reduce using rule 30 (MUL -> operation * NUMBER .)
+    NUMBER          reduce using rule 30 (MUL -> operation * NUMBER .)
+    $end            reduce using rule 30 (MUL -> operation * NUMBER .)
+    RP              reduce using rule 30 (MUL -> operation * NUMBER .)
+    ,               reduce using rule 30 (MUL -> operation * NUMBER .)
+
+
+state 34
+
+    (31) MUL -> operation * VARIABLE .
+
+    +               reduce using rule 31 (MUL -> operation * VARIABLE .)
+    -               reduce using rule 31 (MUL -> operation * VARIABLE .)
+    *               reduce using rule 31 (MUL -> operation * VARIABLE .)
+    /               reduce using rule 31 (MUL -> operation * VARIABLE .)
+    VARIABLE        reduce using rule 31 (MUL -> operation * VARIABLE .)
+    PRINT           reduce using rule 31 (MUL -> operation * VARIABLE .)
+    NUMBER          reduce using rule 31 (MUL -> operation * VARIABLE .)
+    $end            reduce using rule 31 (MUL -> operation * VARIABLE .)
+    RP              reduce using rule 31 (MUL -> operation * VARIABLE .)
+    ,               reduce using rule 31 (MUL -> operation * VARIABLE .)
+
+
+state 35
+
+    (36) DIV -> operation / NUMBER .
+
+    +               reduce using rule 36 (DIV -> operation / NUMBER .)
+    -               reduce using rule 36 (DIV -> operation / NUMBER .)
+    *               reduce using rule 36 (DIV -> operation / NUMBER .)
+    /               reduce using rule 36 (DIV -> operation / NUMBER .)
+    VARIABLE        reduce using rule 36 (DIV -> operation / NUMBER .)
+    PRINT           reduce using rule 36 (DIV -> operation / NUMBER .)
+    NUMBER          reduce using rule 36 (DIV -> operation / NUMBER .)
+    $end            reduce using rule 36 (DIV -> operation / NUMBER .)
+    RP              reduce using rule 36 (DIV -> operation / NUMBER .)
+    ,               reduce using rule 36 (DIV -> operation / NUMBER .)
+
+
+state 36
+
+    (37) DIV -> operation / VARIABLE .
+
+    +               reduce using rule 37 (DIV -> operation / VARIABLE .)
+    -               reduce using rule 37 (DIV -> operation / VARIABLE .)
+    *               reduce using rule 37 (DIV -> operation / VARIABLE .)
+    /               reduce using rule 37 (DIV -> operation / VARIABLE .)
+    VARIABLE        reduce using rule 37 (DIV -> operation / VARIABLE .)
+    PRINT           reduce using rule 37 (DIV -> operation / VARIABLE .)
+    NUMBER          reduce using rule 37 (DIV -> operation / VARIABLE .)
+    $end            reduce using rule 37 (DIV -> operation / VARIABLE .)
+    RP              reduce using rule 37 (DIV -> operation / VARIABLE .)
+    ,               reduce using rule 37 (DIV -> operation / VARIABLE .)
+
+
+state 37
+
+    (7) assignment -> VARIABLE = VARIABLE .
+    (16) ADD -> VARIABLE . + VARIABLE
+    (17) ADD -> VARIABLE . + NUMBER
+    (22) SUB -> VARIABLE . - VARIABLE
+    (23) SUB -> VARIABLE . - NUMBER
+    (28) MUL -> VARIABLE . * VARIABLE
+    (29) MUL -> VARIABLE . * NUMBER
+    (34) DIV -> VARIABLE . / VARIABLE
+    (35) DIV -> VARIABLE . / NUMBER
+
+    VARIABLE        reduce using rule 7 (assignment -> VARIABLE = VARIABLE .)
+    PRINT           reduce using rule 7 (assignment -> VARIABLE = VARIABLE .)
+    NUMBER          reduce using rule 7 (assignment -> VARIABLE = VARIABLE .)
+    $end            reduce using rule 7 (assignment -> VARIABLE = VARIABLE .)
+    +               shift and go to state 20
+    -               shift and go to state 21
+    *               shift and go to state 22
+    /               shift and go to state 23
+
+
+state 38
+
+    (8) assignment -> VARIABLE = operation .
+    (18) ADD -> operation . + NUMBER
+    (19) ADD -> operation . + VARIABLE
+    (24) SUB -> operation . - NUMBER
+    (25) SUB -> operation . - VARIABLE
+    (30) MUL -> operation . * NUMBER
+    (31) MUL -> operation . * VARIABLE
+    (36) DIV -> operation . / NUMBER
+    (37) DIV -> operation . / VARIABLE
+
+    VARIABLE        reduce using rule 8 (assignment -> VARIABLE = operation .)
+    PRINT           reduce using rule 8 (assignment -> VARIABLE = operation .)
+    NUMBER          reduce using rule 8 (assignment -> VARIABLE = operation .)
+    $end            reduce using rule 8 (assignment -> VARIABLE = operation .)
+    +               shift and go to state 15
+    -               shift and go to state 16
+    *               shift and go to state 17
+    /               shift and go to state 18
+
+
+state 39
+
+    (9) assignment -> VARIABLE = NUMBER .
+    (14) ADD -> NUMBER . + NUMBER
+    (15) ADD -> NUMBER . + VARIABLE
+    (20) SUB -> NUMBER . - NUMBER
+    (21) SUB -> NUMBER . - VARIABLE
+    (26) MUL -> NUMBER . * NUMBER
+    (27) MUL -> NUMBER . * VARIABLE
+    (32) DIV -> NUMBER . / NUMBER
+    (33) DIV -> NUMBER . / VARIABLE
+
+    VARIABLE        reduce using rule 9 (assignment -> VARIABLE = NUMBER .)
+    PRINT           reduce using rule 9 (assignment -> VARIABLE = NUMBER .)
+    NUMBER          reduce using rule 9 (assignment -> VARIABLE = NUMBER .)
+    $end            reduce using rule 9 (assignment -> VARIABLE = NUMBER .)
+    +               shift and go to state 24
+    -               shift and go to state 25
+    *               shift and go to state 26
+    /               shift and go to state 27
+
+
+state 40
+
+    (16) ADD -> VARIABLE + VARIABLE .
+
+    +               reduce using rule 16 (ADD -> VARIABLE + VARIABLE .)
+    -               reduce using rule 16 (ADD -> VARIABLE + VARIABLE .)
+    *               reduce using rule 16 (ADD -> VARIABLE + VARIABLE .)
+    /               reduce using rule 16 (ADD -> VARIABLE + VARIABLE .)
+    VARIABLE        reduce using rule 16 (ADD -> VARIABLE + VARIABLE .)
+    PRINT           reduce using rule 16 (ADD -> VARIABLE + VARIABLE .)
+    NUMBER          reduce using rule 16 (ADD -> VARIABLE + VARIABLE .)
+    $end            reduce using rule 16 (ADD -> VARIABLE + VARIABLE .)
+    RP              reduce using rule 16 (ADD -> VARIABLE + VARIABLE .)
+    ,               reduce using rule 16 (ADD -> VARIABLE + VARIABLE .)
+
+
+state 41
+
+    (17) ADD -> VARIABLE + NUMBER .
+
+    +               reduce using rule 17 (ADD -> VARIABLE + NUMBER .)
+    -               reduce using rule 17 (ADD -> VARIABLE + NUMBER .)
+    *               reduce using rule 17 (ADD -> VARIABLE + NUMBER .)
+    /               reduce using rule 17 (ADD -> VARIABLE + NUMBER .)
+    VARIABLE        reduce using rule 17 (ADD -> VARIABLE + NUMBER .)
+    PRINT           reduce using rule 17 (ADD -> VARIABLE + NUMBER .)
+    NUMBER          reduce using rule 17 (ADD -> VARIABLE + NUMBER .)
+    $end            reduce using rule 17 (ADD -> VARIABLE + NUMBER .)
+    RP              reduce using rule 17 (ADD -> VARIABLE + NUMBER .)
+    ,               reduce using rule 17 (ADD -> VARIABLE + NUMBER .)
+
+
+state 42
+
+    (22) SUB -> VARIABLE - VARIABLE .
+
+    +               reduce using rule 22 (SUB -> VARIABLE - VARIABLE .)
+    -               reduce using rule 22 (SUB -> VARIABLE - VARIABLE .)
+    *               reduce using rule 22 (SUB -> VARIABLE - VARIABLE .)
+    /               reduce using rule 22 (SUB -> VARIABLE - VARIABLE .)
+    VARIABLE        reduce using rule 22 (SUB -> VARIABLE - VARIABLE .)
+    PRINT           reduce using rule 22 (SUB -> VARIABLE - VARIABLE .)
+    NUMBER          reduce using rule 22 (SUB -> VARIABLE - VARIABLE .)
+    $end            reduce using rule 22 (SUB -> VARIABLE - VARIABLE .)
+    RP              reduce using rule 22 (SUB -> VARIABLE - VARIABLE .)
+    ,               reduce using rule 22 (SUB -> VARIABLE - VARIABLE .)
+
+
+state 43
+
+    (23) SUB -> VARIABLE - NUMBER .
+
+    +               reduce using rule 23 (SUB -> VARIABLE - NUMBER .)
+    -               reduce using rule 23 (SUB -> VARIABLE - NUMBER .)
+    *               reduce using rule 23 (SUB -> VARIABLE - NUMBER .)
+    /               reduce using rule 23 (SUB -> VARIABLE - NUMBER .)
+    VARIABLE        reduce using rule 23 (SUB -> VARIABLE - NUMBER .)
+    PRINT           reduce using rule 23 (SUB -> VARIABLE - NUMBER .)
+    NUMBER          reduce using rule 23 (SUB -> VARIABLE - NUMBER .)
+    $end            reduce using rule 23 (SUB -> VARIABLE - NUMBER .)
+    RP              reduce using rule 23 (SUB -> VARIABLE - NUMBER .)
+    ,               reduce using rule 23 (SUB -> VARIABLE - NUMBER .)
+
+
+state 44
+
+    (28) MUL -> VARIABLE * VARIABLE .
+
+    +               reduce using rule 28 (MUL -> VARIABLE * VARIABLE .)
+    -               reduce using rule 28 (MUL -> VARIABLE * VARIABLE .)
+    *               reduce using rule 28 (MUL -> VARIABLE * VARIABLE .)
+    /               reduce using rule 28 (MUL -> VARIABLE * VARIABLE .)
+    VARIABLE        reduce using rule 28 (MUL -> VARIABLE * VARIABLE .)
+    PRINT           reduce using rule 28 (MUL -> VARIABLE * VARIABLE .)
+    NUMBER          reduce using rule 28 (MUL -> VARIABLE * VARIABLE .)
+    $end            reduce using rule 28 (MUL -> VARIABLE * VARIABLE .)
+    RP              reduce using rule 28 (MUL -> VARIABLE * VARIABLE .)
+    ,               reduce using rule 28 (MUL -> VARIABLE * VARIABLE .)
+
+
+state 45
+
+    (29) MUL -> VARIABLE * NUMBER .
+
+    +               reduce using rule 29 (MUL -> VARIABLE * NUMBER .)
+    -               reduce using rule 29 (MUL -> VARIABLE * NUMBER .)
+    *               reduce using rule 29 (MUL -> VARIABLE * NUMBER .)
+    /               reduce using rule 29 (MUL -> VARIABLE * NUMBER .)
+    VARIABLE        reduce using rule 29 (MUL -> VARIABLE * NUMBER .)
+    PRINT           reduce using rule 29 (MUL -> VARIABLE * NUMBER .)
+    NUMBER          reduce using rule 29 (MUL -> VARIABLE * NUMBER .)
+    $end            reduce using rule 29 (MUL -> VARIABLE * NUMBER .)
+    RP              reduce using rule 29 (MUL -> VARIABLE * NUMBER .)
+    ,               reduce using rule 29 (MUL -> VARIABLE * NUMBER .)
+
+
+state 46
+
+    (34) DIV -> VARIABLE / VARIABLE .
+
+    +               reduce using rule 34 (DIV -> VARIABLE / VARIABLE .)
+    -               reduce using rule 34 (DIV -> VARIABLE / VARIABLE .)
+    *               reduce using rule 34 (DIV -> VARIABLE / VARIABLE .)
+    /               reduce using rule 34 (DIV -> VARIABLE / VARIABLE .)
+    VARIABLE        reduce using rule 34 (DIV -> VARIABLE / VARIABLE .)
+    PRINT           reduce using rule 34 (DIV -> VARIABLE / VARIABLE .)
+    NUMBER          reduce using rule 34 (DIV -> VARIABLE / VARIABLE .)
+    $end            reduce using rule 34 (DIV -> VARIABLE / VARIABLE .)
+    RP              reduce using rule 34 (DIV -> VARIABLE / VARIABLE .)
+    ,               reduce using rule 34 (DIV -> VARIABLE / VARIABLE .)
+
+
+state 47
+
+    (35) DIV -> VARIABLE / NUMBER .
+
+    +               reduce using rule 35 (DIV -> VARIABLE / NUMBER .)
+    -               reduce using rule 35 (DIV -> VARIABLE / NUMBER .)
+    *               reduce using rule 35 (DIV -> VARIABLE / NUMBER .)
+    /               reduce using rule 35 (DIV -> VARIABLE / NUMBER .)
+    VARIABLE        reduce using rule 35 (DIV -> VARIABLE / NUMBER .)
+    PRINT           reduce using rule 35 (DIV -> VARIABLE / NUMBER .)
+    NUMBER          reduce using rule 35 (DIV -> VARIABLE / NUMBER .)
+    $end            reduce using rule 35 (DIV -> VARIABLE / NUMBER .)
+    RP              reduce using rule 35 (DIV -> VARIABLE / NUMBER .)
+    ,               reduce using rule 35 (DIV -> VARIABLE / NUMBER .)
+
+
+state 48
+
+    (14) ADD -> NUMBER + NUMBER .
+
+    +               reduce using rule 14 (ADD -> NUMBER + NUMBER .)
+    -               reduce using rule 14 (ADD -> NUMBER + NUMBER .)
+    *               reduce using rule 14 (ADD -> NUMBER + NUMBER .)
+    /               reduce using rule 14 (ADD -> NUMBER + NUMBER .)
+    VARIABLE        reduce using rule 14 (ADD -> NUMBER + NUMBER .)
+    PRINT           reduce using rule 14 (ADD -> NUMBER + NUMBER .)
+    NUMBER          reduce using rule 14 (ADD -> NUMBER + NUMBER .)
+    $end            reduce using rule 14 (ADD -> NUMBER + NUMBER .)
+    RP              reduce using rule 14 (ADD -> NUMBER + NUMBER .)
+    ,               reduce using rule 14 (ADD -> NUMBER + NUMBER .)
+
+
+state 49
+
+    (15) ADD -> NUMBER + VARIABLE .
+
+    +               reduce using rule 15 (ADD -> NUMBER + VARIABLE .)
+    -               reduce using rule 15 (ADD -> NUMBER + VARIABLE .)
+    *               reduce using rule 15 (ADD -> NUMBER + VARIABLE .)
+    /               reduce using rule 15 (ADD -> NUMBER + VARIABLE .)
+    VARIABLE        reduce using rule 15 (ADD -> NUMBER + VARIABLE .)
+    PRINT           reduce using rule 15 (ADD -> NUMBER + VARIABLE .)
+    NUMBER          reduce using rule 15 (ADD -> NUMBER + VARIABLE .)
+    $end            reduce using rule 15 (ADD -> NUMBER + VARIABLE .)
+    RP              reduce using rule 15 (ADD -> NUMBER + VARIABLE .)
+    ,               reduce using rule 15 (ADD -> NUMBER + VARIABLE .)
+
+
+state 50
+
+    (20) SUB -> NUMBER - NUMBER .
+
+    +               reduce using rule 20 (SUB -> NUMBER - NUMBER .)
+    -               reduce using rule 20 (SUB -> NUMBER - NUMBER .)
+    *               reduce using rule 20 (SUB -> NUMBER - NUMBER .)
+    /               reduce using rule 20 (SUB -> NUMBER - NUMBER .)
+    VARIABLE        reduce using rule 20 (SUB -> NUMBER - NUMBER .)
+    PRINT           reduce using rule 20 (SUB -> NUMBER - NUMBER .)
+    NUMBER          reduce using rule 20 (SUB -> NUMBER - NUMBER .)
+    $end            reduce using rule 20 (SUB -> NUMBER - NUMBER .)
+    RP              reduce using rule 20 (SUB -> NUMBER - NUMBER .)
+    ,               reduce using rule 20 (SUB -> NUMBER - NUMBER .)
+
+
+state 51
+
+    (21) SUB -> NUMBER - VARIABLE .
+
+    +               reduce using rule 21 (SUB -> NUMBER - VARIABLE .)
+    -               reduce using rule 21 (SUB -> NUMBER - VARIABLE .)
+    *               reduce using rule 21 (SUB -> NUMBER - VARIABLE .)
+    /               reduce using rule 21 (SUB -> NUMBER - VARIABLE .)
+    VARIABLE        reduce using rule 21 (SUB -> NUMBER - VARIABLE .)
+    PRINT           reduce using rule 21 (SUB -> NUMBER - VARIABLE .)
+    NUMBER          reduce using rule 21 (SUB -> NUMBER - VARIABLE .)
+    $end            reduce using rule 21 (SUB -> NUMBER - VARIABLE .)
+    RP              reduce using rule 21 (SUB -> NUMBER - VARIABLE .)
+    ,               reduce using rule 21 (SUB -> NUMBER - VARIABLE .)
+
+
+state 52
+
+    (26) MUL -> NUMBER * NUMBER .
+
+    +               reduce using rule 26 (MUL -> NUMBER * NUMBER .)
+    -               reduce using rule 26 (MUL -> NUMBER * NUMBER .)
+    *               reduce using rule 26 (MUL -> NUMBER * NUMBER .)
+    /               reduce using rule 26 (MUL -> NUMBER * NUMBER .)
+    VARIABLE        reduce using rule 26 (MUL -> NUMBER * NUMBER .)
+    PRINT           reduce using rule 26 (MUL -> NUMBER * NUMBER .)
+    NUMBER          reduce using rule 26 (MUL -> NUMBER * NUMBER .)
+    $end            reduce using rule 26 (MUL -> NUMBER * NUMBER .)
+    RP              reduce using rule 26 (MUL -> NUMBER * NUMBER .)
+    ,               reduce using rule 26 (MUL -> NUMBER * NUMBER .)
+
+
+state 53
+
+    (27) MUL -> NUMBER * VARIABLE .
+
+    +               reduce using rule 27 (MUL -> NUMBER * VARIABLE .)
+    -               reduce using rule 27 (MUL -> NUMBER * VARIABLE .)
+    *               reduce using rule 27 (MUL -> NUMBER * VARIABLE .)
+    /               reduce using rule 27 (MUL -> NUMBER * VARIABLE .)
+    VARIABLE        reduce using rule 27 (MUL -> NUMBER * VARIABLE .)
+    PRINT           reduce using rule 27 (MUL -> NUMBER * VARIABLE .)
+    NUMBER          reduce using rule 27 (MUL -> NUMBER * VARIABLE .)
+    $end            reduce using rule 27 (MUL -> NUMBER * VARIABLE .)
+    RP              reduce using rule 27 (MUL -> NUMBER * VARIABLE .)
+    ,               reduce using rule 27 (MUL -> NUMBER * VARIABLE .)
+
+
+state 54
+
+    (32) DIV -> NUMBER / NUMBER .
+
+    +               reduce using rule 32 (DIV -> NUMBER / NUMBER .)
+    -               reduce using rule 32 (DIV -> NUMBER / NUMBER .)
+    *               reduce using rule 32 (DIV -> NUMBER / NUMBER .)
+    /               reduce using rule 32 (DIV -> NUMBER / NUMBER .)
+    VARIABLE        reduce using rule 32 (DIV -> NUMBER / NUMBER .)
+    PRINT           reduce using rule 32 (DIV -> NUMBER / NUMBER .)
+    NUMBER          reduce using rule 32 (DIV -> NUMBER / NUMBER .)
+    $end            reduce using rule 32 (DIV -> NUMBER / NUMBER .)
+    RP              reduce using rule 32 (DIV -> NUMBER / NUMBER .)
+    ,               reduce using rule 32 (DIV -> NUMBER / NUMBER .)
+
+
+state 55
+
+    (33) DIV -> NUMBER / VARIABLE .
+
+    +               reduce using rule 33 (DIV -> NUMBER / VARIABLE .)
+    -               reduce using rule 33 (DIV -> NUMBER / VARIABLE .)
+    *               reduce using rule 33 (DIV -> NUMBER / VARIABLE .)
+    /               reduce using rule 33 (DIV -> NUMBER / VARIABLE .)
+    VARIABLE        reduce using rule 33 (DIV -> NUMBER / VARIABLE .)
+    PRINT           reduce using rule 33 (DIV -> NUMBER / VARIABLE .)
+    NUMBER          reduce using rule 33 (DIV -> NUMBER / VARIABLE .)
+    $end            reduce using rule 33 (DIV -> NUMBER / VARIABLE .)
+    RP              reduce using rule 33 (DIV -> NUMBER / VARIABLE .)
+    ,               reduce using rule 33 (DIV -> NUMBER / VARIABLE .)
+
+
+state 56
+
+    (38) print -> PRINT LP pcontent . RP
+    (39) pcontent -> pcontent . , VARIABLE
+    (40) pcontent -> pcontent . , NUMBER
+    (41) pcontent -> pcontent . , operation
+
+    RP              shift and go to state 60
+    ,               shift and go to state 61
+
+
+state 57
+
+    (42) pcontent -> VARIABLE .
+    (16) ADD -> VARIABLE . + VARIABLE
+    (17) ADD -> VARIABLE . + NUMBER
+    (22) SUB -> VARIABLE . - VARIABLE
+    (23) SUB -> VARIABLE . - NUMBER
+    (28) MUL -> VARIABLE . * VARIABLE
+    (29) MUL -> VARIABLE . * NUMBER
+    (34) DIV -> VARIABLE . / VARIABLE
+    (35) DIV -> VARIABLE . / NUMBER
+
+    RP              reduce using rule 42 (pcontent -> VARIABLE .)
+    ,               reduce using rule 42 (pcontent -> VARIABLE .)
+    +               shift and go to state 20
+    -               shift and go to state 21
+    *               shift and go to state 22
+    /               shift and go to state 23
+
+
+state 58
+
+    (43) pcontent -> NUMBER .
+    (14) ADD -> NUMBER . + NUMBER
+    (15) ADD -> NUMBER . + VARIABLE
+    (20) SUB -> NUMBER . - NUMBER
+    (21) SUB -> NUMBER . - VARIABLE
+    (26) MUL -> NUMBER . * NUMBER
+    (27) MUL -> NUMBER . * VARIABLE
+    (32) DIV -> NUMBER . / NUMBER
+    (33) DIV -> NUMBER . / VARIABLE
+
+    RP              reduce using rule 43 (pcontent -> NUMBER .)
+    ,               reduce using rule 43 (pcontent -> NUMBER .)
+    +               shift and go to state 24
+    -               shift and go to state 25
+    *               shift and go to state 26
+    /               shift and go to state 27
+
+
+state 59
+
+    (44) pcontent -> operation .
+    (18) ADD -> operation . + NUMBER
+    (19) ADD -> operation . + VARIABLE
+    (24) SUB -> operation . - NUMBER
+    (25) SUB -> operation . - VARIABLE
+    (30) MUL -> operation . * NUMBER
+    (31) MUL -> operation . * VARIABLE
+    (36) DIV -> operation . / NUMBER
+    (37) DIV -> operation . / VARIABLE
+
+    RP              reduce using rule 44 (pcontent -> operation .)
+    ,               reduce using rule 44 (pcontent -> operation .)
+    +               shift and go to state 15
+    -               shift and go to state 16
+    *               shift and go to state 17
+    /               shift and go to state 18
+
+
+state 60
+
+    (38) print -> PRINT LP pcontent RP .
+
+    VARIABLE        reduce using rule 38 (print -> PRINT LP pcontent RP .)
+    PRINT           reduce using rule 38 (print -> PRINT LP pcontent RP .)
+    NUMBER          reduce using rule 38 (print -> PRINT LP pcontent RP .)
+    $end            reduce using rule 38 (print -> PRINT LP pcontent RP .)
+
+
+state 61
+
+    (39) pcontent -> pcontent , . VARIABLE
+    (40) pcontent -> pcontent , . NUMBER
+    (41) pcontent -> pcontent , . operation
+    (10) operation -> . ADD
+    (11) operation -> . SUB
+    (12) operation -> . MUL
+    (13) operation -> . DIV
+    (14) ADD -> . NUMBER + NUMBER
+    (15) ADD -> . NUMBER + VARIABLE
+    (16) ADD -> . VARIABLE + VARIABLE
+    (17) ADD -> . VARIABLE + NUMBER
+    (18) ADD -> . operation + NUMBER
+    (19) ADD -> . operation + VARIABLE
+    (20) SUB -> . NUMBER - NUMBER
+    (21) SUB -> . NUMBER - VARIABLE
+    (22) SUB -> . VARIABLE - VARIABLE
+    (23) SUB -> . VARIABLE - NUMBER
+    (24) SUB -> . operation - NUMBER
+    (25) SUB -> . operation - VARIABLE
+    (26) MUL -> . NUMBER * NUMBER
+    (27) MUL -> . NUMBER * VARIABLE
+    (28) MUL -> . VARIABLE * VARIABLE
+    (29) MUL -> . VARIABLE * NUMBER
+    (30) MUL -> . operation * NUMBER
+    (31) MUL -> . operation * VARIABLE
+    (32) DIV -> . NUMBER / NUMBER
+    (33) DIV -> . NUMBER / VARIABLE
+    (34) DIV -> . VARIABLE / VARIABLE
+    (35) DIV -> . VARIABLE / NUMBER
+    (36) DIV -> . operation / NUMBER
+    (37) DIV -> . operation / VARIABLE
+
+    VARIABLE        shift and go to state 62
+    NUMBER          shift and go to state 63
+
+    operation                      shift and go to state 64
+    ADD                            shift and go to state 9
+    SUB                            shift and go to state 10
+    MUL                            shift and go to state 11
+    DIV                            shift and go to state 12
+
+state 62
+
+    (39) pcontent -> pcontent , VARIABLE .
+    (16) ADD -> VARIABLE . + VARIABLE
+    (17) ADD -> VARIABLE . + NUMBER
+    (22) SUB -> VARIABLE . - VARIABLE
+    (23) SUB -> VARIABLE . - NUMBER
+    (28) MUL -> VARIABLE . * VARIABLE
+    (29) MUL -> VARIABLE . * NUMBER
+    (34) DIV -> VARIABLE . / VARIABLE
+    (35) DIV -> VARIABLE . / NUMBER
+
+    RP              reduce using rule 39 (pcontent -> pcontent , VARIABLE .)
+    ,               reduce using rule 39 (pcontent -> pcontent , VARIABLE .)
+    +               shift and go to state 20
+    -               shift and go to state 21
+    *               shift and go to state 22
+    /               shift and go to state 23
+
+
+state 63
+
+    (40) pcontent -> pcontent , NUMBER .
+    (14) ADD -> NUMBER . + NUMBER
+    (15) ADD -> NUMBER . + VARIABLE
+    (20) SUB -> NUMBER . - NUMBER
+    (21) SUB -> NUMBER . - VARIABLE
+    (26) MUL -> NUMBER . * NUMBER
+    (27) MUL -> NUMBER . * VARIABLE
+    (32) DIV -> NUMBER . / NUMBER
+    (33) DIV -> NUMBER . / VARIABLE
+
+    RP              reduce using rule 40 (pcontent -> pcontent , NUMBER .)
+    ,               reduce using rule 40 (pcontent -> pcontent , NUMBER .)
+    +               shift and go to state 24
+    -               shift and go to state 25
+    *               shift and go to state 26
+    /               shift and go to state 27
+
+
+state 64
+
+    (41) pcontent -> pcontent , operation .
+    (18) ADD -> operation . + NUMBER
+    (19) ADD -> operation . + VARIABLE
+    (24) SUB -> operation . - NUMBER
+    (25) SUB -> operation . - VARIABLE
+    (30) MUL -> operation . * NUMBER
+    (31) MUL -> operation . * VARIABLE
+    (36) DIV -> operation . / NUMBER
+    (37) DIV -> operation . / VARIABLE
+
+    RP              reduce using rule 41 (pcontent -> pcontent , operation .)
+    ,               reduce using rule 41 (pcontent -> pcontent , operation .)
+    +               shift and go to state 15
+    -               shift and go to state 16
+    *               shift and go to state 17
+    /               shift and go to state 18
+

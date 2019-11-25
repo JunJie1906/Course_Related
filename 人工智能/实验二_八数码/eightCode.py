@@ -20,18 +20,18 @@ class node:
 
 
 class eightCode:
-    def __init__(self,begin,ans='123804765'):
+    def __init__(self,begin,size = 3,ans='123804765'):
         self.ans = ans
         self.begin = begin
         self.OPEN = []
         self.CLOSE = []
-
+        self.size = size
     def f_manhattan(self,state):
         dis = 0
         for i in range(len(state)):
             pos = self.ans.find(state[i])
-            dis += abs(pos - i) % 3
-            dis += abs(pos - i) // 3
+            dis += abs(pos - i) % self.size
+            dis += abs(pos - i) // self.size
         return dis
 
     def f_notInPos(self,state):
@@ -44,7 +44,7 @@ class eightCode:
     def move_left(self,state):
         pos = state.find('0')
         state = list(state)
-        if pos%3==0:
+        if pos%self.size==0:
             return
         else:
             state[pos],state[pos-1]=state[pos-1],state[pos]
@@ -56,7 +56,7 @@ class eightCode:
     def move_right(self, state):
         pos = state.find('0')
         state = list(state)
-        if pos%3==2:
+        if pos%self.size==self.size-1:
             return
         else:
             state[pos],state[pos+1]=state[pos+1],state[pos]
@@ -68,10 +68,10 @@ class eightCode:
     def move_up(self, state):
         pos = state.find('0')
         state = list(state)
-        if pos //3 == 0:
+        if pos //self.size == 0:
             return
         else:
-            state[pos], state[pos-3] = state[pos-3], state[pos]
+            state[pos], state[pos-self.size] = state[pos-self.size], state[pos]
         s = ''
         for i in state:
             s += i
@@ -80,10 +80,10 @@ class eightCode:
     def move_down(self, state):
         pos = state.find('0')
         state = list(state)
-        if pos // 3 == 2:
+        if pos // self.size == self.size-1:
             return
         else:
-            state[pos], state[pos + 3] = state[pos + 3], state[pos]
+            state[pos], state[pos + self.size] = state[pos + self.size], state[pos]
         s = ''
         for i in state:
             s += i
@@ -126,14 +126,13 @@ class eightCode:
         return False
 
     def print_road_manhattan(self):
-
-        lst = []
-
+        self.__init__(self.begin, self.size, self.ans)
         Node = self.run_manhattan()
         print('f_manhattan')
         print('OPEN状态数：', len(self.OPEN))
         print('CLOSE状态数：',len(self.CLOSE))
         print('步数：',Node.steps)
+        lst = []
         lst.append(Node)
         father = Node.father
         while father!=None:
@@ -145,7 +144,7 @@ class eightCode:
             self.show_board(lst[len(lst)-i-1].state)
 
     def print_road_notInPos(self):
-
+        self.__init__(self.begin,self.size,self.ans)
         Node = self.run_notInPos()
         print('f_notInPos')
         print('OPEN状态数：', len(self.OPEN))
@@ -164,12 +163,14 @@ class eightCode:
 
     def show_board(self,s):
         for i in range(len(s)):
-            if (i+3)%3==0:
+            if (i+self.size)%self.size==0:
                 if i!=0:
                     print()
             print(s[i],end=' ')
         print()
-# code = eightCode('123456780')
-# code.print_road_notInPos()
-code = eightCode('123456780','012345678')
+
+# 0 是空白
+code = eightCode('123456789qwe0rty',4,'123456789qwerty0')
 code.print_road_manhattan()
+code.print_road_notInPos()
+
