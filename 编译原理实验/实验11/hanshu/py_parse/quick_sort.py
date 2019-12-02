@@ -1,9 +1,6 @@
-def quick_sort(array, left, right,i){
-    print(array, left, right)
+def quick_sort(array, left, right){
     if(left >= right){
-
         return
-
     }
     low = left
     high = right
@@ -19,18 +16,12 @@ def quick_sort(array, left, right,i){
         array[right] = array[left]
     }
     array[right] = key
-    print(i,low, left - 1)
-    print(0)
-    quick_sort(array, low, left - 1,i+1)
-    print(i,low, left - 1)
-    print(i,left + 1, high)
-    print(0)
-    quick_sort(array, left + 1, high,i+1)
+    quick_sort(array, low, left - 1)
+    quick_sort(array, left + 1, high)
 }
 
-a=[122,133,1,2,999,0,99]
+a=[4123,2,1,123,20,124,4,235,2,534,56,3,452,16,7,4,6,4,6,456,7]
 
-quick_sort(a,0,len(a)-1,0)
+quick_sort(a,0,len(a)-1)
 
 print(a)
-

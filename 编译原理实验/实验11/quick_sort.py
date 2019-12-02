@@ -1,4 +1,4 @@
-def quick_sort(array, left, right):
+def quick_sort(array, left, right){
     if(left >= right){
         return
     }
@@ -18,7 +18,7 @@ def quick_sort(array, left, right):
     array[right] = key
     quick_sort(array, low, left - 1)
     quick_sort(array, left + 1, high)
-
+}
 
 a=[1,2,4,3,6,5,7,3]
 

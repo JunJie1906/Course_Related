@@ -232,8 +232,6 @@ def p_assignment(t):
                 | array_term '*' '=' term
                 | VARIABLE '/' '=' term
                 | array_term '/' '=' term
-
-
     '''
     t[0] = node('[assignment]')
 

@@ -1,6 +1,6 @@
 from py_syn import *
 from utils import *
-import copy
+
 class Tran:
     def __init__(self):
         self.has_if = False
@@ -24,10 +24,7 @@ class Tran:
         elif NODE.getVal()==None:
             NODE.setVal(self.VariableTable[NODE.getData()])
 
-
-
-
-    def dfs(self,NODE):
+    def dfs(self,NODE,argu = False):
         if self.RETURN != []:
             return
 
@@ -61,8 +58,9 @@ class Tran:
             self.FunctionTable[NODE._children[0].getData()] = NODE
             return
         elif NODE.getData() == '[RETURN]':
+            self.dfs(NODE._children[0])
             if NODE._children[0].getData() == '[None]':
-                self.RETURN.append(None)
+                self.RETURN.append('None')
             elif NODE._children[0].getVal() != None:
                 self.RETURN.append(NODE._children[0].getVal())
             else:
@@ -82,11 +80,7 @@ class Tran:
                 elif FuncNode._children[1]._children[index].getData() not in self.deleted:
                     self.deleted.append(FuncNode._children[1]._children[index].getData())
 
-
-                # print(self.VariableTable)
-                self.dfs(NODE._children[1]._children[index])
-                # print(NODE._children[1]._children[index].getData())
-
+                self.dfs(NODE._children[1]._children[index],True)
 
                 if NODE._children[1]._children[index].getData() in self.VariableTable and NODE._children[1]._children[index].getData() in self.modified:
                     self.VariableTable[FuncNode._children[1]._children[index].getData()] = self.modified[NODE._children[1]._children[index].getData()]
@@ -185,23 +179,38 @@ class Tran:
         elif NODE.getData() == '[ADD]':
             child1 = NODE.getChildren()[0]
             child2 = NODE.getChildren()[1]
-            c1_val = child1.getVal()
-            c2_val = child2.getVal()
-            if c1_val == None:
-                c1_val = self.VariableTable[child1.getData()]
-            if c2_val == None:
-                c2_val = self.VariableTable[child2.getData()]
+            if argu == True:
+                self.getVal(child1)
+                self.getVal(child2)
+                c1_val = child1.getVal()
+                c2_val = child2.getVal()
+            else:
+
+                c1_val = child1.getVal()
+                c2_val = child2.getVal()
+                if c1_val == None:
+                    c1_val = self.VariableTable[child1.getData()]
+                if c2_val == None:
+                    c2_val = self.VariableTable[child2.getData()]
             NODE.setVal(c1_val + c2_val)
 
         elif NODE.getData() == '[SUB]':
             child1 = NODE.getChildren()[0]
             child2 = NODE.getChildren()[1]
-            c1_val = child1.getVal()
-            c2_val = child2.getVal()
-            if c1_val == None:
-                c1_val = self.VariableTable[child1.getData()]
-            if c2_val == None:
-                c2_val = self.VariableTable[child2.getData()]
+            if argu == True:
+                self.getVal(child1)
+                self.getVal(child2)
+                c1_val = child1.getVal()
+                c2_val = child2.getVal()
+            else:
+
+                c1_val = child1.getVal()
+                c2_val = child2.getVal()
+                if c1_val == None:
+                    c1_val = self.VariableTable[child1.getData()]
+                if c2_val == None:
+                    c2_val = self.VariableTable[child2.getData()]
+            NODE.setVal(c1_val + c2_val)
             NODE.setVal(c1_val - c2_val)
 
         elif NODE.getData() == '[MUL]':
