@@ -1,0 +1,541 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>review</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n2"><a class="md-toc-inner" href="#概述">概述</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n3"><a class="md-toc-inner" href="#网络的几个性能标准">网络的几个性能标准</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n4"><a class="md-toc-inner" href="#速率">速率</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n7"><a class="md-toc-inner" href="#带宽">带宽</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n10"><a class="md-toc-inner" href="#吞吐量">吞吐量</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n13"><a class="md-toc-inner" href="#时延">时延</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n14"><a class="md-toc-inner" href="#发送时延">发送时延</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n16"><a class="md-toc-inner" href="#传播时延">传播时延</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n18"><a class="md-toc-inner" href="#处理时延">处理时延</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n20"><a class="md-toc-inner" href="#排队时延">排队时延</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n23"><a class="md-toc-inner" href="#总时延">总时延</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n25"><a class="md-toc-inner" href="#时延带宽积">时延带宽积</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n28"><a class="md-toc-inner" href="#利用率">利用率</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n29"><a class="md-toc-inner" href="#信道利用率">信道利用率</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n32"><a class="md-toc-inner" href="#网络利用率">网络利用率</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n34"><a class="md-toc-inner" href="#时延与网络利用率的关系">时延与网络利用率的关系</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n38"><a class="md-toc-inner" href="#解释">解释</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n41"><a class="md-toc-inner" href="#分层">分层</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n42"><a class="md-toc-inner" href="#osi七层协议">OSI七层协议</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n50"><a class="md-toc-inner" href="#五层协议体系结构">五层协议体系结构</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n56"><a class="md-toc-inner" href="#传输过程">传输过程</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n59"><a class="md-toc-inner" href="#物理层">物理层</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n60"><a class="md-toc-inner" href="#通信概念">通信概念</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n61"><a class="md-toc-inner" href="#单向通信">单向通信</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n63"><a class="md-toc-inner" href="#半双工通信">半双工通信</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n65"><a class="md-toc-inner" href="#全双工通信">全双工通信</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n67"><a class="md-toc-inner" href="#信道复用技术">信道复用技术</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n68"><a class="md-toc-inner" href="#频分复用fdm-frequency-division-multiplexing">频分复用FDM (Frequency Division Multiplexing)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n70"><a class="md-toc-inner" href="#时分复用tdm-time-division-multiplexing">时分复用TDM (Time Division Multiplexing)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n73"><a class="md-toc-inner" href="#统计时分复用stdmstatistic-tdm）">统计时分复用STDM（Statistic TDM）</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n76"><a class="md-toc-inner" href="#波分复用wdmwavelength-division-multiplexing">波分复用WDM(Wavelength Division Multiplexing)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n79"><a class="md-toc-inner" href="#码分复用">码分复用</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n82"><a class="md-toc-inner" href="#数据链路层">数据链路层</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n83"><a class="md-toc-inner" href="#三个基本问题">三个基本问题</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n84"><a class="md-toc-inner" href="#封装成帧">封装成帧</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n86"><a class="md-toc-inner" href="#首部尾部">首部尾部</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n89"><a class="md-toc-inner" href="#透明传输">透明传输</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n91"><a class="md-toc-inner" href="#解决方法">解决方法：</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n92"><a class="md-toc-inner" href="#字节填充">字节填充</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n94"><a class="md-toc-inner" href="#字符填充">字符填充</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n96"><a class="md-toc-inner" href="#差错控制">差错控制</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n97"><a class="md-toc-inner" href="#crc校验">CRC校验</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n100"><a class="md-toc-inner" href="#ppp协议point-to-point-protocol）">PPP协议（Point-to-Point Protocol）</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n102"><a class="md-toc-inner" href="#ppp协议帧格式">PPP协议帧格式</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n113"><a class="md-toc-inner" href="#局域网">局域网</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n114"><a class="md-toc-inner" href="#常见的拓扑结构">常见的拓扑结构</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n126"><a class="md-toc-inner" href="#10base-t">10BASE-T</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n129"><a class="md-toc-inner" href="#csmacd协议">CSMA/CD协议</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n130"><a class="md-toc-inner" href="#解释-n130">解释</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n144"><a class="md-toc-inner" href="#传数据过程">传数据过程</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n151"><a class="md-toc-inner" href="#争用期长度">争用期长度</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n155"><a class="md-toc-inner" href="#mac地址">MAC地址</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n159"><a class="md-toc-inner" href="#以太网的mac帧格式">以太网的MAC帧格式</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n165"><a class="md-toc-inner" href="#帧间最小间隔">帧间最小间隔</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n167"><a class="md-toc-inner" href="#扩展的局域网">扩展的局域网</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n168"><a class="md-toc-inner" href="#物理层上的扩展">物理层上的扩展</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n169"><a class="md-toc-inner" href="#转发器中继器集线器">转发器/中继器/集线器</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n171"><a class="md-toc-inner" href="#优点">优点</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n173"><a class="md-toc-inner" href="#缺点">缺点</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n176"><a class="md-toc-inner" href="#链路层的扩展">链路层的扩展</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n177"><a class="md-toc-inner" href="#网桥">网桥</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n178"><a class="md-toc-inner" href="#功能">功能</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n184"><a class="md-toc-inner" href="#缺点-n184">缺点</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n194"><a class="md-toc-inner" href="#网桥和集线器的不同">网桥和集线器的不同</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n197"><a class="md-toc-inner" href="#转发表建立过程">转发表建立过程</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n200"><a class="md-toc-inner" href="#转发表的信息">转发表的信息</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n205"><a class="md-toc-inner" href="#以太网交换机">以太网交换机</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n209"><a class="md-toc-inner" href="#网络层">网络层</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n210"><a class="md-toc-inner" href="#网络的划分">网络的划分</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n211"><a class="md-toc-inner" href="#abcde类网络">ABCDE类网络</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n214"><a class="md-toc-inner" href="#abc类网络ip范围">ABC类网络IP范围</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n216"><a class="md-toc-inner" href="#特殊的ip地址">特殊的IP地址</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n217"><a class="md-toc-inner" href="#广播地址">广播地址</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n219"><a class="md-toc-inner" href="#组播地址">组播地址</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n226"><a class="md-toc-inner" href="#私有地址">私有地址</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n230"><a class="md-toc-inner" href="#环回地址">环回地址</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n243"><a class="md-toc-inner" href="#路由器">路由器</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n244"><a class="md-toc-inner" href="#分组转发流程">分组转发流程</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n245"><a class="md-toc-inner" href="#产生原因">产生原因</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n248"><a class="md-toc-inner" href="#特定主机路由">特定主机路由</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n251"><a class="md-toc-inner" href="#默认路由">默认路由</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n254"><a class="md-toc-inner" href="#分组转发流程-n254">分组转发流程</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n263"><a class="md-toc-inner" href="#arp协议">ARP协议</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n265"><a class="md-toc-inner" href="#arp高速缓存">ARP高速缓存</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n268"><a class="md-toc-inner" href="#rarp">RARP</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n270"><a class="md-toc-inner" href="#ipv4数据报">IPv4数据报</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n271"><a class="md-toc-inner" href="#ipv4数据报格式">IPv4数据报格式</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n273"><a class="md-toc-inner" href="#版本">版本</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n275"><a class="md-toc-inner" href="#首部长度">首部长度</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n277"><a class="md-toc-inner" href="#区分服务">区分服务</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n280"><a class="md-toc-inner" href="#总长度">总长度</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n283"><a class="md-toc-inner" href="#标识">标识</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n285"><a class="md-toc-inner" href="#标志">标志</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n288"><a class="md-toc-inner" href="#mf-more-fragment">MF (More Fragment)</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n290"><a class="md-toc-inner" href="#df-dont-fragment">DF (Don't Fragment) </a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n292"><a class="md-toc-inner" href="#片偏移">片偏移</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n296"><a class="md-toc-inner" href="#生存时间">生存时间</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n298"><a class="md-toc-inner" href="#协议">协议</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n302"><a class="md-toc-inner" href="#首部检验和">首部检验和</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n308"><a class="md-toc-inner" href="#源地址目的地址">源地址/目的地址</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n310"><a class="md-toc-inner" href="#可变部分">可变部分</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n313"><a class="md-toc-inner" href="#ipv6">IPv6</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n370"><a class="md-toc-inner" href="#写法">写法</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n372"><a class="md-toc-inner" href="#0压缩">0压缩</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n369"><a class="md-toc-inner" href="#子网划分">子网划分</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n316"><a class="md-toc-inner" href="#子网掩码">子网掩码</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n318"><a class="md-toc-inner" href="#icmp">ICMP</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n320"><a class="md-toc-inner" href="#icmp-差错报告报文">ICMP 差错报告报文</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n321"><a class="md-toc-inner" href="#5种差错报告">5种差错报告</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n323"><a class="md-toc-inner" href="#icmp差错报告数据报内容">ICMP差错报告数据报内容</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n325"><a class="md-toc-inner" href="#icmp-询问报文">ICMP 询问报文</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n326"><a class="md-toc-inner" href="#2种询问报文">2种询问报文</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n328"><a class="md-toc-inner" href="#应用举例">应用举例</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n329"><a class="md-toc-inner" href="#ping">ping</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n331"><a class="md-toc-inner" href="#traceroute">traceroute</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n332"><a class="md-toc-inner" href="#工作流程">工作流程</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n336"><a class="md-toc-inner" href="#路由选择协议">路由选择协议</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n337"><a class="md-toc-inner" href="#内部网关协议">内部网关协议</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n338"><a class="md-toc-inner" href="#rip">RIP</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n339"><a class="md-toc-inner" href="#基于距离向量算法">基于距离向量算法</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n349"><a class="md-toc-inner" href="#特点">特点</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n351"><a class="md-toc-inner" href="#ospf">OSPF</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n353"><a class="md-toc-inner" href="#基于dijkstra最短路的算法">基于dijkstra最短路的算法</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n363"><a class="md-toc-inner" href="#传播方式">传播方式</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n377"><a class="md-toc-inner" href="#运输层">运输层</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n383"><a class="md-toc-inner" href="#知名端口号">知名端口号</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n395"><a class="md-toc-inner" href="#tcp">TCP</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n416"><a class="md-toc-inner" href="#报文段格式">报文段格式</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n399"><a class="md-toc-inner" href="#可靠传输的实现">可靠传输的实现</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n406"><a class="md-toc-inner" href="#滑动窗口">滑动窗口</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n422"><a class="md-toc-inner" href="#流量控制">流量控制</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n436"><a class="md-toc-inner" href="#拥塞控制">拥塞控制</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n402"><a class="md-toc-inner" href="#拥塞">拥塞</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n437"><a class="md-toc-inner" href="#慢开始和拥塞避免">慢开始和拥塞避免</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n408"><a class="md-toc-inner" href="#快重传和快恢复">快重传和快恢复</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n397"><a class="md-toc-inner" href="#连接建立">连接建立</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n455"><a class="md-toc-inner" href="#应用层">应用层</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n444"><a class="md-toc-inner" href="#dns">DNS</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n490"><a class="md-toc-inner" href="#域名分类">域名分类</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n484"><a class="md-toc-inner" href="#根域名">根域名</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n456"><a class="md-toc-inner" href="#顶级域名">顶级域名</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n464"><a class="md-toc-inner" href="#国家级">国家级</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n465"><a class="md-toc-inner" href="#通用顶级域名">通用顶级域名</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n476"><a class="md-toc-inner" href="#反向域名">反向域名</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n486"><a class="md-toc-inner" href="#二级域名三级域名">二级域名，三级域名......</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n458"><a class="md-toc-inner" href="#域名服务器">域名服务器</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n492"><a class="md-toc-inner" href="#查询方式">查询方式</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n494"><a class="md-toc-inner" href="#递归查询">递归查询</a></span><span role="listitem" class="md-toc-item md-toc-h5" data-ref="n495"><a class="md-toc-inner" href="#迭代查询">迭代查询</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n521"><a class="md-toc-inner" href="#ftp">FTP</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n536"><a class="md-toc-inner" href="#工作流程-n536">工作流程</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n537"><a class="md-toc-inner" href="#两个连接">两个连接</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n541"><a class="md-toc-inner" href="#两个端口号">两个端口号</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n538"><a class="md-toc-inner" href="#使用两个端口号的好处">使用两个端口号的好处</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n555"><a class="md-toc-inner" href="#wwwworld-wide-web）">WWW（World Wide Web）</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n557"><a class="md-toc-inner" href="#url">URL</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n561"><a class="md-toc-inner" href="#一般形式">一般形式</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n558"><a class="md-toc-inner" href="#http">http</a></span><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n579"><a class="md-toc-inner" href="#无线网">无线网</a></span></p></div><h1><a name="概述" class="md-header-anchor"></a><span>概述</span></h1><h2><a name="网络的几个性能标准" class="md-header-anchor"></a><span>网络的几个性能标准</span></h2><h3><a name="速率" class="md-header-anchor"></a><span>速率</span></h3><p><span>b/s</span></p><p><span>kb/s</span></p><h3><a name="带宽" class="md-header-anchor"></a><span>带宽</span></h3><p><span>b/s</span></p><p><strong><span>最高数据率</span></strong></p><h3><a name="吞吐量" class="md-header-anchor"></a><span>吞吐量</span></h3><p><span>单位时间内通过某个网络（信道，接口）的数据量</span></p><p><span>受带宽和网络额定速率限制</span></p><h3><a name="时延" class="md-header-anchor"></a><span>时延</span></h3><h4><a name="发送时延" class="md-header-anchor"></a><span>发送时延</span></h4><p><strong><span>发送</span></strong><span>开始到</span><strong><span>发送</span></strong><span>结束的时间</span></p><h4><a name="传播时延" class="md-header-anchor"></a><span>传播时延</span></h4><p><span>信道长度 / </span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="11.021ex" height="2.928ex" viewBox="0 -956.9 4745 1260.5" role="img" focusable="false" style="vertical-align: -0.705ex;"><defs><path stroke-width="0" id="E1-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path stroke-width="0" id="E1-MJMAIN-2217" d="M229 286Q216 420 216 436Q216 454 240 464Q241 464 245 464T251 465Q263 464 273 456T283 436Q283 419 277 356T270 286L328 328Q384 369 389 372T399 375Q412 375 423 365T435 338Q435 325 425 315Q420 312 357 282T289 250L355 219L425 184Q434 175 434 161Q434 146 425 136T401 125Q393 125 383 131T328 171L270 213Q283 79 283 63Q283 53 276 44T250 35Q231 35 224 44T216 63Q216 80 222 143T229 213L171 171Q115 130 110 127Q106 124 100 124Q87 124 76 134T64 161Q64 166 64 169T67 175T72 181T81 188T94 195T113 204T138 215T170 230T210 250L74 315Q65 324 65 338Q65 353 74 363T98 374Q106 374 116 368T171 328L229 286Z"></path><path stroke-width="0" id="E1-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path stroke-width="0" id="E1-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path stroke-width="0" id="E1-MJMAIN-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path stroke-width="0" id="E1-MJMATHI-6D" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path stroke-width="0" id="E1-MJMAIN-2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"></path><path stroke-width="0" id="E1-MJMATHI-73" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E1-MJMAIN-32" x="0" y="0"></use><use xlink:href="#E1-MJMAIN-2217" x="722" y="0"></use><g transform="translate(1444,0)"><use xlink:href="#E1-MJMAIN-31"></use><use xlink:href="#E1-MJMAIN-30" x="500" y="0"></use><use transform="scale(0.707)" xlink:href="#E1-MJMAIN-38" x="1414" y="555"></use></g><use xlink:href="#E1-MJMATHI-6D" x="2897" y="0"></use><use xlink:href="#E1-MJMAIN-2F" x="3775" y="0"></use><use xlink:href="#E1-MJMATHI-73" x="4275" y="0"></use></g></svg></span><script type="math/tex">2*10^8m/s</script><span> </span></p><h4><a name="处理时延" class="md-header-anchor"></a><span>处理时延</span></h4><p><span>交换结点为存储转发而进行一些必要的处理所花费的时间</span></p><h4><a name="排队时延" class="md-header-anchor"></a><span>排队时延</span></h4><p><span>结点缓存队列中分组排队所经历的时延。</span></p><p><span>取决于网络当时的通信量</span></p><h4><a name="总时延" class="md-header-anchor"></a><span>总时延</span></h4><p><span>发送时延+传播时延+处理时延+排队时延</span></p><h3><a name="时延带宽积" class="md-header-anchor"></a><span>时延带宽积</span></h3><p><strong><span>传播</span></strong><span>时延×带宽</span></p><p><span>链路的时延带宽积又称为</span><strong><span>以比特为单位的链路长度</span></strong><span>。 </span></p><h3><a name="利用率" class="md-header-anchor"></a><span>利用率</span></h3><h4><a name="信道利用率" class="md-header-anchor"></a><span>信道利用率</span></h4><p><span>指出</span><strong><span>某信道</span></strong><span>有百分之几的时间是被利用的（有数据通过）。</span></p><p><span>完全空闲的信道的利用率是零。</span></p><h4><a name="网络利用率" class="md-header-anchor"></a><span>网络利用率</span></h4><p><span>全网络的</span><strong><span>信道利用率</span></strong><span>的加权平均值。</span></p><h3><a name="时延与网络利用率的关系" class="md-header-anchor"></a><span>时延与网络利用率的关系</span></h3><p><span>若令 </span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2.977ex" height="2.344ex" viewBox="0 -755.9 1281.6 1009.2" role="img" focusable="false" style="vertical-align: -0.588ex;"><defs><path stroke-width="0" id="E2-MJMATHI-44" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path><path stroke-width="0" id="E2-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E2-MJMATHI-44" x="0" y="0"></use><use transform="scale(0.707)" xlink:href="#E2-MJMAIN-30" x="1170" y="-213"></use></g></svg></span><script type="math/tex">D_0</script><span> 表示网络空闲时的时延，</span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.923ex" height="1.877ex" viewBox="0 -755.9 828 808.1" role="img" focusable="false" style="vertical-align: -0.121ex;"><defs><path stroke-width="0" id="E3-MJMATHI-44" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E3-MJMATHI-44" x="0" y="0"></use></g></svg></span><script type="math/tex">D</script><span> 表示网络当前的时延</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104124438082.png" referrerpolicy="no-referrer" alt="image-20200104124438082"></p><p><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.781ex" height="1.994ex" viewBox="0 -755.9 767 858.4" role="img" focusable="false" style="vertical-align: -0.238ex;"><defs><path stroke-width="0" id="E4-MJMATHI-55" d="M107 637Q73 637 71 641Q70 643 70 649Q70 673 81 682Q83 683 98 683Q139 681 234 681Q268 681 297 681T342 682T362 682Q378 682 378 672Q378 670 376 658Q371 641 366 638H364Q362 638 359 638T352 638T343 637T334 637Q295 636 284 634T266 623Q265 621 238 518T184 302T154 169Q152 155 152 140Q152 86 183 55T269 24Q336 24 403 69T501 205L552 406Q599 598 599 606Q599 633 535 637Q511 637 511 648Q511 650 513 660Q517 676 519 679T529 683Q532 683 561 682T645 680Q696 680 723 681T752 682Q767 682 767 672Q767 650 759 642Q756 637 737 637Q666 633 648 597Q646 592 598 404Q557 235 548 205Q515 105 433 42T263 -22Q171 -22 116 34T60 167V183Q60 201 115 421Q164 622 164 628Q164 635 107 637Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E4-MJMATHI-55" x="0" y="0"></use></g></svg></span><script type="math/tex">U</script><span>是网络利用率,0-1之间</span></p><h4><a name="解释" class="md-header-anchor"></a><span>解释</span></h4><p><span>网络利用率越高，</span><strong><span>当前网络</span></strong><span>的时延越长</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104124647684.png" referrerpolicy="no-referrer" alt="image-20200104124647684"></p><h2><a name="分层" class="md-header-anchor"></a><span>分层</span></h2><h3><a name="osi七层协议" class="md-header-anchor"></a><span>OSI七层协议</span></h3><p><span>应用层</span></p><p><span>表示层</span></p><p><span>会话层</span></p><p><span>运输层</span></p><p><span>网络层</span></p><p><span>数据链路层</span></p><p><span>物理层</span></p><h3><a name="五层协议体系结构" class="md-header-anchor"></a><span>五层协议体系结构</span></h3><p><span>应用层</span></p><p><span>运输层</span></p><p><span>网络层</span></p><p><span>数据链路层</span></p><p><span>物理层</span></p><h4><a name="传输过程" class="md-header-anchor"></a><span>传输过程</span></h4><p><span>应用数据加上</span><strong><span>应用层头</span></strong><span>，传给运输层，加上</span><strong><span>运输层头</span></strong><span>，</span><strong><span>变成UDP/TCP数据报</span></strong><span>传给网络层，加上</span><strong><span>网络层头</span></strong><span>，变成</span><strong><span>IP数据报（或者分组）</span></strong><span>，传给链路层，加上</span><strong><span>链路层首尾部</span></strong><span>，变成</span><strong><span>链路层帧</span></strong><span>，传给物理层</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104125416693.png" referrerpolicy="no-referrer" alt="image-20200104125416693"></p><h1><a name="物理层" class="md-header-anchor"></a><span>物理层</span></h1><h2><a name="通信概念" class="md-header-anchor"></a><span>通信概念</span></h2><h3><a name="单向通信" class="md-header-anchor"></a><span>单向通信</span></h3><p><span>只能一个方向发送消息，一个只能发，一个只能收，是</span><strong><span>单行道</span></strong></p><h3><a name="半双工通信" class="md-header-anchor"></a><span>半双工通信</span></h3><p><span>既可以发，也可以收，但是不能同时发消息，是</span><strong><span>只能容得下一辆车走的小路</span></strong></p><h3><a name="全双工通信" class="md-header-anchor"></a><span>全双工通信</span></h3><p><span>可以同时收发消息，是</span><strong><span>双向车道</span></strong></p><h2><a name="信道复用技术" class="md-header-anchor"></a><span>信道复用技术</span></h2><h3><a name="频分复用fdm-frequency-division-multiplexing" class="md-header-anchor"></a><span>频分复用FDM (Frequency Division Multiplexing)</span></h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104130146317.png" referrerpolicy="no-referrer" alt="image-20200104130146317"></p><h3><a name="时分复用tdm-time-division-multiplexing" class="md-header-anchor"></a><span>时分复用TDM (Time Division Multiplexing)</span></h3><p><span>每个用户在一个周期内交替使用信道</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104130206905.png" referrerpolicy="no-referrer" alt="image-20200104130206905"></p><h3><a name="统计时分复用stdmstatistic-tdm）" class="md-header-anchor"></a><span>统计时分复用STDM（Statistic TDM）</span></h3><p><span>加强了时分复用的利用率</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104130353237.png" referrerpolicy="no-referrer" alt="image-20200104130353237"></p><h3><a name="波分复用wdmwavelength-division-multiplexing" class="md-header-anchor"></a><span>波分复用WDM(Wavelength Division Multiplexing)</span></h3><p><span>就是</span><strong><span>光的频分复用</span></strong></p><p><span>每个用户占用一个光波频率</span></p><h3><a name="码分复用" class="md-header-anchor"></a><span>码分复用</span></h3><p><span>每个基站都有一个唯一的正交芯片，如 p= (-1,-1,1,1,-1,1,1,1)</span></p><p><span>每次发送0时，就发送p‘，即p的反码，发送1时，就发送p</span></p><h1><a name="数据链路层" class="md-header-anchor"></a><span>数据链路层</span></h1><h2><a name="三个基本问题" class="md-header-anchor"></a><span>三个基本问题</span></h2><h3><a name="封装成帧" class="md-header-anchor"></a><span>封装成帧</span></h3><p><span>在数据前后添加</span><strong><span>首部和尾部</span></strong><span>，就构成了一个</span><strong><span>帧</span></strong></p><h4><a name="首部尾部" class="md-header-anchor"></a><span>首部尾部</span></h4><p><span>作用是：</span><strong><span>帧定界</span></strong></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104150817466.png" referrerpolicy="no-referrer" alt="image-20200104150817466"></p><h3><a name="透明传输" class="md-header-anchor"></a><span>透明传输</span></h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104150854067.png" referrerpolicy="no-referrer" alt="image-20200104150854067"></p><h4><a name="解决方法" class="md-header-anchor"></a><span>解决方法：</span></h4><h5><a name="字节填充" class="md-header-anchor"></a><span>字节填充</span></h5><p><span>在出现SOH，EOT时候在前面加一个ESC字符</span></p><h5><a name="字符填充" class="md-header-anchor"></a><span>字符填充</span></h5><p><span>每出现5个1，加上一个0</span></p><h3><a name="差错控制" class="md-header-anchor"></a><span>差错控制</span></h3><h4><a name="crc校验" class="md-header-anchor"></a><span>CRC校验</span></h4><p><span>例如 1101</span></p><p><strong><span>二进制除法</span></strong><span>，得到</span><strong><span>三位</span></strong><span>的余数作为</span><strong><span>帧检验序列 FCS (Frame Check Sequence)</span></strong></p><h2><a name="ppp协议point-to-point-protocol）" class="md-header-anchor"></a><span>PPP协议（Point-to-Point Protocol）</span></h2><p><strong><span>点对点的</span></strong></p><h3><a name="ppp协议帧格式" class="md-header-anchor"></a><span>PPP协议帧格式</span></h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104152055345.png" referrerpolicy="no-referrer" alt="image-20200104152055345"></p><p><span>7E FF 03 _ _  </span><strong><em><span>IP数据报</span></em></strong><span>  FCS 7E</span></p><p><strong><span>标志字段</span></strong><span> F = 7E (01111110)</span></p><p><strong><span>地址字段</span></strong><span> A = FF（</span><strong><span>事实上不起作用</span></strong><span>）</span></p><p><strong><span>控制字段</span></strong><span> C = 03</span></p><p><strong><span>协议字段</span></strong><span>：</span></p><p><span>当协议字段为 </span><strong><span>0x0021</span></strong><span> 时，PPP 帧的信息字段就是</span><strong><span>IP 数据报</span></strong><span>。</span>
+<span>若为 </span><strong><span>0xC021</span></strong><span>, 则信息字段是 </span><strong><span>PPP 链路控制数据</span></strong><span>。</span>
+<span>若为 </span><strong><span>0x8021</span></strong><span>，则表示这是</span><strong><span>网络控制数据</span></strong><span>。  </span></p><p>&nbsp;</p><blockquote><p><span>将信息字段中出现的每一个 0x7E 字节转变成为 2 字节序列(0x7D, 0x5E)。 </span>
+<span>若信息字段中出现一个 0x7D 的字节, 则将其转变成为 2 字节序列(0x7D, 0x5D)。</span>
+<span>若信息字段中出现 ASCII 码的控制字符（即数值小于 0x20 的字符），则在该字符前面要加入一个 0x7D 字节，同时将该字符的编码加以改变。  </span></p></blockquote><h2><a name="局域网" class="md-header-anchor"></a><span>局域网</span></h2><h3><a name="常见的拓扑结构" class="md-header-anchor"></a><span>常见的拓扑结构</span></h3><ol start='' ><li><span>星型</span></li><li><span>环形</span></li><li><span>总线型</span></li><li><span>网状结构</span></li><li><span>树形</span></li></ol><h3><a name="10base-t" class="md-header-anchor"></a><span>10BASE-T</span></h3><p><span>使用集线器</span></p><p><strong><span>物理上的星型，逻辑上总线型</span></strong><span>，使用CSMA/CD协议</span></p><h2><a name="csmacd协议" class="md-header-anchor"></a><span>CSMA/CD协议</span></h2><h3><a name="解释-n130" class="md-header-anchor"></a><span>解释</span></h3><ol start='' ><li><p><span>载波监听（Carrier Sense）：开始发数据前检测线路是否空闲，发数据时继续监听，实质是</span><strong><span>收数据</span></strong><span>,就是用电子技术检测总线上有没有其他计算机发送的数据信号</span></p></li><li><p><span>多点接入（Multiple Assess）：</span></p><p><span>总线型网络，多个用户接入</span></p><p><strong><span>PPP：只有两个点接入</span></strong></p></li><li><p><span>碰撞检测（Collision Detection）：</span></p><p><span>一旦听到</span><strong><span>电压变化</span></strong><span>就说明发生碰撞，</span><strong><span>边发送数据边检测</span></strong><span>信道上的信号电压大小</span></p><blockquote><p><span>当几个站同时在总线上发送数据时，总线上的信号电压摆动值将会增大（互相叠加）。</span>
+<span>当一个站检测到的信号电压摆动值超过一定的门限值时，就认为总线上至少有两个站同时在发送数据，表明产生了碰撞。</span>
+<span>所谓“碰撞”就是发生了冲突。因此“碰撞检测”也称为“冲突检测”。</span></p></blockquote></li></ol><p>&nbsp;</p><h3><a name="传数据过程" class="md-header-anchor"></a><span>传数据过程</span></h3><p><span>检测线路是否空闲，如果空闲就发送，然后</span><strong><span>持续监听</span></strong></p><p><span>一旦检测到发生了碰撞，立即停止发送</span></p><p><span>当过了</span><strong><span>争用期</span></strong><span>（2</span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.201ex" height="1.41ex" viewBox="0 -504.6 517 607.1" role="img" focusable="false" style="vertical-align: -0.238ex;"><defs><path stroke-width="0" id="E5-MJMATHI-3C4" d="M39 284Q18 284 18 294Q18 301 45 338T99 398Q134 425 164 429Q170 431 332 431Q492 431 497 429Q517 424 517 402Q517 388 508 376T485 360Q479 358 389 358T299 356Q298 355 283 274T251 109T233 20Q228 5 215 -4T186 -13Q153 -13 153 20V30L203 192Q214 228 227 272T248 336L254 357Q254 358 208 358Q206 358 197 358T183 359Q105 359 61 295Q56 287 53 286T39 284Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E5-MJMATHI-3C4" x="0" y="0"></use></g></svg></span><script type="math/tex">\tau</script><span>）时间后，就说明这次传送已经</span><strong><span>不会产生碰撞</span></strong><span>了</span></p><p><span>在开始发送数据后，</span><strong><span>每次检测到碰撞就停止一段时间</span></strong><span>，遵循下面规则</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104155351750.png" referrerpolicy="no-referrer" alt="image-20200104155351750"></p><p><strong><span>重传16次</span></strong><span>还没成功就抛弃</span></p><h4><a name="争用期长度" class="md-header-anchor"></a><span>争用期长度</span></h4><p><span>以太网取  </span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.619ex" height="2.461ex" viewBox="0 -755.9 2850 1059.4" role="img" focusable="false" style="vertical-align: -0.705ex;"><defs><path stroke-width="0" id="E6-MJMAIN-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path stroke-width="0" id="E6-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path stroke-width="0" id="E6-MJMAIN-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path stroke-width="0" id="E6-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path stroke-width="0" id="E6-MJMATHI-3BC" d="M58 -216Q44 -216 34 -208T23 -186Q23 -176 96 116T173 414Q186 442 219 442Q231 441 239 435T249 423T251 413Q251 401 220 279T187 142Q185 131 185 107V99Q185 26 252 26Q261 26 270 27T287 31T302 38T315 45T327 55T338 65T348 77T356 88T365 100L372 110L408 253Q444 395 448 404Q461 431 491 431Q504 431 512 424T523 412T525 402L449 84Q448 79 448 68Q448 43 455 35T476 26Q485 27 496 35Q517 55 537 131Q543 151 547 152Q549 153 557 153H561Q580 153 580 144Q580 138 575 117T555 63T523 13Q510 0 491 -8Q483 -10 467 -10Q446 -10 429 -4T402 11T385 29T376 44T374 51L368 45Q362 39 350 30T324 12T288 -4T246 -11Q199 -11 153 12L129 -85Q108 -167 104 -180T92 -202Q76 -216 58 -216Z"></path><path stroke-width="0" id="E6-MJMATHI-73" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E6-MJMAIN-35"></use><use xlink:href="#E6-MJMAIN-31" x="500" y="0"></use><use xlink:href="#E6-MJMAIN-2E" x="1000" y="0"></use><use xlink:href="#E6-MJMAIN-32" x="1278" y="0"></use><use xlink:href="#E6-MJMATHI-3BC" x="1778" y="0"></use><use xlink:href="#E6-MJMATHI-73" x="2381" y="0"></use></g></svg></span><script type="math/tex">51.2\mu s</script><span> 为争用期的长度。</span>
+<span>对于 </span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="8.011ex" height="2.577ex" viewBox="0 -806.1 3449 1109.7" role="img" focusable="false" style="vertical-align: -0.705ex;"><defs><path stroke-width="0" id="E7-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path stroke-width="0" id="E7-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path stroke-width="0" id="E7-MJMATHI-4D" d="M289 629Q289 635 232 637Q208 637 201 638T194 648Q194 649 196 659Q197 662 198 666T199 671T201 676T203 679T207 681T212 683T220 683T232 684Q238 684 262 684T307 683Q386 683 398 683T414 678Q415 674 451 396L487 117L510 154Q534 190 574 254T662 394Q837 673 839 675Q840 676 842 678T846 681L852 683H948Q965 683 988 683T1017 684Q1051 684 1051 673Q1051 668 1048 656T1045 643Q1041 637 1008 637Q968 636 957 634T939 623Q936 618 867 340T797 59Q797 55 798 54T805 50T822 48T855 46H886Q892 37 892 35Q892 19 885 5Q880 0 869 0Q864 0 828 1T736 2Q675 2 644 2T609 1Q592 1 592 11Q592 13 594 25Q598 41 602 43T625 46Q652 46 685 49Q699 52 704 61Q706 65 742 207T813 490T848 631L654 322Q458 10 453 5Q451 4 449 3Q444 0 433 0Q418 0 415 7Q413 11 374 317L335 624L267 354Q200 88 200 79Q206 46 272 46H282Q288 41 289 37T286 19Q282 3 278 1Q274 0 267 0Q265 0 255 0T221 1T157 2Q127 2 95 1T58 0Q43 0 39 2T35 11Q35 13 38 25T43 40Q45 46 65 46Q135 46 154 86Q158 92 223 354T289 629Z"></path><path stroke-width="0" id="E7-MJMATHI-62" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path stroke-width="0" id="E7-MJMAIN-2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"></path><path stroke-width="0" id="E7-MJMATHI-73" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E7-MJMAIN-31"></use><use xlink:href="#E7-MJMAIN-30" x="500" y="0"></use><use xlink:href="#E7-MJMATHI-4D" x="1000" y="0"></use><use xlink:href="#E7-MJMATHI-62" x="2051" y="0"></use><use xlink:href="#E7-MJMAIN-2F" x="2480" y="0"></use><use xlink:href="#E7-MJMATHI-73" x="2980" y="0"></use></g></svg></span><script type="math/tex">10 Mb/s</script><span> 以太网，在争用期内可发送</span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="6.12ex" height="1.994ex" viewBox="0 -755.9 2635 858.4" role="img" focusable="false" style="vertical-align: -0.238ex;"><defs><path stroke-width="0" id="E8-MJMAIN-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path stroke-width="0" id="E8-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path stroke-width="0" id="E8-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path stroke-width="0" id="E8-MJMATHI-62" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path><path stroke-width="0" id="E8-MJMATHI-69" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path stroke-width="0" id="E8-MJMATHI-74" d="M26 385Q19 392 19 395Q19 399 22 411T27 425Q29 430 36 430T87 431H140L159 511Q162 522 166 540T173 566T179 586T187 603T197 615T211 624T229 626Q247 625 254 615T261 596Q261 589 252 549T232 470L222 433Q222 431 272 431H323Q330 424 330 420Q330 398 317 385H210L174 240Q135 80 135 68Q135 26 162 26Q197 26 230 60T283 144Q285 150 288 151T303 153H307Q322 153 322 145Q322 142 319 133Q314 117 301 95T267 48T216 6T155 -11Q125 -11 98 4T59 56Q57 64 57 83V101L92 241Q127 382 128 383Q128 385 77 385H26Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E8-MJMAIN-35"></use><use xlink:href="#E8-MJMAIN-31" x="500" y="0"></use><use xlink:href="#E8-MJMAIN-32" x="1000" y="0"></use><use xlink:href="#E8-MJMATHI-62" x="1500" y="0"></use><use xlink:href="#E8-MJMATHI-69" x="1929" y="0"></use><use xlink:href="#E8-MJMATHI-74" x="2274" y="0"></use></g></svg></span><script type="math/tex">512 bit</script><span>，即 64 字节。</span>
+<span>以太网在发送数据时，</span><strong><span>若前 64 字节没有发生冲突，则后续的数据就不会发生冲突。</span></strong><span> </span></p><p><span>以太网规定了</span><strong><span>最短有效帧长为 64 字节</span></strong><span>，凡长度小于 64 字节的帧都是由于冲突而异常中止的无效帧。 </span></p><p>&nbsp;</p><h2><a name="mac地址" class="md-header-anchor"></a><span>MAC地址</span></h2><p><strong><span>网卡</span></strong><span>的全球唯一的编号</span></p><p><span>48位，6字节</span></p><p>&nbsp;</p><h3><a name="以太网的mac帧格式" class="md-header-anchor"></a><span>以太网的MAC帧格式</span></h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104160356017.png" referrerpolicy="no-referrer" alt="image-20200104160356017"></p><p><strong><span>由上面CSMA/CD的最短帧得到，帧最短长度为64B，去掉首尾18字节，数据部分最短46Byte</span></strong></p><p><span>所以有效MAC帧长度为</span><strong><span>64 ~ 1518 B</span></strong></p><p><span>对于检查出的</span><strong><span>无效 MAC 帧就简单地丢弃</span></strong><span>。以太网</span><strong><span>不负责重传</span></strong><span>丢弃的帧。 </span></p><p>&nbsp;</p><h3><a name="帧间最小间隔" class="md-header-anchor"></a><span>帧间最小间隔</span></h3><p><span>帧间最小间隔为  </span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.458ex" height="2.461ex" viewBox="0 -755.9 2350 1059.4" role="img" focusable="false" style="vertical-align: -0.705ex;"><defs><path stroke-width="0" id="E10-MJMAIN-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path stroke-width="0" id="E10-MJMAIN-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path stroke-width="0" id="E10-MJMAIN-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path stroke-width="0" id="E10-MJMATHI-3BC" d="M58 -216Q44 -216 34 -208T23 -186Q23 -176 96 116T173 414Q186 442 219 442Q231 441 239 435T249 423T251 413Q251 401 220 279T187 142Q185 131 185 107V99Q185 26 252 26Q261 26 270 27T287 31T302 38T315 45T327 55T338 65T348 77T356 88T365 100L372 110L408 253Q444 395 448 404Q461 431 491 431Q504 431 512 424T523 412T525 402L449 84Q448 79 448 68Q448 43 455 35T476 26Q485 27 496 35Q517 55 537 131Q543 151 547 152Q549 153 557 153H561Q580 153 580 144Q580 138 575 117T555 63T523 13Q510 0 491 -8Q483 -10 467 -10Q446 -10 429 -4T402 11T385 29T376 44T374 51L368 45Q362 39 350 30T324 12T288 -4T246 -11Q199 -11 153 12L129 -85Q108 -167 104 -180T92 -202Q76 -216 58 -216Z"></path><path stroke-width="0" id="E10-MJMATHI-73" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E10-MJMAIN-39"></use><use xlink:href="#E10-MJMAIN-2E" x="500" y="0"></use><use xlink:href="#E10-MJMAIN-36" x="778" y="0"></use><use xlink:href="#E10-MJMATHI-3BC" x="1278" y="0"></use><use xlink:href="#E10-MJMATHI-73" x="1881" y="0"></use></g></svg></span><script type="math/tex">9.6\mu s</script><span> ，</span><strong><span>相当于 96 bit 的发送时间</span></strong><span>。</span>
+<span>一个站在检测到总线开始空闲后，还要等待 </span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="5.458ex" height="2.461ex" viewBox="0 -755.9 2350 1059.4" role="img" focusable="false" style="vertical-align: -0.705ex;"><defs><path stroke-width="0" id="E10-MJMAIN-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path stroke-width="0" id="E10-MJMAIN-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path stroke-width="0" id="E10-MJMAIN-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path stroke-width="0" id="E10-MJMATHI-3BC" d="M58 -216Q44 -216 34 -208T23 -186Q23 -176 96 116T173 414Q186 442 219 442Q231 441 239 435T249 423T251 413Q251 401 220 279T187 142Q185 131 185 107V99Q185 26 252 26Q261 26 270 27T287 31T302 38T315 45T327 55T338 65T348 77T356 88T365 100L372 110L408 253Q444 395 448 404Q461 431 491 431Q504 431 512 424T523 412T525 402L449 84Q448 79 448 68Q448 43 455 35T476 26Q485 27 496 35Q517 55 537 131Q543 151 547 152Q549 153 557 153H561Q580 153 580 144Q580 138 575 117T555 63T523 13Q510 0 491 -8Q483 -10 467 -10Q446 -10 429 -4T402 11T385 29T376 44T374 51L368 45Q362 39 350 30T324 12T288 -4T246 -11Q199 -11 153 12L129 -85Q108 -167 104 -180T92 -202Q76 -216 58 -216Z"></path><path stroke-width="0" id="E10-MJMATHI-73" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E10-MJMAIN-39"></use><use xlink:href="#E10-MJMAIN-2E" x="500" y="0"></use><use xlink:href="#E10-MJMAIN-36" x="778" y="0"></use><use xlink:href="#E10-MJMATHI-3BC" x="1278" y="0"></use><use xlink:href="#E10-MJMATHI-73" x="1881" y="0"></use></g></svg></span><script type="math/tex">9.6\mu s</script><span> 才能再次发送数据。</span>
+<span>这样做是为了</span><strong><span>使刚刚收到数据帧的站的接收缓存来得及清理</span></strong><span>，做好接收下一帧的准备。</span></p><h2><a name="扩展的局域网" class="md-header-anchor"></a><span>扩展的局域网</span></h2><h3><a name="物理层上的扩展" class="md-header-anchor"></a><span>物理层上的扩展</span></h3><h4><a name="转发器中继器集线器" class="md-header-anchor"></a><span>转发器/中继器/集线器</span></h4><p><span>物理上的把线连起来，对信号不做任何处理</span></p><h4><a name="优点" class="md-header-anchor"></a><span>优点</span></h4><p><span>使原来属于不同碰撞域的局域网上的计算机能够进行</span><strong><span>跨碰撞域的通信</span></strong><span>。</span>
+<span>扩大了局域网覆盖的地理范围。</span></p><h4><a name="缺点" class="md-header-anchor"></a><span>缺点</span></h4><p><span>碰撞域增大了，但总的</span><strong><span>吞吐量并未提高</span></strong><span>。</span>
+<span>如果</span><strong><span>不同的碰撞域使用不同的数据率，那么就不能用集线器将它们互连起来</span></strong><span>。   </span></p><p>&nbsp;</p><h3><a name="链路层的扩展" class="md-header-anchor"></a><span>链路层的扩展</span></h3><h4><a name="网桥" class="md-header-anchor"></a><span>网桥</span></h4><h5><a name="功能" class="md-header-anchor"></a><span>功能</span></h5><p><span>它根据 </span><strong><span>MAC 帧的目的地址</span></strong><span>对收到的帧进行转发</span></p><p><span>具有</span><strong><span>过滤帧</span></strong><span>的功能，当网桥收到一个帧时，并不是向所有的接口转发此帧，而是先</span><strong><span>检查此帧的目的 MAC 地址</span></strong><span>，然后再</span><strong><span>确定将该帧转发到哪一个接口</span></strong><span> </span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104161923314.png" referrerpolicy="no-referrer" alt="image-20200104161923314"></p><p><strong><span>网桥使各网段成为隔离开的碰撞域</span></strong><span> </span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104162025620.png" referrerpolicy="no-referrer" alt="image-20200104162025620"></p><h5><a name="缺点-n184" class="md-header-anchor"></a><span>缺点</span></h5><ol start='' ><li><span>存储转发</span><strong><span>增加了时延</span></strong><span>。 </span></li><li><span>在MAC 子层并</span><strong><span>没有流量控制功能</span></strong><span>。 </span></li><li><span>具有不同 MAC 子层的网段桥接在一起时时延更大。</span></li><li><span>网桥</span><strong><span>只适合于用户数不太多</span></strong><span>(不超过几百个)和</span><strong><span>通信量不太大</span></strong><span>的局域网，否则有时还会因传播过多的广播信息而产生网络拥塞。这就是所谓的</span><strong><span>广播风暴</span></strong><span>。  </span></li></ol><h5><a name="网桥和集线器的不同" class="md-header-anchor"></a><span>网桥和集线器的不同</span></h5><p><strong><span>网桥</span></strong><span>在转发帧之前必须</span><strong><span>执行 CSMA/CD 算法</span></strong><span>，若在发送过程中出现碰撞，就必须停止发送和进行退避。</span></p><p><span>集线器不做任何处理</span></p><h5><a name="转发表建立过程" class="md-header-anchor"></a><span>转发表建立过程</span></h5><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104162615770.png" referrerpolicy="no-referrer" alt="image-20200104162615770"></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104163717574.png" referrerpolicy="no-referrer" alt="image-20200104163717574"></p><h5><a name="转发表的信息" class="md-header-anchor"></a><span>转发表的信息</span></h5><p><strong><span>地址</span></strong></p><p><strong><span>接口</span></strong></p><p><strong><span>该帧进入网桥的时间</span></strong></p><p>&nbsp;</p><h4><a name="以太网交换机" class="md-header-anchor"></a><span>以太网交换机</span></h4><p><span>即</span><strong><span>多接口的网桥</span></strong></p><p><span>各个层的转发器有一个连通就行，如网桥，路由器等选择一个</span></p><p>&nbsp;</p><h1><a name="网络层" class="md-header-anchor"></a><span>网络层</span></h1><h2><a name="网络的划分" class="md-header-anchor"></a><span>网络的划分</span></h2><h3><a name="abcde类网络" class="md-header-anchor"></a><span>ABCDE类网络</span></h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104164223242.png" referrerpolicy="no-referrer" alt="image-20200104164223242"></p><p><span>ABC类网络号分别为 1,2,3个字节，主机号分别为3,2,1个字节</span></p><h4><a name="abc类网络ip范围" class="md-header-anchor"></a><span>ABC类网络IP范围</span></h4><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104164434047.png" referrerpolicy="no-referrer" alt="image-20200104164434047"></p><h3><a name="特殊的ip地址" class="md-header-anchor"></a><span>特殊的IP地址</span></h3><h4><a name="广播地址" class="md-header-anchor"></a><span>广播地址</span></h4><p><span>主机地址全为 1 </span></p><h4><a name="组播地址" class="md-header-anchor"></a><span>组播地址</span></h4><p><span>就是</span><strong><span>D类地址</span></strong></p><p><span>224.0.0.0/8到239.255.255.255/8</span></p><p><span>1110 0000.0.0.0</span></p><p><span>1110 1111.255.255.255</span></p><p><span> </span><strong><span>224.0.0.1特指所有主机</span></strong></p><p><span> </span><strong><span>224.0.0.2特指所有路由器</span></strong></p><h4><a name="私有地址" class="md-header-anchor"></a><span>私有地址</span></h4><p><span>10.x.x.x（A类）</span></p><p><span>172.16.x.x-172.31.x.x（B类）</span></p><p><span>192.168.x.x（C类）</span></p><h4><a name="环回地址" class="md-header-anchor"></a><span>环回地址</span></h4><p><span> 127.0.0.1 </span></p><p><span>即 localhost</span></p><p>&nbsp;</p><p><span> </span><strong><span>对一台网络上的主机来说，它可以正常接收的合法目的网络地址有三种：</span></strong></p><ol start='' ><li><span>本机的IP地址</span></li><li><span>广播地址</span></li><li><span>组播地址</span></li></ol><p>&nbsp;</p><h2><a name="路由器" class="md-header-anchor"></a><span>路由器</span></h2><h3><a name="分组转发流程" class="md-header-anchor"></a><span>分组转发流程</span></h3><h4><a name="产生原因" class="md-header-anchor"></a><span>产生原因</span></h4><p><span>若按</span><strong><span>目的主机号</span></strong><span>来制作路由表，则所得出的路由表就会</span><strong><span>过于庞大</span></strong><span>。</span></p><p><span>但若按</span><strong><span>主机所在的网络地址</span></strong><span>来制作路由表，那么每一个路由器中的路由表就只包含少量项目，这样就可使路由表大大简化。</span></p><h4><a name="特定主机路由" class="md-header-anchor"></a><span>特定主机路由</span></h4><p><span>为特定的主机指明一个路由</span></p><p><span>采用特定主机路由可使网络管理人员能</span><strong><span>更方便地控制网络和测试网络</span></strong><span>，同时也可在</span><strong><span>需要考虑某种安全问题时</span></strong><span>采用这种特定主机路由。 </span></p><h4><a name="默认路由" class="md-header-anchor"></a><span>默认路由</span></h4><p><span>如果</span><strong><span>路由表</span></strong><span>里</span><strong><span>没有</span></strong><span>就交给</span><strong><span>默认路由</span></strong><span>转发，让默认路由器再转发给下一个路由器</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104174250193.png" referrerpolicy="no-referrer" alt="image-20200104174250193"></p><h4><a name="分组转发流程-n254" class="md-header-anchor"></a><span>分组转发流程</span></h4><p><span>(1)  从</span><strong><span>数据报</span></strong><span>的首部</span><strong><span>提取目的主机的 IP 地址 D</span></strong><span>, 得出</span><strong><span>目的网络地址为 N</span></strong><span>。</span>
+<span>(2)  若</span><strong><span>网络 N</span></strong><span> 与</span><strong><span>此路由器直接相连</span></strong><span>，则把数据报</span><strong><span>直接交付目的主机 D</span></strong><span>；（</span><strong><span>到了目的网络</span></strong><span>）</span></p><p><strong><span>否则</span></strong><span>是间接交付，</span><strong><span>执行(3)</span></strong><span>。</span>
+<span>(3)  若</span><strong><span>路由表中有</span></strong><span>目的地址为 </span><strong><span>D的特定主机路由</span></strong><span>，则把数据报</span><strong><span>送到主机D的的下一跳</span></strong></p><p><strong><span>否则</span></strong><span>，</span><strong><span>执行(4)。</span></strong>
+<span>(4)  若</span><strong><span>路由表中</span></strong><span>有到达</span><strong><span>网络 N 的路由</span></strong><span>，则把数据报</span><strong><span>送到网络N的下一跳</span></strong></p><p><strong><span>否则，执行(5)。</span></strong>
+<span>(5) 若路由表中有一个</span><strong><span>默认路由</span></strong><span>，则把数据报</span><strong><span>送到默认路由</span></strong></p><p><strong><span>否则，执行(6)。</span></strong>
+<span>(6)  报告转发分组</span><strong><span>出错</span></strong><span>。 </span></p><p>&nbsp;</p><p><span>总结下来就是，先得到</span><strong><span>主机IP地址</span></strong><span>，得到</span><strong><span>对应的网络号</span></strong><span>，看是不是</span><strong><span>此网络</span></strong><span>的主机，再看是不是</span><strong><span>特定主机路由</span></strong><span>，再检查有没有</span><strong><span>到此网络的记录</span></strong><span>，再经过</span><strong><span>默认路由</span></strong><span>，否则出错</span></p><p>&nbsp;</p><h2><a name="arp协议" class="md-header-anchor"></a><span>ARP协议</span></h2><p><span>把IP地址转化为MAC地址</span></p><h3><a name="arp高速缓存" class="md-header-anchor"></a><span>ARP高速缓存</span></h3><p><strong><span>每一个主机</span></strong><span>都设有一个 ARP 高速缓存</span></p><p><span>有</span><strong><span>所在的局域网</span></strong><span>上的各</span><strong><span>主机和路由器</span></strong><span>的 </span><strong><span>IP 地址</span></strong><span>到</span><strong><span>硬件地址</span></strong><span>的映射表。</span></p><h3><a name="rarp" class="md-header-anchor"></a><span>RARP</span></h3><p><span>反向ARP</span></p><h2><a name="ipv4数据报" class="md-header-anchor"></a><span>IPv4数据报</span></h2><h3><a name="ipv4数据报格式" class="md-header-anchor"></a><span>IPv4数据报格式</span></h3><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104171458169.png" referrerpolicy="no-referrer" alt="image-20200104171458169"></p><h4><a name="版本" class="md-header-anchor"></a><span>版本</span></h4><p><span>占 </span><strong><span>4 位</span></strong><span>，指 </span><strong><span>IP 协议的版本</span></strong><span>，目前的 IP 协议版本号为 4 (即 IPv4)</span></p><h4><a name="首部长度" class="md-header-anchor"></a><span>首部长度</span></h4><p><span>占</span><strong><span>4位</span></strong><span>，最大15，单位为</span><strong><span>4字节</span></strong><span>，最大长度为60B</span></p><h4><a name="区分服务" class="md-header-anchor"></a><span>区分服务</span></h4><p><span>占 </span><strong><span>8 位</span></strong><span>，用来获得更好的服务</span></p><p><span>不过</span><strong><span>一般没用</span></strong></p><h4><a name="总长度" class="md-header-anchor"></a><span>总长度</span></h4><p><span>占</span><strong><span>16位</span></strong><span>，</span><strong><span>首部和数据之和</span></strong><span>的长度，单位</span><strong><span>字节</span></strong></p><p><strong><span>总长度必须不超过最大传送单元 MTU</span></strong></p><h4><a name="标识" class="md-header-anchor"></a><span>标识</span></h4><p><strong><span>16位</span></strong><span>，它是一个</span><strong><span>计数器</span></strong><span>，用来</span><strong><span>产生数据报的标识</span></strong><span>。</span></p><h4><a name="标志" class="md-header-anchor"></a><span>标志</span></h4><p><span>占 </span><strong><span>3 位</span></strong><span>，目前只有前两位有意义。</span></p><p><strong><span>MF DF Unused</span></strong></p><h5><a name="mf-more-fragment" class="md-header-anchor"></a><span>MF (More Fragment)</span></h5><p><span>MF = 1 表示后面“还有分片”。MF = 0 表示最后一个分片。</span></p><h5><a name="df-dont-fragment" class="md-header-anchor"></a><span>DF (Don&#39;t Fragment) </span></h5><p><span>只有当 DF = 0 时才允许分片。 </span></p><h4><a name="片偏移" class="md-header-anchor"></a><span>片偏移</span></h4><p><strong><span>13位</span></strong><span>，在原分组的相对位置，</span><strong><span>单位为8字节</span></strong></p><p><span>分片例子：</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104172420454.png" referrerpolicy="no-referrer" alt="image-20200104172420454"></p><h4><a name="生存时间" class="md-header-anchor"></a><span>生存时间</span></h4><p><strong><span>8位</span></strong><span>，</span><strong><span>可通过的路由器数</span></strong><span>的最大值</span></p><h4><a name="协议" class="md-header-anchor"></a><span>协议</span></h4><p><strong><span>8位</span></strong></p><p><span>上层的协议类型，用来确定把数据交给谁，如TCP, UDP, ICMP, IGMP, OSPF等</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104172919227.png" referrerpolicy="no-referrer" alt="image-20200104172919227"></p><h4><a name="首部检验和" class="md-header-anchor"></a><span>首部检验和</span></h4><p><strong><span>16位</span></strong></p><p><strong><span>只检验数据报首部</span></strong></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104173019156.png" referrerpolicy="no-referrer" alt="image-20200104173019156"></p><p><span>就是把首部</span><strong><span>每16位做二进制加法</span></strong><span>，结果</span><strong><span>取反</span></strong><span>放入首部检验和字段</span></p><p><span>验证时候只需要将</span><strong><span>每个16位按二进制加法加起来</span></strong><span>，然后</span><strong><span>取反</span></strong><span>，如果</span><strong><span>等于0</span></strong><span>就说明正确，否则出错，丢弃该数据报</span></p><h4><a name="源地址目的地址" class="md-header-anchor"></a><span>源地址/目的地址</span></h4><p><span>每个</span><strong><span>32位</span></strong><span>，即</span><strong><span>4字节的IP地址</span></strong></p><h4><a name="可变部分" class="md-header-anchor"></a><span>可变部分</span></h4><p><span>很少使用，暂时不记录</span></p><p>&nbsp;</p><h2><a name="ipv6" class="md-header-anchor"></a><span>IPv6</span></h2><p><span>长度 16字节</span></p><h3><a name="写法" class="md-header-anchor"></a><span>写法</span></h3><p><span>用16进制数写，每16位（2字节）加一个冒号</span></p><h4><a name="0压缩" class="md-header-anchor"></a><span>0压缩</span></h4><p><span>如果中间有很多0的话，可以用一个0代替，</span><strong><span>只能用一次</span></strong></p><p>&nbsp;</p><h2><a name="子网划分" class="md-header-anchor"></a><span>子网划分</span></h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104175742060.png" referrerpolicy="no-referrer" alt="image-20200104175742060"></p><p>&nbsp;</p><h3><a name="子网掩码" class="md-header-anchor"></a><span>子网掩码</span></h3><p><span>不说了</span></p><h2><a name="icmp" class="md-header-anchor"></a><span>ICMP</span></h2><p><span>允许主机或路由器</span><strong><span>报告差错情况</span></strong><span>和</span><strong><span>提供有关异常情况</span></strong><span>的报告。</span></p><h3><a name="icmp-差错报告报文" class="md-header-anchor"></a><span>ICMP 差错报告报文</span></h3><h4><a name="5种差错报告" class="md-header-anchor"></a><span>5种差错报告</span></h4><p><span>终点不可达 </span>
+<span>源点抑制(Source quench)</span><br/><span>时间超过 </span>
+<span>参数问题 </span>
+<span>改变路由（重定向）(Redirect) </span></p><h4><a name="icmp差错报告数据报内容" class="md-header-anchor"></a><span>ICMP差错报告数据报内容</span></h4><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104194005685.png" referrerpolicy="no-referrer" alt="image-20200104194005685"></p><h3><a name="icmp-询问报文" class="md-header-anchor"></a><span>ICMP 询问报文</span></h3><h4><a name="2种询问报文" class="md-header-anchor"></a><span>2种询问报文</span></h4><p><span>回送请求和回答报文</span>
+<span>时间戳请求和回答报文</span></p><h3><a name="应用举例" class="md-header-anchor"></a><span>应用举例</span></h3><h4><a name="ping" class="md-header-anchor"></a><span>ping</span></h4><p><span>回送请求和回答报文</span></p><h4><a name="traceroute" class="md-header-anchor"></a><span>traceroute</span></h4><h5><a name="工作流程" class="md-header-anchor"></a><span>工作流程</span></h5><p><span>先发送TTL=1的数据报，遇到第一个路由器，发送一个错误报告，知道了那个路由器</span></p><p><span>然后发送TTL=2的数据报，等等</span></p><p>&nbsp;</p><h2><a name="路由选择协议" class="md-header-anchor"></a><span>路由选择协议</span></h2><h3><a name="内部网关协议" class="md-header-anchor"></a><span>内部网关协议</span></h3><h4><a name="rip" class="md-header-anchor"></a><span>RIP</span></h4><h5><a name="基于距离向量算法" class="md-header-anchor"></a><span>基于距离向量算法</span></h5><ol start='' ><li><span>仅和</span><strong><span>相邻路由器</span></strong><span>交换信息。 </span></li><li><strong><span>交换的信息</span></strong><span>是当前本路由器所知道的</span><strong><span>全部信息</span></strong><span>，即自己的路由表。 </span></li><li><span>按</span><strong><span>固定的时间间隔</span></strong><span>交换路由信息，例如，每隔 30 秒。 </span></li><li><strong><span>超过16</span></strong><span>跳就判定为不可达</span></li></ol><h5><a name="特点" class="md-header-anchor"></a><span>特点</span></h5><p><span>好消息传的快，坏消息传的慢</span></p><h4><a name="ospf" class="md-header-anchor"></a><span>OSPF</span></h4><p><span>（Open Shortest Path First）</span></p><h5><a name="基于dijkstra最短路的算法" class="md-header-anchor"></a><span>基于dijkstra最短路的算法</span></h5><ol start='' ><li><span>向</span><strong><span>本自治系统中所有路由器</span></strong><span>发送信息，这里使用的方法是</span><strong><span>洪泛法</span></strong><span>。</span></li><li><span>发送的信息就是</span><strong><span>与本路由器相邻的</span></strong><span>所有路由器的</span><strong><span>链路状态</span></strong><span>，但这只是路由器所知道的部分信息。</span></li><li><span>“链路状态”就是说明本路由器都和哪些路由器相邻，以及该链路的“度量”(metric)。 </span></li><li><span>只有当</span><strong><span>链路状态发生变化时</span></strong><span>，路由器才用</span><strong><span>洪泛法</span></strong><span>向</span><strong><span>所有路由器</span></strong><span>发送此信息。  </span></li></ol><h5><a name="传播方式" class="md-header-anchor"></a><span>传播方式</span></h5><p><span>直接使用</span><strong><span>IP数据报</span></strong><span>传播</span></p><h1><a name="运输层" class="md-header-anchor"></a><span>运输层</span></h1><p><strong><span>端到端的通信</span></strong></p><h3><a name="知名端口号" class="md-header-anchor"></a><span>知名端口号</span></h3><p><span>DNS端口号 ： 53</span></p><p><span>HTTP协议代理服务器常用端口号：80/8080/3128/8081/9080</span></p><p><span>FTP（文件传输）协议代理服务器常用端口号：21</span></p><h3><a name="tcp" class="md-header-anchor"></a><span>TCP</span></h3><h4><a name="报文段格式" class="md-header-anchor"></a><span>报文段格式</span></h4><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104212409827.png" referrerpolicy="no-referrer" alt="image-20200104212409827"></p><h4><a name="可靠传输的实现" class="md-header-anchor"></a><span>可靠传输的实现</span></h4><h5><a name="滑动窗口" class="md-header-anchor"></a><span>滑动窗口</span></h5><p><strong><span>确认</span></strong></p><p><span>按照</span><strong><span>字节流</span></strong><span>来发送，给每个字节编号，编号范围为2^32，接受成功后发送一个确认报文段，确认报文段为最前面需要的字节编号</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104213448361.png" referrerpolicy="no-referrer" alt="image-20200104213448361"></p><p><strong><span>重传</span></strong></p><p><span>重传时间：加权平均往返时间</span></p><h4><a name="流量控制" class="md-header-anchor"></a><span>流量控制</span></h4><p><span>目的：让发送的人慢点，要让接收方来得及接收</span></p><p><span>发送方的滑动窗口大小取决于接收方</span></p><p><strong><span>一个例子</span></strong></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104214733458.png" referrerpolicy="no-referrer" alt="image-20200104214733458"></p><p>&nbsp;</p><h4><a name="拥塞控制" class="md-header-anchor"></a><span>拥塞控制</span></h4><h5><a name="拥塞" class="md-header-anchor"></a><span>拥塞</span></h5><p><span>在网络中，带宽，缓存，CUP等都叫</span><strong><span>资源</span></strong></p><p><span>对网络中对</span><strong><span>某一资源的需求大于可用资源</span></strong><span>，网络性能变坏，叫拥塞</span></p><h5><a name="慢开始和拥塞避免" class="md-header-anchor"></a><span>慢开始和拥塞避免</span></h5><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104220408100.png" referrerpolicy="no-referrer" alt="image-20200104220408100"></p><p><span>假定拥塞窗口的数值增长到 24 时，网络出现超时，表明网络拥塞了。 </span></p><p><span>更新后的 ssthresh 值变为 12（即发送窗口数值 24 的一半），拥塞窗口再重新设置为 1，并执行慢开始算法。 </span></p><p>&nbsp;</p><h5><a name="快重传和快恢复" class="md-header-anchor"></a><span>快重传和快恢复</span></h5><p><span>快重传：收到三个连续的对某一字节的确认就立即重传接下来的那字节</span></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104221258469.png" referrerpolicy="no-referrer" alt="image-20200104221258469"></p><h4><a name="连接建立" class="md-header-anchor"></a><span>连接建立</span></h4><p><strong><span>三次握手</span></strong></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104222000714.png" referrerpolicy="no-referrer" alt="image-20200104222000714"></p><p><strong><span>四次挥手</span></strong></p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104222016378.png" referrerpolicy="no-referrer" alt="image-20200104222016378"></p><p>&nbsp;</p><h1><a name="应用层" class="md-header-anchor"></a><span>应用层</span></h1><h2><a name="dns" class="md-header-anchor"></a><span>DNS</span></h2><h3><a name="域名分类" class="md-header-anchor"></a><span>域名分类</span></h3><h4><a name="根域名" class="md-header-anchor"></a><span>根域名</span></h4><p><span>所有顶级域名的父节点</span></p><h4><a name="顶级域名" class="md-header-anchor"></a><span>顶级域名</span></h4><h5><a name="国家级" class="md-header-anchor"></a><span>国家级</span></h5><p><span>.cn</span></p><p><span>.us</span></p><p><span>.uk</span></p><h5><a name="通用顶级域名" class="md-header-anchor"></a><span>通用顶级域名</span></h5><p><span>.com</span></p><p><span>.org</span></p><p><span>.edu</span></p><p><span>.gov</span></p><p><span>.int</span></p><p><span>.info</span></p><p><span>......</span></p><h5><a name="反向域名" class="md-header-anchor"></a><span>反向域名</span></h5><p><span>只有一个 arpa</span></p><h5><a name="二级域名三级域名" class="md-header-anchor"></a><span>二级域名，三级域名......</span></h5><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104222537525.png" referrerpolicy="no-referrer" alt="image-20200104222537525"></p><h3><a name="域名服务器" class="md-header-anchor"></a><span>域名服务器</span></h3><p><span>根域名服务器 </span>
+<span>顶级域名服务器 </span>
+<span>权限域名服务器 </span>
+<span>本地域名服务器</span></p><h4><a name="查询方式" class="md-header-anchor"></a><span>查询方式</span></h4><h5><a name="递归查询" class="md-header-anchor"></a><span>递归查询</span></h5><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104223332027.png" referrerpolicy="no-referrer" alt="image-20200104223332027"></p><h5><a name="迭代查询" class="md-header-anchor"></a><span>迭代查询</span></h5><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200104223249561.png" referrerpolicy="no-referrer" alt="image-20200104223249561"></p><p><strong><span>主机</span></strong><span>向</span><strong><span>本地域名服务器</span></strong><span>的查询一般都是采用</span><strong><span>递归查询</span></strong></p><p><strong><span>本地域名服务器</span></strong><span>向</span><strong><span>根域名服务器</span></strong><span>的查询通常是采用</span><strong><span>迭代查询</span></strong></p><h2><a name="ftp" class="md-header-anchor"></a><span>FTP</span></h2><p><span>FTP 的主要功能是减少或消除在不同操作系统下处理文件的不兼容性。</span></p><p><strong><span>一个 FTP 服务器进程</span></strong><span>可同时为</span><strong><span>多个客户</span></strong><span>进程提供服务，FTP 的服务器进程由</span><strong><span>两大部分</span></strong><span>组成：一个</span><strong><span>主进程</span></strong><span>，负责</span><strong><span>接受新的请求</span></strong><span>；另外有</span><strong><span>若干个从属进程</span></strong><span>，负责</span><strong><span>处理单个请求</span></strong><span>。</span></p><h3><a name="工作流程-n536" class="md-header-anchor"></a><span>工作流程</span></h3><p><strong><span>打开</span></strong><span>熟知端口（</span><strong><span>端口号为 21</span></strong><span>），使客户进程能够连接上。</span>
+<strong><span>等待</span></strong><span>客户进程发出</span><strong><span>连接请求</span></strong><span>。</span>
+<strong><span>启动从属进程</span></strong><span>来处理客户进程发来的请求。</span><strong><span>从属进程</span></strong><span>对客户进程的请求</span><strong><span>处理完毕后即终止</span></strong><span>，但</span><strong><span>从属进程</span></strong><span>在运行期间根据需要</span><strong><span>还可能创建其他一些子进程</span></strong><span>。</span>
+<strong><span>回到等待状态</span></strong><span>，继续接受其他客户进程发来的请求。</span><strong><span>主进程与从属进程的处理是并发地进行。</span></strong><span> </span></p><h3><a name="两个连接" class="md-header-anchor"></a><span>两个连接</span></h3><p><strong><span>控制连接</span></strong><span>在整个会话期间</span><strong><span>一直保持打开</span></strong><span>，FTP 客户发出的传送请求通过控制连接发送给服务器端的控制进程，但控制连接</span><strong><span>不用来传送文件</span></strong><span>。</span>
+<span>实际用于传输文件的是“</span><strong><span>数据连接</span></strong><span>”。服务器端的</span><strong><span>控制进程</span></strong><span>在</span><strong><span>接收</span></strong><span>到 FTP </span><strong><span>客户</span></strong><span>发送来的</span><strong><span>文件传输请求</span></strong><span>后就</span><strong><span>创建</span></strong><span>“数据传送进程”和“数据连接”，用来</span><strong><span>连接</span></strong><span>客户端和服务器端的</span><strong><span>数据传送进程</span></strong><span>。</span>
+<strong><span>数据传送进程实际完成文件的传送</span></strong><span>，在</span><strong><span>传送完毕后关闭</span></strong><span>“数据传送</span><strong><span>连接</span></strong><span>”并结束运行。 </span></p><h4><a name="两个端口号" class="md-header-anchor"></a><span>两个端口号</span></h4><p><span> 当客户进程向服务器进程</span><strong><span>发出建立连接请求</span></strong><span>时，要</span><strong><span>寻找</span></strong><span>连接服务器进程的熟知端口(</span><strong><span>21</span></strong><span>)，同时还要</span><strong><span>告诉服务器进程自己的另一个端口号码</span></strong><span>，用于建立数据传送连接。</span>
+<span>接着，</span><strong><span>服务器进程</span></strong><span>用自己</span><strong><span>传送数据的熟知端口(20)</span></strong><span>与</span><strong><span>客户进程所提供的端口号码</span></strong><span>建立</span><strong><span>数据传送连接</span></strong><span>。</span>
+<span>由于 FTP 使用了两个不同的端口号，所以</span><strong><span>数据连接</span></strong><span>与</span><strong><span>控制连接</span></strong><span>不会发生混乱。</span></p><h4><a name="使用两个端口号的好处" class="md-header-anchor"></a><span>使用两个端口号的好处</span></h4><p><span>使协议更加简单和更容易实现。</span>
+<span>在传输文件时还可以利用控制连接（例如，客户发送请求终止传输）。 </span></p><h2><a name="wwwworld-wide-web）" class="md-header-anchor"></a><span>WWW（World Wide Web）</span></h2><p><span>万维网是</span><strong><span>分布式超媒体(hypermedia)系统</span></strong><span>，它是超文本(hypertext)系统的扩充。</span></p><h3><a name="url" class="md-header-anchor"></a><span>URL</span></h3><p><strong><span>统一资源定位符（Uniform Resource Locator）</span></strong><span>是对</span><strong><span>可以从因特网上得到的资源</span></strong><span>的</span><strong><span>位置和访问方法</span></strong><span>的一种简洁的表示。</span></p><h4><a name="一般形式" class="md-header-anchor"></a><span>一般形式</span></h4><p><span>&lt;协议&gt;://&lt;主机&gt;:&lt;端口&gt;/&lt;路径&gt; </span></p><h3><a name="http" class="md-header-anchor"></a><span>http</span></h3><p><strong><span>（HyperText Transfer Protocol）超文本传输协议</span></strong></p><p><span>利用TCP建立连接</span></p><p>&nbsp;</p><h1><a name="无线网" class="md-header-anchor"></a><span>无线网</span></h1><p><span>也分为广域网，城域网，局域网，个人局域网</span></p><p><span>平常用的手机就是</span><strong><span>无线广域网</span></strong></p><p><strong><span>无线城域网</span></strong><span>：WiMAX</span></p><p><strong><span>无线广域网</span></strong><span>：蜂窝无线通信网</span></p><p><strong><span>无线个人区域网</span></strong><span>：蓝牙，ZigBee，超高速WPAN</span></p><p>&nbsp;</p></div>
+</body>
+</html>

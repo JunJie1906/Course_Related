@@ -1,0 +1,34 @@
+
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}抽奖{% endblock %}
+{% block css %}<link href="{% static 'css/login.css' %}" rel="stylesheet"/>{% endblock %}
+
+{% block content %}
+
+<h3>
+    <a href="/launch/" >我要发起抽奖</a>
+</h3>
+<div align="center">
+<h1 >抽奖列表</h1>
+</div>
+{% for draw in draw_list %}
+<div align="center">
+<article>
+    <header class="entry-header">
+        <h3 class="entry-title">
+            <a href="{{ draw.get_absolute_url }}">
+                {{ draw.Draw_name }} </a>
+        </h3>
+        <div class="entry-meta">
+            <span class="post-date">创建时间：<time class="entry-date">{{ draw.c_time}}</time></span>
+            <span class="post-author">发起人：{{ draw.initiator }}</span>
+        </div>
+
+    </header>
+    奖品：{{ draw.Prize }}
+</article>
+</div>
+{% endfor %}
+
+{% endblock %}

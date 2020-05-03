@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}抽奖{% endblock %}
+{% block css %}<link href="{% static 'css/login.css' %}" rel="stylesheet"/>{% endblock %}
+
+{% block content %}
+
+<h1 align="center">{{ draw.Draw_name }}</h1>
+<br>
+<h3 align="center">奖品：{{ draw.Prize }}</h3>
+<br>
+<h3 align="center">开奖时间：{{ draw.DDL }}</h3>
+
+<br>
+<div class="container">
+    <div class="col-md-4 col-md-offset-4">
+        <form action="{{ draw.get_absolute_url }}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary pull-right">我要参与！</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

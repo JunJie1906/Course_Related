@@ -1,0 +1,62 @@
+ segment   text                    
+        org   100H
+	MOV AX,CS
+	MOV DS,AX
+	
+	MOV DX,INFOR2
+	MOV AH,9;
+	INT 21H
+	MOV CL,10
+BEGIN:
+	MOV DL,10
+	MOV AH,2
+	INT 21H
+    MOV AH,0
+    INT 16H
+	MOV BX,AX
+	CALL OUTPUT
+
+	MOV DL,' '
+	MOV AH,2
+	INT 21H
+	MOV AH,BL
+	MOV AL,BH
+	CALL OUTPUT
+	JMP BEGIN
+
+    MOV AH,4CH
+    INT 21H
+
+
+OUTPUT:
+	PUSH BP
+	MOV BP,SP
+	MOV SI,0
+L1:
+	CBW
+	DIV CL
+	ADD AH ,48
+	PUSH AX
+	INC SI
+	CMP AL,0
+	
+	JG L1
+L2:
+	CMP SI,0
+	JZ FIN
+	DEC SI
+
+	POP AX
+	
+	MOV DX,AX
+	MOV DL,DH
+
+	MOV AH,2
+	INT 21H
+	JMP L2
+FIN:
+	POP BP
+	RET
+
+
+INFOR2 DB "Please input:$"

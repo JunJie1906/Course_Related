@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}{{ Live.roomName }}{% endblock %}
+{% block css %}	<link href="{% static 'css/video-js.min.css' %}" rel="stylesheet">{% endblock %}
+
+
+{% block content %}
+
+    <div class="container">
+        <h5>主讲人：{{ Live.creater }}</h5>
+        <h5>房间号：{{ Live.roomId }}</h5>
+
+        <video id="rtmpVideo" class="video-js" controls preload="auto" width="640" height="264" data-setup='{ "html5" : { "nativeTextTracks" : false } }'>
+        </video>
+		<script src="{% static 'js/video.min.js' %}"></script>
+		<script src="{% static 'js/videojs-flash.min.js' %}"></script>
+		  <script type="text/javascript">
+		   //设置中文
+		   videojs.options.flash.swf = '{% static 'js/video-js.swf' %}';
+
+		   // 初始化视频，设为全局变量
+            var myPlayer = videojs('rtmpVideo', {
+                autoplay: true,
+                controls: true,//控制条
+
+                muted: true,// 静音
+                preload: "auto",// 预加载
+                language: "zh-CN",// 初始化语言
+                playbackRates: [1, 2, 3, 4, 5, 8, 10, 20],// 播放速度
+                 'techOrder': ['flash'],
+
+                        sources: [{
+                                /*src: 'rtmp://localhost:1935/live/{{ Live.roomId }}'*/
+                            /*src: 'rtmp://58.200.131.2:1935/livetv/hunantv',*/
+                            src: 'rtmp://localhost:1935/live/{{ Live.roomId }}',   //这里设置你的播放资源，
+                            type: 'rtmp/flv'
+                        }]
+            }, function () {
+                console.log("--------------成功初始化视频--------------");
+                myPlayer.one("playing", function () {         // 监听播放
+                    console.log("开始播放");
+                });
+                myPlayer.one("error", function (error) {      // 监听错误
+                    console.error("监听到异常，错误信息：%o",error);
+                });
+            });
+		</script>
+        {% if is_main %}
+        <form action="/opencamera/" method="post">
+            {% csrf_token %}
+            <button type="submit">打开摄像头</button>
+        </form>
+        <form action="/closecamera/" method="post">
+            {% csrf_token %}
+            <button type="submit">关闭摄像头</button>
+        </form>
+        <form action="/closelive/" method="post" id="{{ Live.roomId }}">
+            {% csrf_token %}
+
+            <button type="submit">关闭直播</button>
+        </form>
+        {% endif %}
+
+    </div>
+
+
+
+{% endblock %}
+
+
