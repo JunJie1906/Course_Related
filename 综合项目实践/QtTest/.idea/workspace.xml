@@ -58,7 +58,7 @@
       <file leaf-file-name="1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
+            <state relative-caret-position="792">
               <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -70,7 +70,7 @@
       <file leaf-file-name="loginHandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handler/loginHandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="297">
               <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -82,8 +82,8 @@
       <file leaf-file-name="webview.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/webview.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="-132">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -196,7 +196,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -218,12 +218,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
-    <property name="last_opened_file_path" value="E:/杂东西/瞎搞/django/blog/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -370,7 +370,7 @@
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26877683" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2725322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -725,7 +725,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
+        <state relative-caret-position="792">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -735,7 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/handler/loginHandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="297">
           <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -745,8 +745,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/webview.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="-132">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

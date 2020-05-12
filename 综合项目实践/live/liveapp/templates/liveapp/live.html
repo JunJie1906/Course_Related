@@ -30,8 +30,6 @@
                  'techOrder': ['flash'],
 
                         sources: [{
-                                /*src: 'rtmp://localhost:1935/live/{{ Live.roomId }}'*/
-                            /*src: 'rtmp://58.200.131.2:1935/livetv/hunantv',*/
                             src: 'rtmp://localhost:1935/live/{{ Live.roomId }}',   //这里设置你的播放资源，
                             type: 'rtmp/flv'
                         }]
@@ -45,26 +43,73 @@
                 });
             });
 		</script>
+
         {% if is_main %}
+        <div>
         <form action="/opencamera/" method="post">
             {% csrf_token %}
             <button type="submit">打开摄像头</button>
         </form>
+        <form action="/openShareScreen/" method="post">
+            {% csrf_token %}
+            <button type="submit">打开屏幕共享</button>
+        </form>
+        </div>
         <form action="/closecamera/" method="post">
             {% csrf_token %}
-            <button type="submit">关闭摄像头</button>
+            <button type="submit">关闭屏幕和摄像头</button>
         </form>
+
+
+
         <form action="/closelive/" method="post" id="{{ Live.roomId }}">
             {% csrf_token %}
-
             <button type="submit">关闭直播</button>
         </form>
         {% endif %}
 
     </div>
 
+<div align="center">
+    <textarea id="chat-log" cols="50" rows="10"></textarea><br/>
+    <input id="chat-message-input" type="text" size="50" placeholder="说点什么吧"/><br/>
+    <input id="chat-message-submit" type="button" value="Send"/>
+</div>
+<script>
+    var roomName = '{{ pk }}';
 
+    var chatSocket = new WebSocket(
+        'ws://' + window.location.host +
+        '/ws/live/' + roomName + '/');
 
+    chatSocket.onmessage = function(e) {
+        var data = JSON.parse(e.data);
+        var message = data['message'];
+        document.querySelector('#chat-log').value += (message + '\n');
+    };
+
+    chatSocket.onclose = function(e) {
+        console.error('Chat socket closed unexpectedly');
+    };
+
+    document.querySelector('#chat-message-input').focus();
+    document.querySelector('#chat-message-input').onkeyup = function(e) {
+        if (e.keyCode === 13) {  // enter, return
+            document.querySelector('#chat-message-submit').click();
+        }
+    };
+
+    document.querySelector('#chat-message-submit').onclick = function(e) {
+        var messageInputDom = document.querySelector('#chat-message-input');
+        var message = messageInputDom.value;
+        message = '{{ username }}: '+message;
+        chatSocket.send(JSON.stringify({
+            'message': message
+        }));
+        messageInputDom.value = '';
+    };
+</script>
 {% endblock %}
+
 
 

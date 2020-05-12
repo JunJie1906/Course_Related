@@ -8,7 +8,7 @@ from PyQt5.QtWebEngineWidgets import *
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
-        self.setWindowTitle('加载外部网页的例子')
+        self.setWindowTitle('MyLive')
         self.setGeometry(5,30,1355,730)
         self.browser=QWebEngineView()
         #加载外部的web界面

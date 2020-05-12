@@ -80,7 +80,7 @@ struct file_operations proc_fops =
     .open = proc_foobar_open,
     .read = seq_read,
     .write = proc_write,
-    .release = single_release,
+
 };
 
 struct file_operations jiff_fops = 
@@ -89,7 +89,6 @@ struct file_operations jiff_fops =
     .open  = proc_jiffies_open,
     .read = seq_read,
     .write = proc_write,
-    .release = single_release,
 };
 
 

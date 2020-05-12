@@ -4,6 +4,8 @@ import os
 import threading
 import inspect
 import ctypes
+import psutil
+
 
 import login.models,liveapp.models
 
@@ -11,28 +13,18 @@ def gen_9_numbers(s):
     return str(abs(hash(s)))[:9]
 
 def ffmpeg(id):
+
     os.system('ffmpeg -f dshow -i video="HD Webcam"  '
 
               '-vcodec libx264 -preset:v ultrafast -tune:v zerolatency '
               '-f flv '
               'rtmp://localhost:1935/live/'+id)
 
-
-def _async_raise(tid, exctype):
-    """raises the exception, performs cleanup if needed"""
-    tid = ctypes.c_long(tid)
-    if not inspect.isclass(exctype):
-        exctype = type(exctype)
-    res = ctypes.pythonapi.PyThreadState_SetAsyncExc(tid, ctypes.py_object(exctype))
-    if res == 0:
-        raise ValueError("invalid thread id")
-    elif res != 1:
-        # """if it returns a number greater than one, you're in trouble,
-        # and you should call it again with exc=NULL to revert the effect"""
-        ctypes.pythonapi.PyThreadState_SetAsyncExc(tid, None)
-        raise SystemError("PyThreadState_SetAsyncExc failed")
-def stop_thread(thread):
-    _async_raise(thread.ident, SystemExit)
+def shareScreen(id):
+    os.system('ffmpeg -f gdigrab -video_size 1920x1080 '
+              '-framerate 15 -i desktop -pix_fmt yuv420p '
+              '-codec:v libx264 -bf 0 -g 300 -f flv '
+              'rtmp://localhost:1935/live/'+id)
 
 
 def live(request,pk):
@@ -40,14 +32,25 @@ def live(request,pk):
         return redirect('/login/')
     username = request.session.get('user_name')
 
-    live = get_object_or_404(liveapp.models.Live, pk=pk)
+    Live = get_object_or_404(liveapp.models.Live, pk=pk)
     is_main = False
-    if username == live.creater.name:
+    if username == Live.creater.name:
         is_main = True
-    roomID = live.roomId
+    roomID = Live.roomId
     request.session["cur_roomId"] = roomID
-    return render(request,'liveapp/live.html',context={'Live':live,'is_main':is_main})
 
+    return render(request,'liveapp/live.html',locals())
+
+def openShareScreen(request):
+    if not request.session.get('is_login', None):
+        return redirect('/login/')
+    username = request.session.get('user_name')
+    creater = login.models.User.objects.get(name=username)
+    live = liveapp.models.Live.objects.get(creater=creater)
+    id = live.roomId
+    # t = threading.Thread(target=ffmpeg, args=(id,))
+    shareScreen(id)
+    return redirect(live.get_absolute_url())
 
 def openCamera(request):
     if not request.session.get('is_login', None):
@@ -56,9 +59,8 @@ def openCamera(request):
     creater = login.models.User.objects.get(name=username)
     live = liveapp.models.Live.objects.get(creater=creater)
     id = live.roomId
-    t = threading.Thread(target=ffmpeg, args=(id,))
-    t.start()
-    request.session['camera']=t.ident
+    # t = threading.Thread(target=ffmpeg, args=(id,))
+    ffmpeg(id)
     return redirect(live.get_absolute_url())
 
 def closeCamera(request):
@@ -67,8 +69,12 @@ def closeCamera(request):
     username = request.session.get('user_name')
     creater = login.models.User.objects.get(name=username)
     live = liveapp.models.Live.objects.get(creater=creater)
-    tid = request.session.get('camera')
-    _async_raise(tid, SystemExit)
+    lst = psutil.pids()
+    for i in lst:
+        process = psutil.Process(i)
+        if process.name() == 'ffmpeg.exe':
+            process.kill()
+            break
     return redirect(live.get_absolute_url())
 
 def launch(request):
@@ -149,4 +155,3 @@ def closelive(request):
         return redirect('/mylive/')
     room.delete()
     return redirect('/launch/')
-

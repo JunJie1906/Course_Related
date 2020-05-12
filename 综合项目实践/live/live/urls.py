@@ -19,8 +19,10 @@ from django.conf.urls import include,url
 import login.urls
 import liveapp.urls
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include(login.urls)),
     path('',include(liveapp.urls)),
+
 ]

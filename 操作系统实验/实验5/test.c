@@ -44,18 +44,18 @@ static ssize_t proc_write(struct file *file,const char __user *buffer,size_t cou
 }
 
 
-static int proc_show_jiffies(struct seq_file *file, void *v)
-{
-    int cnt = 0;
-    seq_printf(file, "jiffies = %ld\n", jiffies);
-    return cnt;
-}
+// static int proc_show_jiffies(struct seq_file *file, void *v)
+// {
+//     int cnt = 0;
+//     seq_printf(file, "jiffies = %ld\n", jiffies);
+//     return cnt;
+// }
 
-static int proc_jiffies_open(struct inode *inode, struct file *file)
-{
-    single_open(file, proc_show_jiffies, NULL);
-    return 0;
-}
+// static int proc_jiffies_open(struct inode *inode, struct file *file)
+// {
+//     single_open(file, proc_show_jiffies, NULL);
+//     return 0;
+// }
 
 static int proc_show_foobar(struct seq_file *file, void * data)
 {
@@ -83,14 +83,28 @@ struct file_operations proc_fops =
     .release = single_release,
 };
 
+
+static ssize_t read_jiffies_proc(struct file *filp,char __user *buf,size_t count,loff_t *offp ){
+	printk(KERN_INFO"count=%d  jiff_temp=%d\n", count, jiff_temp);
+	char tempstring[100]="";
+	if (jiff_temp!=0)
+		jiff_temp=sprintf(tempstring, "jiffies=%ld\n", jiffies);	//jiffies为系统启动后经过的时间戳
+	if (count>jiff_temp)
+		count=jiff_temp;
+	jiff_temp=jiff_temp-count;
+
+	printk(KERN_INFO"count=%d  jiff_temp=%d\n", count, jiff_temp);
+	copy_to_user(buf, tempstring, count);
+	if (count==0)
+		jiff_temp=-1;	//读取结束后temp变回-1
+	return count;
+}
+
 struct file_operations jiff_fops = 
 {
 	.owner = THIS_MODULE,
-    .open  = proc_jiffies_open,
-    .read = seq_read,
+    .read = read_jiffies_proc,
     .write = proc_write,
-    .llseek  = seq_lseek,
-    .release = single_release,
 };
 
 
